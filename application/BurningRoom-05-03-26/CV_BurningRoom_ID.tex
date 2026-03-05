@@ -1,0 +1,255 @@
+%-------------------------
+% CV Target: Burning Room Technology — Fullstack Website Developer (Inhouse)
+% Author: Hafidz Mulia
+% Bahasa: Indonesia
+% Compile: pdflatex -interaction=nonstopmode "CV_BurningRoom_ID.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{C0392B}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+% #1 = Posisi, #2 = Institusi, #3 = Periode, #4 = Deskripsi
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+% #1 = Nama Proyek, #2 = Periode, #3 = Peran/Teknologi, #4 = Deskripsi, #5 = Tautan
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Repositori / Demo}} \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvskillcat}[2]{%
+  \noindent\textbf{#1:} #2\\[2pt]%
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Fullstack Web Developer}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://linkedin.com/in/hafidz-mulia}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== RINGKASAN ====================
+\section{Ringkasan Profesional}
+Mahasiswa tingkat akhir Matematika ITS dengan pengalaman nyata mengerjakan \textbf{aplikasi web full-stack} menggunakan \textbf{Laravel, Next.js, PHP, dan MySQL/MongoDB}. Telah merampungkan 7+ proyek nyata --- mulai dari backend REST API untuk aplikasi mobile pertolongan pertama, platform LMS berbasis gamifikasi, hingga direktori hotel berbasis GIS --- mencakup seluruh siklus pengembangan: desain backend, pemodelan basis data, autentikasi, hingga deployment. Menjalankan \textbf{MulyOS}, agensi digital freelance yang membantu UMKM dan civitas akademik membangun aplikasi web dan mobile sesuai kebutuhan. Berdomisili di Surabaya, siap bekerja secara inhouse.
+
+%==================== PENDIDIKAN ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika (Peminatan Komputasi \& Informatika)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Sekarang}
+  {Mata kuliah relevan: Algoritma, Sistem Basis Data, Komputasi Statistik, Rekayasa Perangkat Lunak.}
+
+%==================== PROYEK ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {ELKPD --- Platform Manajemen Pembelajaran Berbasis Gamifikasi}
+  {Agu 2025 -- Jan 2026}
+  {Fullstack Developer | Next.js · NextAuth · MongoDB}
+  {Membangun platform LMS berbasis kuis untuk mendukung studi tesis akademik.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Sistem kuis gamifikasi bertingkat dengan penilaian dan skor progres.
+      \item Dashboard guru untuk pemantauan progres siswa secara real-time dan pelaporan komprehensif.
+      \item Kontrol akses berbasis peran (Guru / Siswa) dengan autentikasi NextAuth.
+      \item MongoDB untuk pelacakan progres dan persistensi sesi pengguna yang fleksibel.
+  \end{itemize}}
+  {}
+
+\cvproject
+  {Patahero API --- Backend RESTful untuk Aplikasi Mobile}
+  {Jan 2026}
+  {Backend Developer | Laravel 12 · PHP 8.2 · MySQL · Laravel Sanctum · Eloquent ORM}
+  {Membangun backend REST API untuk PataHero, aplikasi mobile panduan pertolongan pertama patah tulang.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Merancang dan mengimplementasikan endpoint API terstruktur untuk data pertolongan pertama beserta pengiriman gambar per langkah.
+      \item Autentikasi berbasis token (Laravel Sanctum): register, login, logout, dan manajemen profil.
+      \item Penanganan unggah file (foto profil, gambar langkah) via Laravel storage dengan public symlink.
+      \item Di-deploy ke cPanel/shared hosting; basis data di-seed dengan data penanganan patah tulang nyata.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/patahero\_api}
+
+\cvproject
+  {HiSurabaya --- Direktori Hotel Berbasis GIS}
+  {Des 2025}
+  {Lead Developer | Laravel 12 · Tailwind CSS · Alpine.js · Leaflet.js · Google OAuth (Socialite)}
+  {Membangun direktori hotel lengkap dengan pencarian peta interaktif.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Integrasi Google OAuth dengan Laravel Socialite untuk login satu klik.
+      \item Tiga mode pencarian peta: lokasi titik, jarak rute, dan seleksi area poligon.
+      \item Dashboard berbasis peran untuk Pengguna, Pemilik Hotel, dan Admin.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/hisurabaya}
+
+\cvproject
+  {Sina --- Platform Buku Cerita Digital Anak}
+  {Okt 2025 -- Des 2025}
+  {Pengembang Tunggal | Laravel 12 · PHP 8.2 · MySQL · Tailwind CSS · Alpine.js · Cloudinary API}
+  {Platform cerita end-to-end dengan sistem tiga tingkat peran (Superadmin / Admin / Pengguna).
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Integrasi Cloudinary API untuk unggah gambar dan pengiriman via CDN.
+      \item Pelacakan progres membaca per pengguna; dashboard CMS admin untuk manajemen konten.
+      \item Di-deploy via Vercel dengan MySQL hosted di Aiven. Tersedia di \texttt{sina.hafmul.site}.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/sina}
+
+\cvproject
+  {Literasik --- Sistem Informasi Perpustakaan}
+  {Jun 2025 -- Des 2025}
+  {Pengembang Tunggal | Laravel 12 · PHP 8.2 · MySQL · Tailwind CSS · Alpine.js · Eloquent ORM}
+  {Membangun sistem perpustakaan sekolah secara lengkap dari awal.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item CRUD lengkap untuk buku, siswa, dan eksemplar buku dengan pelacakan ketersediaan multi-status.
+      \item Kalkulasi denda otomatis (Rp 1.000/hari) disertai riwayat peminjaman dan ekspor laporan PDF.
+      \item Akses berbasis peran (Petugas / Siswa) dengan autentikasi Laravel Breeze.
+      \item Seeder 200+ data realistis menggunakan Faker; di-deploy ke \texttt{literasik.hafmul.site}.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/SIPerpustakaan}
+
+\cvproject
+  {SIBPS --- Sistem Blog \& Manajemen Konten}
+  {Jan 2025 -- Des 2025}
+  {Lead Developer | Laravel 11 · Eloquent ORM · MySQL · Laravel Breeze · Blade}
+  {Mengembangkan CMS blog dengan CRUD artikel lengkap, relasi Eloquent ORM, dan autentikasi Breeze. Menerapkan pemisahan controller/model yang bersih serta desain skema basis data yang ternormalisasi.}
+  {https://github.com/hafidzmulia-its/SIBPS}
+
+\cvproject
+  {SI Presensi --- Sistem Presensi Siswa}
+  {Mei 2025}
+  {Fullstack Developer | Laravel · MySQL · Blade}
+  {Mengembangkan dan men-deploy sistem presensi digital saat magang di SMA IT Al Uswah. Melakukan UAT bersama staf non-teknis untuk memastikan sistem tahan terhadap kesalahan input umum. Diselesaikan tepat waktu untuk tahun ajaran baru.}
+  {https://github.com/hafidzmulia-its/SIPresensi}
+
+%==================== PENGALAMAN KERJA ====================
+\section{Pengalaman Kerja}
+
+\cventry
+  {Pendiri \& Lead Developer}
+  {MulyOS --- Agensi Digital Freelance}
+  {2026 -- Sekarang}
+  {Mendirikan dan mengelola MulyOS, agensi digital freelance yang membantu UMKM dan civitas akademik membangun aplikasi web dan mobile menggunakan teknologi modern (Next.js/React). Proyek klien terpilih:
+  \begin{itemize}[nosep, leftmargin=15pt]
+    \item \textbf{NestBloom, Premom, Thyva, Soulmom} --- Aplikasi full-stack klien yang dibangun dengan Next.js.
+    \item \textbf{Real Keke} --- Aplikasi full-stack klien (sedang dalam pengembangan).
+  \end{itemize}}
+
+\cventry
+  {Magang Fullstack Developer}
+  {SMA IT Al Uswah Surabaya}
+  {Mei 2025}
+  {Pengembang tunggal sistem presensi berbasis Laravel. Menangani pengumpulan kebutuhan, desain basis data, pengembangan, dan UAT bersama tim administrasi sekolah. Sistem diterima dan digunakan secara operasional.}
+
+\cventry
+  {Instruktur Pemrograman \& Web Development}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajar dasar-dasar pemrograman, berpikir algoritmik, dan pengembangan web kepada siswa. Menyusun materi ajar terstruktur yang menjelaskan logika, debugging, dan arsitektur proyek bagi pemula.}
+
+\cventry
+  {Asisten Koordinator Laboratorium (Algoritma \& Komputasi Visual)}
+  {Departemen Matematika ITS}
+  {2024 -- Sekarang}
+  {Membimbing 50+ mahasiswa per minggu dalam desain algoritma, debugging kode, dan dasar-dasar basis data. Menyusun dan memelihara modul praktikum.}
+
+%==================== KEAHLIAN TEKNIS ====================
+\section{Keahlian Teknis}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Bahasa Pemrograman:} & PHP (utama), JavaScript, TypeScript, SQL \\[3pt]
+\textbf{Framework:} & Laravel (Mahir --- v11 \& v12), Next.js, Alpine.js \\[3pt]
+\textbf{Basis Data:} & MySQL, PostgreSQL, Microsoft SQL Server, MongoDB \\[3pt]
+\textbf{Frontend:} & Tailwind CSS, Bootstrap, Blade Templates (Laravel) \\[3pt]
+\textbf{API \& Integrasi:} & Perancangan RESTful API, Google OAuth (Socialite), Cloudinary, Integrasi API pihak ketiga \\[3pt]
+\textbf{Tools:} & Git (GitHub), Composer, NPM/Vite, Figma, Vercel \\[3pt]
+\textbf{Sedang Dipelajari:} & Laravel Livewire, Inertia.js \\
+\end{tabularx}
+
+%==================== ORGANISASI ====================
+\section{Kepemimpinan \& Organisasi}
+
+\cventry
+  {Wakil Ketua I}
+  {HIMATIKA ITS (Himpunan Mahasiswa Matematika)}
+  {Feb 2025 -- Des 2026}
+  {Memimpin transformasi operasional dan koordinasi staf untuk organisasi beranggotakan 100+ orang. Membangun alur pelaporan internal yang mengurangi beban administrasi secara signifikan.}
+
+\cventry
+  {Web Developer}
+  {Abila Company --- Program KKN Abdi Masyarakat ITS}
+  {Jul 2024}
+  {Mengembangkan website profil perusahaan dalam rangka program KKN Abdi Masyarakat ITS, mulai dari mockup awal hingga deployment ke production.}
+
+%==================== PRESTASI ====================
+\section{Prestasi}
+\begin{itemize}[leftmargin=15pt, nosep]
+  \item Kontributor utama digitalisasi internal HIMATIKA ITS melalui sistem e-Rapor (erapor.himatika.vercel.app).
+  \item Memiliki 7+ aplikasi web aktif yang dapat diakses publik melalui domain khusus maupun Vercel, termasuk proyek klien nyata yang dikerjakan melalui MulyOS.
+\end{itemize}
+
+%==================== BAHASA ====================
+\section{Bahasa}
+\begin{tabularx}{\textwidth}{@{}l l@{}}
+\textbf{Bahasa Indonesia:} & Penutur Asli \\
+\textbf{Bahasa Inggris:} & Profesional (membaca/menulis dokumentasi teknis) \\
+\end{tabularx}
+
+\end{document}

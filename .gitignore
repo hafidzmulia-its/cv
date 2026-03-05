@@ -1,0 +1,32 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.gz
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.acn
+*.acr
+*.alg
+*.glg
+*.xdy
+*.nav
+*.snm
+*.vrb
+
+# PDF output (comment out if you want to track PDFs)
+# *.pdf

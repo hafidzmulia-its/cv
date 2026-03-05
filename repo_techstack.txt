@@ -1,0 +1,357 @@
+================================================================
+HAFIDZ MULIA - ALL GITHUB REPOSITORIES + TECH STACK
+Fetched: March 5, 2026
+================================================================
+
+================================================================
+PUBLIC REPOSITORIES
+================================================================
+
+---------- sina ----------
+URL      : https://github.com/hafidzmulia-its/sina
+Live     : https://ibnu-sina.vercel.app (sina.hafmul.site)
+Language : PHP (Laravel/Blade)
+Topics   : laravel, mysql, tailwindcss, cloudinary
+Description: Children's Digital Storybook Platform
+
+Tech Stack:
+  Backend  : Laravel 12, PHP 8.2, MySQL (Aiven hosted), Eloquent ORM, Laravel Breeze
+  Frontend : Tailwind CSS 3, Alpine.js, Blade Templates, Vite
+  Cloud    : Vercel (deploy), Cloudinary (media), Aiven.io (database)
+  Auth     : Laravel Breeze (3-tier: User, Admin, Superadmin)
+
+Key Features:
+  - Full CRUD for books/users with Cloudinary image upload
+  - Role-based access control (User / Admin / Superadmin)
+  - Reading progress tracking per user
+  - Admin CMS dashboard
+
+---------- SIPerpustakaan ----------
+URL      : https://github.com/hafidzmulia-its/SIPerpustakaan
+Live     : https://literasik.hafmul.site
+Language : PHP (Laravel/Blade)
+Description: Laravel-based school library management system
+
+Tech Stack:
+  Backend  : Laravel 12, PHP 8.2+, MySQL 8.0, Eloquent ORM, Laravel Breeze
+  Frontend : Tailwind CSS 3, Alpine.js 3, Blade Templates, Vite 6, Axios
+
+Key Features:
+  - Full CRUD for books with cover image upload
+  - Borrowing/return system with 7-day limit
+  - Automatic fine calculation (Rp 1,000/day)
+  - Student management, borrowing history
+  - Seeders for 200+ records, PDF export
+
+---------- SIPresensi ----------
+URL      : https://github.com/hafidzmulia-its/SIPresensi
+Language : PHP (Laravel/Blade)
+Description: Student attendance system — built during internship at SMA IT Al Uswah
+Tech Stack: Laravel (Blade). Default README only.
+
+---------- hisurabaya ----------
+URL      : https://github.com/hafidzmulia-its/hisurabaya
+Language : PHP (Laravel/Blade)
+Description: Hotel GIS Information System for Surabaya
+
+Tech Stack:
+  Backend  : Laravel 12, PHP 8.2, Microsoft SQL Server
+  Frontend : Blade + Tailwind CSS + Alpine.js
+  Maps     : Leaflet.js + OpenStreetMap, Turf.js (polygon search)
+  Auth     : Laravel Breeze + Laravel Socialite (Google OAuth)
+
+Key Features:
+  - 3 map search modes: Point (markers), Route (distance), Area (polygon)
+  - Spatial search: haversine radius + polygon intersect
+  - Hotel CRUD with images
+  - Google OAuth login, role-based (User/Admin/Owner)
+
+---------- e-kos ----------
+URL      : https://github.com/hafidzmulia-its/e-kos
+Live     : https://e-kos.vercel.app
+Language : TypeScript (Next.js)
+Description: Web GIS to find boarding houses around ITS Surabaya
+
+Tech Stack:
+  Frontend : Next.js 16, TypeScript 5, React 19, Tailwind CSS 4, Leaflet.js
+  Backend  : Next.js API Routes, Supabase (PostgreSQL + PostGIS)
+  Auth     : NextAuth.js 4, Google OAuth 2.0, JWT, RBAC (USER/ADMIN)
+  Media    : Vercel Blob + Cloudinary
+  Deploy   : Vercel
+
+Key Features:
+  - Interactive map with PostGIS spatial queries (ST_DWithin)
+  - Full CRUD for kos listings with multi-image upload
+  - Advanced filtering (gender, price, facilities)
+  - Admin panel, REST API
+
+---------- erapor ----------
+URL      : https://github.com/hafidzmulia-its/erapor
+Live     : https://rapor-himatika.vercel.app
+Language : TypeScript (Next.js)
+Description: Reporting system for HIMATIKA with PDF/Excel export
+
+Tech Stack:
+  Frontend : Next.js, TypeScript, React
+  Backend  : Next.js API Routes, MongoDB Atlas, Google Apps Script
+  Auth     : NextAuth
+
+---------- haf (Portfolio) ----------
+URL      : https://github.com/hafidzmulia-its/haf
+Live     : https://hafmul.site
+Language : HTML + Bootstrap
+Description: Personal portfolio website
+
+================================================================
+PRIVATE REPOSITORIES
+================================================================
+
+---------- SIBPS (Private) ----------
+URL      : https://github.com/hafidzmulia-its/SIBPS
+Language : PHP (Laravel/Blade)
+Description: Laravel 11 blog project - Eloquent ORM, CRUD, Breeze Authentication
+
+Tech Stack:
+  Backend  : Laravel 11, Eloquent ORM, MySQL (inferred)
+  Frontend : Blade Templates, Tailwind CSS (inferred via Breeze)
+  Auth     : Laravel Breeze
+
+Key Features:
+  - Blog with full CRUD
+  - Laravel Breeze authentication
+  - Eloquent ORM for data management
+
+Note: No README.md found in repo.
+
+---------- patahero_api (Private) ----------
+URL      : https://github.com/hafidzmulia-its/patahero_api
+Live     : https://your-domain.com/api (cPanel / HostData shared hosting)
+Language : PHP (Laravel)
+Description: PataHero — RESTful API backend for a mobile first aid app (bone fracture treatment guides)
+
+Tech Stack:
+  Language : PHP 8.2+
+  Framework: Laravel 12.0, Eloquent ORM
+  Auth     : Laravel Sanctum 4.0 (token-based Bearer auth)
+  Database : MySQL
+  Tools    : Vite, PHPUnit 11.5, Laravel Pint, Laravel Sail (Docker dev)
+  Deploy   : cPanel / HostData shared hosting
+
+Database Models:
+  - User, Fracture, FirstAidStep, AlertNotification
+
+API Endpoints:
+  Public:
+    GET  /api/fracture_names            — list all fracture types
+    GET  /api/first_aid_fracture_data   — fractures with step-by-step instructions + images
+    POST /api/first_aid_fracture        — add custom fracture entry
+    DELETE /api/first_aid_fracture      — remove fracture entry
+  Auth (/api/v1):
+    POST /api/v1/register | login | logout
+    GET  /api/v1/me
+  User (protected):
+    GET/PATCH/DELETE /api/v1/user
+    POST /api/v1/user/photo             — profile photo upload
+
+Key Features:
+  - Step-by-step first aid instructions per fracture type (arm, leg, spine, etc.)
+  - Instructional image serving for each step (storage/app/public/)
+  - Token-based authentication (Sanctum) with register/login/logout/profile
+  - Profile photo upload support
+  - Alert/notification system for accident events
+  - Database-seeded fracture data (seeders)
+
+---------- elkpd (Private - full) ----------
+URL      : https://github.com/hafidzmulia-its/elkpd
+Live     : https://elkpd.vercel.app
+Language : TypeScript (Next.js)
+Description: ELKPD — gamified e-learning platform with multi-level quiz system (production client project)
+
+Tech Stack:
+  Frontend : Next.js 15, React 19, TypeScript 5, Tailwind CSS 4, SWR, Heroicons
+  Backend  : Next.js API Routes, MongoDB (Mongoose 8), NextAuth.js 4
+  Auth     : NextAuth credential-based, bcryptjs password hashing, RBAC
+  Forms    : react-hook-form 7, Zod 4 validation
+  Deploy   : Vercel (region IAD1)
+
+Database Models (MongoDB/Mongoose):
+  - User, UserProgress, Answer, Level, GroupProfile
+
+Key Features:
+  - Progressive level unlocking based on completion + score
+  - Question types: multiple-choice, multi-select, text input, file upload
+  - Group profiles (multiple members under one account)
+  - Teacher dashboard: view all student progress, export PDF/Excel reports
+  - Real-time progress tracking, historical data retention
+  - Role-based access (Student / Teacher / Admin), protected routes
+  - Production client project — deployed and in active use
+
+---------- premom (Private) ----------
+URL      : https://github.com/hafidzmulia-its/premom
+Live     : https://premom.vercel.app
+Language : TypeScript (Next.js)
+Description: Prenatal health education platform — Kementerian Kesehatan RI
+
+Tech Stack:
+  Frontend : Next.js 15, React 19, Tailwind CSS, TypeScript
+  Backend  : Next.js API Routes, Appwrite Cloud, Google Sheets API
+  Auth     : iron-session, Appwrite, RBAC (user/admin)
+  Extra    : Coze AI chatbot integration
+
+Key Features:
+  - Educational content management (Kemenkes RI collaboration)
+  - AI chatbot (Coze)
+  - Admin CRUD for users, materials, questions
+  - Google Sheets data export
+
+---------- nestbloom (Private) ----------
+URL      : https://github.com/hafidzmulia-its/nestbloom
+Live     : https://nestbloom.vercel.app
+Language : TypeScript (Next.js)
+Description: Gamified LMS for parenting education — thesis research
+
+Tech Stack:
+  Frontend : Next.js 15, React 19, Tailwind CSS v4, TypeScript
+  Backend  : Next.js API Routes, Appwrite Cloud, Google Sheets API
+  Auth     : iron-session, RBAC (user/admin)
+
+Key Features:
+  - Gated learning path: pre-test → materials → post-test
+  - Gamification + progress tracking
+  - Admin CRUD panel
+  - Auto export to Google Sheets
+  - Thesis research tool
+
+---------- thyva (Private) ----------
+URL      : https://github.com/hafidzmulia-its/thyva
+Live     : https://thyva.vercel.app
+Language : TypeScript (Next.js)
+Description: Educational chatbot for teenage girls — reproductive health (Poltekkes research)
+
+Tech Stack:
+  Frontend : Next.js 16, React 19, TypeScript, Tailwind CSS v4
+  Backend  : Next.js API Routes, Appwrite Cloud (Auth + Database)
+  AI       : Coze API (chatbot engine, proxied via /api/chat)
+  UI       : shadcn/ui (Radix UI), react-hot-toast
+  Deploy   : Vercel
+
+Database Collections (Appwrite):
+  - users           — profile, age, class, test completion flags
+  - chat_sessions   — session metadata per user
+  - chat_messages   — persistent chat history
+
+Key Features:
+  - Registration + Appwrite auth (email/password)
+  - Pre-test gate → 6-topic educational intervention → Post-test gate
+  - AI-powered free chat (Coze) on reproductive health topic (Leukorrhea)
+  - Code-based gate unlock: THYVA-START, POST-KNOWLEDGE-DONE, POST-ATTITUDE-DONE, POST-ACTION-DONE
+  - Progress tracking per user across all test stages
+  - Mobile-responsive
+  - Research instrument for Poltekkes Surabaya
+
+---------- soulmom-web (Private) ----------
+URL      : https://github.com/hafidzmulia-its/soulmom-web
+Live     : https://soulmom-web.vercel.app
+Language : TypeScript (Next.js)
+Description: SOULMOM — postpartum depression (baby blues) screening platform using EPDS questionnaire
+
+Tech Stack:
+  Frontend : Next.js 16, TypeScript, Tailwind CSS v4, react-hook-form + Zod
+  Backend  : Next.js API Routes, Firebase (Auth + Firestore), Google Sheets API
+  Auth     : Firebase Authentication (email/password), Firebase Admin SDK
+  Deploy   : Vercel
+
+Key Features:
+  - 10-question EPDS (Edinburgh Postnatal Depression Scale) questionnaire
+  - Respondent data collection (multi-step form with validation)
+  - Automatic scoring + classification (Low / Moderate / High risk)
+  - Self-harm safety check: if Q10 > 0, displays hotline warning prominently
+  - Results, educational videos, and recommendations
+  - Admin panel: upload poster, set YouTube URLs, configure hotline text
+  - All submissions logged to Google Sheets (Responses + Config tabs)
+  - Research data: timestamp, demographics, per-question scores, EPDS level
+  - Firebase Firestore for session storage; Google Sheets for research export
+  - Configurable themes and branding via admin panel
+
+---------- greeting-site (Private) ----------
+URL      : https://github.com/hafidzmulia-its/greeting-site
+Live     : https://greeting-site-two.vercel.app
+Language : TypeScript (Next.js)
+
+---------- thesis (Private) ----------
+URL      : https://github.com/hafidzmulia-its/thesis
+Language : TeX (LaTeX — thesis document)
+
+---------- abilacomp (Private) ----------
+URL      : https://github.com/hafidzmulia-its/abilacomp
+Language : HTML (company project)
+
+================================================================
+OTHER / LEARNING REPOS
+================================================================
+- daftarsiswa        → PHP, student registration form
+- MergeBinaryLinear  → Java, algorithm practice
+- SortingButCOol     → Java, sorting algorithms
+- etsalpro           → Java, algorithmic programming
+- CrossTheRoad       → Java, Alpro 2 final project
+- Tutorial-Alpro     → Java, algorithm tutorials
+- statistical_distribution → TeX, statistics
+- learn-npm          → Node.js/npm learning
+- coffeeshop         → HTML/CSS design exercise
+- artikel / artikels → HTML, Bootstrap practice
+- testss             → test repo
+- vue-tasty-recipes  → Vue.js (from tutorial)
+
+================================================================
+QUICK REFERENCE — BY TECH CATEGORY
+================================================================
+
+PHP / Laravel:
+  sina          → Laravel 12 · MySQL · Tailwind · Alpine.js · Cloudinary · Breeze
+  SIPerpustakaan→ Laravel 12 · MySQL · Tailwind · Alpine.js · Breeze · DomPDF
+  SIPresensi    → Laravel · Blade (internship project)
+  hisurabaya    → Laravel 12 · SQL Server · Tailwind · Alpine.js · Leaflet · Maps
+  SIBPS         → Laravel 11 · Eloquent · Breeze (CRUD blog, private)
+  patahero_api  → Laravel 12 · PHP 8.2 · MySQL · Sanctum auth · REST API (mobile backend)
+  daftarsiswa   → Raw PHP
+
+Next.js / TypeScript:
+  e-kos         → Next.js 16 · PostgreSQL · PostGIS · Supabase · Leaflet · RBAC
+  erapor        → Next.js · MongoDB · PDF export
+  elkpd         → Next.js 15 · MongoDB · NextAuth · bcryptjs · Zod · gamified LMS (client project)
+  premom        → Next.js 15 · Appwrite · Google Sheets · Coze AI
+  nestbloom     → Next.js 15 · Appwrite · Google Sheets · Gamified LMS
+  thyva         → Next.js 16 · Appwrite · Coze AI chatbot · educational (Poltekkes research)
+  soulmom-web   → Next.js 16 · Firebase · Firestore · Google Sheets · EPDS screening platform
+  greeting-site → Next.js (private)
+
+Vue.js:
+  vue-tasty-recipes → Vue.js
+
+Static / HTML:
+  haf           → HTML + Bootstrap (portfolio, hafmul.site)
+  abilacomp     → HTML (company project)
+  coffeeshop    → HTML/CSS
+
+================================================================
+BURNING ROOM TECH JOB MATCH ANALYSIS
+Target Role: Fullstack Website Developer — Burning Room Technology, Surabaya
+Requirements: PHP · Laravel · Bootstrap/Tailwind · Livewire · API Integration
+              PostgreSQL/MySQL · Git · (min SMK, Surabaya/Sidoarjo/Gresik)
+================================================================
+
+STRONGEST MATCHES:
+  ✅ sina        — Laravel 12 + MySQL + Tailwind + Breeze + CRUD + Cloudinary API
+  ✅ SIPerpus    — Laravel 12 + MySQL + Tailwind + CRUD + fine logic + PDF export
+  ✅ patahero_api— Laravel 12 + MySQL + Sanctum + REST API (full API backend for mobile app)
+  ✅ SIBPS       — Laravel 11 + Eloquent + Breeze (auth + CRUD blog)
+
+SUPPORTING:
+  ✅ SIPresensi  — Laravel (internship, real-world delivery)
+  ✅ hisurabaya  — Laravel 12 + auth + 3rd-party API (Google, Leaflet)
+  ✅ e-kos       — PostgreSQL + PostGIS (covers DB skill)
+
+GAPS:
+  ❓ Livewire    — Not found in any README; may need to mention "familiar with" or add to learning
+
+================================================================

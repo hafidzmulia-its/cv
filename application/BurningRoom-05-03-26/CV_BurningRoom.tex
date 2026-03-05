@@ -1,0 +1,254 @@
+%-------------------------
+% CV Target: Burning Room Technology — Fullstack Website Developer (Inhouse)
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "CV_BurningRoom.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{C0392B} % deep red — energetic, aligned with "Burning Room"
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+% #1 = Role, #2 = Company/Org, #3 = Date, #4 = Description
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+% #1 = Project Name, #2 = Date, #3 = Role/Tech, #4 = Desc, #5 = Link
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{View Repository / Demo}} \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvskillcat}[2]{%
+  \noindent\textbf{#1:} #2\\[2pt]%
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Fullstack Web Developer}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://linkedin.com/in/hafidz-mulia}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Professional Summary}
+Final-year Mathematics student at ITS with hands-on experience delivering production-grade \textbf{full-stack web applications} using \textbf{Laravel, Next.js, PHP, and MySQL/MongoDB}. Shipped 7+ real-world projects across personal builds and client work — including a REST API backend for a mobile first-aid app, a gamified LMS platform, and a GIS-based hotel directory — covering the full development cycle: backend design, database modeling, authentication, and deployment. Also operates \textbf{MulyOS}, a freelance digital agency delivering web apps for UMKM and the academic community. Based in Surabaya, immediately available for inhouse work.
+
+%==================== EDUCATION ====================
+\section{Education}
+\cventry
+  {Bachelor of Mathematics (Computational \& Informatics Track)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Present}
+  {Relevant coursework: Algorithms, Database Systems, Statistical Computing, Software Engineering.}
+
+%==================== PROJECTS ====================
+\section{Selected Projects}
+
+\cvproject
+  {ELKPD --- Gamified Learning Management System}
+  {Aug 2025 -- Jan 2026}
+  {Fullstack Developer | Next.js · NextAuth · MongoDB}
+  {Built a quiz-based LMS platform supporting thesis study for academic users.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Multi-level gamified quiz system with educational assessments and progress scoring.
+      \item Teacher dashboard for real-time student progress monitoring and comprehensive reporting.
+      \item Role-based access control (Teacher / Student) secured via NextAuth authentication.
+      \item MongoDB for flexible user progress tracking and session persistence.
+  \end{itemize}}
+  {}
+
+\cvproject
+  {Patahero API --- RESTful Backend for Mobile App}
+  {Jan 2026}
+  {Backend Developer | Laravel 12 · PHP 8.2 · MySQL · Laravel Sanctum · Eloquent ORM}
+  {Built a production REST API backend for PataHero, a mobile first aid application.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Designed and implemented structured API endpoints for fracture first aid data with step-by-step image delivery.
+      \item Implemented token-based authentication (Laravel Sanctum) covering register, login, logout, and profile management.
+      \item Handled file uploads (profile photos, step images) via Laravel storage with public symlink.
+      \item Deployed to cPanel/shared hosting; seeded database with real fracture treatment data.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/patahero\_api}
+
+\cvproject
+  {HiSurabaya --- Hotel GIS Directory}
+  {Dec 2025}
+  {Lead Developer | Laravel 12 · Tailwind CSS · Alpine.js · Leaflet.js · Google OAuth (Socialite)}
+  {Built a complete hotel directory with interactive map search.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Integrated Google OAuth with Laravel Socialite for one-click login.
+      \item Three map search modes: point locations, route distance, and polygon area selection.
+      \item Role-based dashboards for User, Hotel Owner, and Admin.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/hisurabaya}
+
+\cvproject
+  {Sina --- Children's Digital Storybook Platform}
+  {Oct 2025 -- Dec 2025}
+  {Sole Developer | Laravel 12 · PHP 8.2 · MySQL · Tailwind CSS · Alpine.js · Cloudinary API}
+  {End-to-end story platform with three-tier role system (Superadmin / Admin / User).
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Integrated Cloudinary API for image upload and CDN delivery.
+      \item Reading progress tracking per user; admin CMS for content management.
+      \item Deployed via Vercel with Aiven hosted MySQL. Live: \texttt{sina.hafmul.site}.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/sina}
+
+\cvproject
+  {Literasik --- Library Management System}
+  {Jun 2025 -- Dec 2025}
+  {Sole Developer | Laravel 12 · PHP 8.2 · MySQL · Tailwind CSS · Alpine.js · Eloquent ORM}
+  {Built a complete school library system from ground up.
+  \begin{itemize}[leftmargin=15pt, nosep]
+      \item Full CRUD for books, students, and book copies (eksemplar) with multi-state availability tracking.
+      \item Automated fine calculation (Rp 1,000/day) with borrowing history and PDF report export.
+      \item Role-based access (Librarian / Student) with Laravel Breeze authentication.
+      \item Seeded 200+ realistic records using Faker; deployed to production at \texttt{literasik.hafmul.site}.
+  \end{itemize}}
+  {https://github.com/hafidzmulia-its/SIPerpustakaan}
+
+\cvproject
+  {SIBPS --- Blog \& Content Management System}
+  {Jan 2025 -- Dec 2025}
+  {Lead Developer | Laravel 11 · Eloquent ORM · MySQL · Laravel Breeze · Blade}
+  {Developed a role-gated blog CMS with full article CRUD, Eloquent relationships, and Breeze starter kit authentication. Focused on clean controller/model separation and normalized database schema design.}
+  {https://github.com/hafidzmulia-its/SIBPS}
+
+\cvproject
+  {SI Presensi --- Student Attendance System}
+  {May 2025}
+  {Fullstack Developer | Laravel · MySQL · Blade}
+  {Developed and deployed a digitized attendance tracking system during internship at SMA IT Al Uswah. Conducted UAT with non-technical staff to ensure the system was robust against common data-entry errors. Delivered on-time for academic year rollout.}
+  {https://github.com/hafidzmulia-its/SIPresensi}
+
+%==================== PROFESSIONAL EXPERIENCE ====================
+\section{Professional Experience}
+
+\cventry
+  {Founder \& Lead Developer}
+  {MulyOS --- Freelance Digital Agency}
+  {2026 -- Present}
+  {Founded and operate MulyOS, a freelance digital agency helping UMKM (small-medium enterprises) and civitas akademik (academic community) build web and mobile applications using modern stacks (Next.js/React). Selected client projects:
+  \begin{itemize}[nosep, leftmargin=15pt]
+    \item \textbf{NestBloom, Premom, Thyva, Soulmom} --- Full-stack client applications built with Next.js.
+    \item \textbf{Real Keke} --- Full-stack client application (currently in development).
+  \end{itemize}}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Sole developer for a Laravel-based attendance system. Handled requirements gathering, DB design, development, and UAT with the school's admin team. Delivered a working system adopted for operational use.}
+
+\cventry
+  {Programming \& Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teaching programming fundamentals, algorithmic thinking, and web development basics to students. Developed structured lesson materials explaining logic, debugging, and project architecture for non-experts.}
+
+\cventry
+  {Assistant Laboratory Coordinator (Algorithms \& Visual Computing)}
+  {ITS Mathematics Department}
+  {2024 -- Present}
+  {Guided 50+ junior students weekly in algorithm design, code debugging, and database fundamentals. Authored and maintained practicum module materials.}
+
+%==================== TECHNICAL SKILLS ====================
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Languages:} & PHP (primary), JavaScript, TypeScript, SQL \\[3pt]
+\textbf{Frameworks:} & Laravel (Expert — v11 \& v12), Next.js, Alpine.js \\[3pt]
+\textbf{Databases:} & MySQL, PostgreSQL, Microsoft SQL Server, MongoDB \\[3pt]
+\textbf{Frontend:} & Tailwind CSS, Bootstrap, Blade Templates (Laravel) \\[3pt]
+\textbf{API \& Integration:} & RESTful API design, Google OAuth (Socialite), Cloudinary, Third-party API integration \\[3pt]
+\textbf{Tools:} & Git (GitHub), Composer, NPM/Vite, Figma, Vercel \\[3pt]
+\textbf{Currently Learning:} & Laravel Livewire, Inertia.js \\
+\end{tabularx}
+
+%==================== ORGANIZATIONAL EXPERIENCE ====================
+\section{Leadership \& Organizational Experience}
+
+\cventry
+  {1st Vice Head}
+  {HIMATIKA ITS (Mathematics Student Association)}
+  {Feb 2025 -- Dec 2026}
+  {Lead operational transformation and staff coordination for a 100+ member organization. Built internal reporting workflow that reduced administrative overhead.}
+
+\cventry
+  {Web Developer}
+  {Abila Company --- ITS KKN Abdi Masyarakat Program}
+  {Jul 2024}
+  {Developed a company profile and documentation website as part of the ITS KKN Abdi Masyarakat community service program, delivering the full site from initial mockup to production deployment.}
+
+%==================== ACHIEVEMENTS ====================
+\section{Achievements \& Competitions}
+\begin{itemize}[leftmargin=15pt, nosep]
+  \item HIMATIKA ITS member recognized for significant contributions to departmental digitization (erapor HIMATIKA system).
+  \item Active contribution to 7+ live, deployed web applications accessible via custom domain or Vercel, including real-world client projects delivered through MulyOS.
+\end{itemize}
+
+%==================== LANGUAGES ====================
+\section{Languages}
+\begin{tabularx}{\textwidth}{@{}l l@{}}
+\textbf{Indonesian:} & Native \\
+\textbf{English:} & Professional proficiency (reading/writing technical documentation) \\
+\end{tabularx}
+
+\end{document}
