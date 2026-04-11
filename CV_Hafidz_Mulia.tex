@@ -1,8 +1,8 @@
 %-------------------------
-% CV Target: PGN SOR III (Database & System Integrity Focus)
+% CV Target: General Application
 % Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "CV_Hafidz_Mulia.tex"
 %-------------------------
-%pdflatex -interaction=nonstopmode "CV_Hafidz_Mulia.tex" 2>&1 | Select-String -Pattern "^!|error|Output written" -CaseSensitive:$false
 \documentclass[a4paper,11pt]{article}
 
 %----------- PACKAGES -----------
@@ -18,7 +18,7 @@
 \usepackage{tabularx}
 
 %----------- COLORS -----------
-\definecolor{accent}{HTML}{00529C} % PGN Blue-ish color for subconscious alignment
+\definecolor{accent}{HTML}{0F4C81}
 
 %----------- PAGE STYLE -----------
 \pagestyle{fancy}
@@ -50,7 +50,6 @@
   {\centering\small #1\par\vspace{6pt}}%
 }
 
-% #1 = Role, #2 = Company, #3 = Date, #4 = Description
 \newcommand{\cventry}[4]{%
   \noindent\textbf{#1} \hfill \textit{#3} \\
   \textit{#2}
@@ -58,7 +57,6 @@
   \vspace{6pt}
 }
 
-% #1 = Project Name, #2 = Date, #3 = Role/Tech, #4 = Desc, #5 = Link
 \newcommand{\cvproject}[5]{%
   \noindent\textbf{#1} \hfill \textit{#2} \\
   \textit{\small #3} \\
@@ -67,117 +65,128 @@
   \vspace{6pt}
 }
 
-\newcommand{\cvskillcat}[2]{%
-  \noindent\textbf{#1:} #2\\[2pt]%
-}
-
 %----------- DOCUMENT START -----------
 \begin{document}
 
 %==================== HEADER ====================
 \cvname{Hafidz Mulia}
-\cvtitle{Database Reliability Engineer \& Fullstack Developer}
+\cvtitle{Fullstack Web Developer}
 \cvcontact{%
   \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
   \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
   Surabaya, Indonesia \\
-  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia} \quad\textbar\quad
-  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its}
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
 }
 
 %==================== SUMMARY ====================
 \section{Professional Summary}
-Final-year Mathematics student at ITS focusing on \textbf{Database Optimization} and \textbf{System Integrity}. Proven track record in developing fault-tolerant information systems for educational and government sectors, specifically addressing \textbf{data inconsistency} and \textbf{input validation errors}. Currently conducting advanced research (PROADAPT) on distributed query optimization, highly relevant to modern logistics data architecture. Seeking to leverage backend expertise (Laravel/Go/SQL) to assist PGN in modernizing legacy infrastructures and ensuring high-availability data operations.
+Final-year Mathematics student at ITS with hands-on experience building and deploying full-stack web applications across education, GIS, reporting, and health-tech domains. Strong in Laravel, Next.js, PHP, TypeScript, SQL, database design, authentication, admin dashboards, and production deployment. Delivered multiple live projects for student organizations, schools, research initiatives, and freelance clients through NechCode, covering the full development lifecycle from requirements and schema design to implementation and release.
 
 %==================== EDUCATION ====================
 \section{Education}
 \cventry
-  {Bachelor of Mathematics (Focus: Computational Mathematics)}
+  {Bachelor of Mathematics}
   {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
   {2022 -- Present}
-  {Current GPA: [Your GPA] | Thesis: \textit{"PROADAPT: Query Optimization in Distributed Databases using Apache Spark SQL"}}
+  {GPA: 3.36 / 4.00 | Focus: Computational Mathematics and Informatics | Thesis: Improved data warehouse query performance using a PROADAPT-based memory-aware partitioning mechanism on PostgreSQL and TimescaleDB for 50M+ row time-series data}
 
-%==================== KEY PROJECTS (RELEVANT TO PGN) ====================
-\section{Selected Projects \& Research}
-
-\cvproject
-  {PROADAPT (Thesis Research)}
-  {Nov 2025 -- Present}
-  {Researcher \& Data Architect | Tech: Apache Spark, Python, SQL}
-  {Conducting research on query plan optimization for distributed database systems. Focused on reducing latency in massive data retrieval—directly applicable to handling high-volume logistics and telemetry data (IoT) for energy distribution pipelines.}
-  {https://github.com/hafidzmulia-its/thesis}
+%==================== PROJECTS ====================
+\section{Selected Projects}
 
 \cvproject
-  {SI-BPS \& SI-PRESENSI (System Modernization)}
-  {Jan 2025 -- Dec 2025}
-  {Lead Backend Developer | Tech: Laravel, MySQL, Alpine.js}
-  {Engineered a robust internal system for student and employee tracking.
-  \begin{itemize}[leftmargin=15pt, nosep]
-      \item \textbf{Solved Data Corruption:} Implemented strict server-side input validation and data sanitization layers to prevent system crashes caused by user formatting errors (e.g., trailing spaces, invalid characters).
-      \item \textbf{Logic Optimization:} Designed a relational schema to handle complex "Credit Point" calculations automatically, replacing error-prone manual spreadsheet methods.
-  \end{itemize}}
-  {https://github.com/hafidzmulia-its/SIPresensi}
+  {HISurabaya --- GIS Hotel Information System}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, SQL Server, Tailwind CSS, Leaflet, Turf.js}
+  {Built a GIS-based hotel information system for Surabaya with point, route, and area search modes. Combined Laravel, SQL Server, and interactive mapping workflows to deliver a stronger spatial-search product than a standard CRUD application.}
+  {https://github.com/hafidzmulia-its/hisurabaya}
 
 \cvproject
-  {Patahero API (Production REST API)}
-  {Jan 2026}
-  {Backend Engineer | Tech: Laravel 12, PHP 8.2, MySQL, Laravel Sanctum}
-  {Built a production RESTful API backend for PataHero, a mobile first aid application. Focused on creating standardized, structured data endpoints for fracture treatment steps, ensuring seamless communication between the mobile app and server. Implemented token-based auth (Sanctum) and file upload handling. Deployed to shared hosting with a seeded production database.}
+  {erapor --- Automated Reporting System}
+  {2025}
+  {Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Developed a reporting platform for HIMATIKA with role-based dashboards, user management, and automated report generation. Improved internal reporting workflows through centralized data access and export features.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {sina --- Children's Storybook Platform}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Tailwind CSS, Alpine.js, Cloudinary}
+  {Developed a responsive content platform with reading progress tracking, role-based access control, and admin CMS. Integrated Cloudinary for media delivery and deployed the application to production.}
+  {https://github.com/hafidzmulia-its/sina}
+
+\cvproject
+  {patahero\_api --- REST API Backend for Mobile App}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Built a RESTful backend for a mobile first-aid application, including structured fracture-treatment endpoints, token-based authentication, user profile management, and image upload handling.}
   {https://github.com/hafidzmulia-its/patahero\_api}
 
-%==================== PROFESSIONAL EXPERIENCE ====================
+\cvproject
+  {ELKPD and PREMOM --- Learning and Health Platforms}
+  {2025 -- 2026}
+  {Fullstack Developer | Next.js, TypeScript, MongoDB / Appwrite, Tailwind CSS}
+  {Built learning and health-focused platforms with gated user flows, admin dashboards, progress tracking, and data management. Combined product development with deployment and client-facing delivery for real use cases.}
+  {}
+
+%==================== EXPERIENCE ====================
 \section{Professional Experience}
 
 \cventry
   {Founder \& Lead Developer}
-  {MulyOS --- Freelance Digital Agency}
-  {Jan 2026 -- Present}
-  {
-  \begin{itemize}[leftmargin=15pt, nosep]
-      \item Founded MulyOS, a digital agency delivering full-stack web applications for UMKM and the academic community using Next.js/React.
-      \item Delivered client platforms: NestBloom, Premom, Thyva, Soulmom (live on Vercel); Real Keke (in progress).
-      \item Managed full project lifecycle: requirements, architecture, development, and deployment for each client.
-  \end{itemize}
-  }
+  {NechCode --- Freelance Digital Agency}
+  {2026 -- Present}
+  {Founded and operate a freelance digital agency delivering web applications for UMKM and academic or research clients. Handle requirements gathering, architecture, development, database design, deployment, and iteration across projects such as Nestbloom, Premom, Thyva, Soulmom, and Real Keke.}
 
 \cventry
-  {Assistant Laboratory Coordinator (Programming \& Visual Computing)}
-  {ProviKom Lab, ITS Mathematics Department}
+  {Programming and Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming fundamentals, algorithmic thinking, and introductory web development. Prepare lesson materials and guide students through logic building, debugging, and project-based practice.}
+
+\cventry
+  {Assistant Laboratory Coordinator}
+  {ITS Mathematics Department}
   {2024 -- Present}
-  {
-  \begin{itemize}[leftmargin=15pt, nosep]
-      \item Managing database practicum modules for junior students, focusing on SQL efficiency and normalization standards (3NF).
-      \item Troubleshooting code and logic errors for 50+ students weekly, sharpening debugging skills for legacy codebases.
-  \end{itemize}
-  }
+  {Support programming and visual computing practicum activities, guide junior students in algorithm design and debugging, and help maintain practicum materials.}
 
 \cventry
   {Fullstack Developer Intern}
   {SMA IT Al Uswah Surabaya}
   {May 2025}
-  {Deployed a digitized attendance and performance system. Conducted User Acceptance Testing (UAT) with non-technical staff to ensure the interface was "error-proof" and easy to navigate for users with low tech-literacy.}
+  {Developed and delivered a Laravel-based attendance system, covering requirement gathering, database design, implementation, and user acceptance testing with school staff.}
 
-\cventry
-  {Programming Instructor}
-  {Timedoor Academy}
-  {Jan 2025 -- Present}
-  {Teaching algorithmic thinking and coding fundamentals. honed communication skills to explain complex technical concepts (like logic errors and database structures) to non-technical audiences.}
-
-%==================== TECHNICAL SKILLS ====================
+%==================== SKILLS ====================
 \section{Technical Skills}
-\noindent
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Backend \& Database:} & Laravel (Expert), Go (Intermediate), MySQL, PostgreSQL, MongoDB, Apache Spark, SQL Tuning, ERD Design, Database Normalization. \\
-\textbf{System Integrity:} & Input Validation (Server/Client), Error Handling, API Design (REST), Data Sanitization. \\
-\textbf{Frontend \& Tools:} & Next.js, Tailwind CSS, Docker, Git (Version Control), Linux Environment. \\
+\textbf{Languages:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS \\[3pt]
+\textbf{Frameworks:} & Laravel, Next.js, React, Alpine.js, Blade, Bootstrap, Tailwind CSS \\[3pt]
+\textbf{Databases:} & MySQL, PostgreSQL, PostGIS, TimescaleDB, MongoDB, Microsoft SQL Server, Appwrite, Firebase Firestore \\[3pt]
+\textbf{Auth \& API:} & REST API design, Laravel Sanctum, Laravel Breeze, NextAuth.js, Iron Session, Google OAuth \\[3pt]
+\textbf{Tools \& Cloud:} & Git, GitHub, Composer, npm, Vite, Vercel, Cloudinary, Vercel Blob, Google Sheets API \\[3pt]
+\textbf{Other Strengths:} & Database modeling, CRUD systems, admin dashboards, deployment, debugging, responsive UI implementation, data warehouse research fundamentals \\
 \end{tabularx}
 
-%==================== ORGANIZATIONAL EXPERIENCE ====================
+%==================== LEADERSHIP ====================
 \section{Leadership}
 \cventry
   {1st Vice Head}
-  {HIMATIKA ITS (Mathematics Student Association)}
+  {HIMATIKA ITS}
   {Feb 2025 -- Present}
-  {Led organizational transformation and staff performance management for 100+ members. Standardized internal reporting workflows to increase administrative efficiency.}
+  {Support organizational operations and staff coordination for a 100+ member student organization, including workflow improvement and internal reporting support.}
+
+\cventry
+  {Web Developer}
+  {Abila Company --- ITS Community Service Program}
+  {Jul 2024}
+  {Developed a company profile website from initial design to deployment as part of the ITS community service program.}
+
+%==================== LANGUAGES ====================
+\section{Languages}
+\begin{tabularx}{\textwidth}{@{}l l@{}}
+\textbf{Indonesian:} & Native \\
+\textbf{English:} & Professional working proficiency for technical reading and writing \\
+\end{tabularx}
 
 \end{document}

@@ -1,0 +1,80 @@
+Full Stack Engineer (Integrations & APIs)
+About Eterna Indonesia
+Eterna Indonesia is a fast-growing BPO company providing multiple business services including IT infrastructure, software development, security operations, and customer support. We bridge top talent from Southeast Asia with innovative U.S.-based businesses through our remote-first model. We are Great Place to Work®️ certified with over 200+ employees currently working with leading U.S.-based companies.
+
+We are currently hiring a skilled Full Stack Engineer to build, integrate, and optimize API-driven systems and workflow automations for our U.S.-based client's development team.
+
+About the Role
+You'll work as part of the client's development team, building and maintaining integrations between client applications and third-party services through an Integration Hub Service. This is a fully remote, full-time role with night shift hours (Indonesian time) aligned to U.S. business hours. Your day-to-day will center on creating and optimizing API integrations, building workflow automations with Insightly CRM and AWS Lambda, and collaborating directly with the client through daily syncs to gather requirements and deliver solutions.
+
+Key Responsibilities
+
+Integrate client applications with third-party services using the Integration Hub Service built on NestJS
+Create and maintain workflow automations using Insightly CRM with their custom scripting (Node.js)
+Optimize existing integrations and workflow automations for performance and reliability
+Debug, analyze, and resolve errors across integrations and Insightly CRM workflows
+Design and propose integration solutions based on client requirements
+Gather and clarify client requirements for integrations through daily sync meetings
+Develop and maintain backend services and RESTful APIs using NestJS and Express.js
+Build responsive frontend pages using React, Next.js, and Tailwind CSS
+Write clean, type-safe code using TypeScript across the full stack
+Design and manage database schemas using PostgreSQL and MySQL
+Document integration architectures, API specifications, and workflow logic
+Participate in code reviews and contribute to engineering best practices
+Develop and maintain custom reporting service and activity service
+Monitor API performance and logging to ensure the process works correctly
+Track API documentation across platform and apply best practice for the implementation
+Requirements (Must-have)
+
+2+ years of full stack development experience with JavaScript and TypeScript
+Strong proficiency in Node.js with hands-on experience building APIs using NestJS or Express.js
+Experience with React and at least one React framework (Next.js, Tanstack Router, or Tanstack Start)
+Solid understanding of RESTful API design, integration patterns, and third-party API consumption
+Working knowledge of PostgreSQL and/or MySQL
+Experience with CSS and Tailwind CSS for frontend development
+Familiarity with serverless functions (AWS Lambda or similar)
+Experience debugging and troubleshooting complex API integrations and data flows
+Strong problem-solving abilities and attention to detail
+Familiarity with CLI tools and terminal-based development workflows
+Experience using AI-assisted development tools within the IDE or terminal (e.g., Claude Code, Cursor, GitHub Copilot, or similar)
+Able to fluently use AI on everyday task
+Fluent in English (written and spoken) for daily client communication
+Willingness to work night shift (Indonesian time) aligned to U.S. business hours
+Preferred Qualifications
+
+Integration & API Experience:
+
+Experience working with CRM platforms (Insightly, Salesforce, HubSpot, or similar)
+Familiarity with webhook-based integrations and event-driven architectures
+Experience with API gateway tools and integration middleware
+Understanding of OAuth 2.0, API key management, and third-party authentication flows
+Experience building or consuming GraphQL APIs
+Cloud & DevOps:
+
+Experience with AWS services (Lambda, API Gateway, S3, SQS, CloudWatch, or similar)
+Experience with Vercel services
+Familiarity with containerization using Docker
+Understanding of CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI)
+Experience with serverless deployment frameworks (Serverless Framework, AWS SAM)
+Note: We welcome candidates who are pursuing these certifications or have equivalent demonstrated experience.
+
+Tools & Technologies You May Use
+
+JavaScript, TypeScript, Node.js, NestJS, Express.js, React, Next.js, Tanstack Router, Tanstack Start, Tailwind CSS, PostgreSQL, MySQL, AWS Lambda, AWS API Gateway, AWS CloudWatch, Insightly CRM, REST APIs, Webhooks, Git, GitHub, Docker, Postman, VS Code, Cursor, Jira, Slack.
+
+Join Our Team
+
+At Eterna Indonesia, you'll be part of a collaborative remote-first culture. You'll have the opportunity to build integration solutions that connect critical business systems for U.S. clients, work across the full stack with modern JavaScript technologies, and directly shape how applications communicate and automate. We value ownership, continuous learning, and transparency.
+
+This role offers growth paths into Senior Full Stack Engineer, Integration Architect, or Technical Lead positions.
+
+SALARY RANGE
+Rp10.000.000 - 12.000.000
+EMPLOYMENT TYPE
+Full Time
+LOCATION
+Fully Remote
+CLIENT
+U.S. Based Client
+Apply Now
+Share

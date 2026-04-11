@@ -1,0 +1,158 @@
+%-------------------------
+% CV Target: SOBI Junior Web Developer
+% Author: Hafidz Mulia
+% Language: Indonesian
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0E8A46}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Repository / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Junior Web Developer}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Ringkasan Profesional}
+Web developer dengan pengalaman hands-on membangun dan mendeploy aplikasi full-stack berbasis Laravel, PHP, MySQL, JavaScript, dan frontend responsif, serta memiliki exposure langsung ke Vue.js. Saya terbiasa mengerjakan pengembangan dari sisi backend dan frontend, mulai dari perancangan database relasional, authentication, REST API, sampai deployment dan perbaikan lanjutan. Sejauh ini saya sudah mengerjakan beberapa sistem live di bidang edukasi, reporting, GIS, dan content platform, serta cukup nyaman bekerja mandiri dalam setup remote.
+
+%==================== EXPERIENCE ====================
+\section{Pengalaman Relevan}
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode --- Freelance Digital Agency}
+  {2026 -- Sekarang}
+  {Menangani delivery proyek web dari awal sampai rilis, mencakup breakdown kebutuhan, implementasi backend dan frontend, perancangan database, deployment, debugging, dan pengembangan fitur lanjutan. Mayoritas proyek yang saya kerjakan berbentuk sistem yang benar-benar dipakai, sehingga saya terbiasa menjaga solusi tetap praktis dan maintainable.}
+
+\cventry
+  {Programming and Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajar dasar pemrograman, web development, debugging, dan problem solving secara terstruktur. Pengalaman ini membantu saya terbiasa menjelaskan hal teknis dengan jelas dan bekerja lebih rapi dalam dokumentasi maupun komunikasi.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Mei 2025}
+  {Mengembangkan dan menyerahkan sistem presensi berbasis Laravel dari tahap penggalian kebutuhan sampai implementasi dan user testing. Pengalaman ini memberi saya pengalaman langsung membangun aplikasi PHP untuk kebutuhan institusi yang nyata.}
+
+%==================== PROJECTS ====================
+\section{Proyek Pilihan}
+\cvproject
+  {sina --- Children's Storybook Platform}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Blade, Tailwind CSS, Alpine.js}
+  {Membangun platform konten responsif dengan progress membaca, role-based access control, media management, dan admin CMS. Di proyek ini saya menangani logic aplikasi, relasi data berbasis Eloquent, serta deployment untuk rilis live.}
+  {https://github.com/hafidzmulia-its/sina}
+
+\cvproject
+  {SIPerpustakaan --- Library Management System}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Eloquent, Blade, Tailwind CSS}
+  {Mengembangkan sistem web dengan alur data buku, siswa, peminjaman, denda keterlambatan, dan analitik. Proyek ini memperkuat pengalaman saya dalam business logic yang cukup kompleks, desain database relasional, dan struktur backend yang rapi.}
+  {https://github.com/hafidzmulia-its/SIPerpustakaan}
+
+\cvproject
+  {patahero\_api --- REST API Backend}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Membangun backend REST API untuk aplikasi mobile pertolongan pertama, termasuk authenticated endpoints, profile management, structured resource handling, dan upload gambar. Proyek ini menjadi bukti paling kuat untuk pengalaman saya di Laravel yang berfokus pada API.}
+  {https://github.com/hafidzmulia-its/patahero_api}
+
+\cvproject
+  {vue-tasty-recipes --- Vue.js Frontend Practice Project}
+  {2025}
+  {Frontend Developer | Vue.js, JavaScript, responsive UI}
+  {Membangun proyek web kecil berbasis Vue.js dengan fokus pada struktur frontend berbasis komponen dan implementasi antarmuka yang responsif. Proyek ini menjadi bukti langsung bahwa saya juga pernah mengerjakan Vue.js di luar proyek Laravel yang lebih besar.}
+  {https://github.com/hafidzmulia-its/vue-tasty-recipes}
+
+%==================== SKILLS ====================
+\section{Keahlian Teknis}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Bahasa Pemrograman:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS \\[3pt]
+\textbf{Framework \& Library:} & Laravel, Vue.js, Next.js, Blade, Alpine.js, Tailwind CSS, Bootstrap \\[3pt]
+\textbf{Backend:} & REST API development, Eloquent ORM, authentication dan authorization, CRUD systems, admin dashboard \\[3pt]
+\textbf{Database:} & MySQL, PostgreSQL, SQL Server, MongoDB, Firebase Firestore, Appwrite \\[3pt]
+\textbf{Deployment \& Tools:} & Git, GitHub, Composer, npm, Vite, Vercel, Cloudinary, shared hosting deployment, custom domain setup \\[3pt]
+\textbf{Cara Kerja:} & Debugging, kolaborasi lintas fungsi, dokumentasi, disiplin kerja remote, self-management \\[3pt]
+\textbf{Bahasa:} & Indonesia (native), Inggris (membaca dan menulis teknis) \\
+\end{tabularx}
+
+%==================== EDUCATION ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Sekarang}
+  {Fokus pada komputasi dan informatika, dengan exposure kuat pada pemrograman, basis data, dan pengembangan software terapan. IPK: 3.36 / 4.00.}
+
+\end{document}

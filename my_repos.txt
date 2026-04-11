@@ -1,353 +1,261 @@
-﻿
+================================================================
+HAFIDZ MULIA - GITHUB REPOSITORY INVENTORY
+Fetched: April 1, 2026
+Source: GitHub connector snapshot (public + private repos accessible to hafidzmulia-its)
+Counts: 42 total repos | 30 public | 12 private
+================================================================
 
-name        : premom
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://premom.vercel.app
-html_url    : https://github.com/hafidzmulia-its/premom
-created_at  : 2026-01-21T21:00:23Z
-pushed_at   : 2026-03-03T06:37:55Z
+NOTES
+- Featured repos below use README-backed details fetched on April 1, 2026.
+- Smaller repos and placeholders are listed from GitHub metadata only.
+- This file is meant for fast CV and portfolio scanning, not raw API storage.
 
-name        : thyva
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://thyva.vercel.app
-html_url    : https://github.com/hafidzmulia-its/thyva
-created_at  : 2026-01-25T05:56:15Z
-pushed_at   : 2026-03-03T06:17:40Z
+================================================================
+FEATURED PORTFOLIO REPOS
+================================================================
 
-name        : soulmom-web
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://soulmom-web.vercel.app
-html_url    : https://github.com/hafidzmulia-its/soulmom-web
-created_at  : 2026-03-01T15:57:24Z
-pushed_at   : 2026-03-02T16:20:47Z
+1. sina [Public]
+   URL   : https://github.com/hafidzmulia-its/sina
+   Live  : https://sina.hafmul.site
+   Stack : Laravel 12, PHP 8.2, MySQL, Blade, Tailwind CSS 3, Alpine.js, Cloudinary, Vercel
+   Focus : Children's storybook platform with reading progress tracking, admin CMS, and RBAC.
 
-name        : thesis
-private     : True
-description : 
-language    : TeX
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/thesis
-created_at  : 2025-11-23T21:47:18Z
-pushed_at   : 2026-02-02T03:27:07Z
+2. e-kos [Public]
+   URL   : https://github.com/hafidzmulia-its/e-kos
+   Live  : https://e-kos.vercel.app
+   Stack : Next.js 16, React 19, TypeScript 5, Tailwind CSS 4, Supabase, PostgreSQL, PostGIS, NextAuth, Leaflet, Vercel Blob
+   Focus : Web GIS boarding-house discovery platform with filters, admin panel, and spatial search.
 
-name        : nestbloom
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://nestbloom.vercel.app
-html_url    : https://github.com/hafidzmulia-its/nestbloom
-created_at  : 2026-01-17T19:58:22Z
-pushed_at   : 2026-01-29T10:16:16Z
+3. erapor [Public]
+   URL   : https://github.com/hafidzmulia-its/erapor
+   Live  : https://rapor-himatika.vercel.app
+   Stack : Next.js 15, React 19, TypeScript, Tailwind CSS 4, MongoDB Atlas, Mongoose, NextAuth, PDF and Excel export
+   Focus : Reporting automation platform for HIMATIKA with role-based dashboards and bulk export workflows.
 
-name        : elkpd
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://elkpd.vercel.app
-html_url    : https://github.com/hafidzmulia-its/elkpd
-created_at  : 2025-08-14T05:51:56Z
-pushed_at   : 2026-01-22T07:42:19Z
+4. hisurabaya [Public]
+   URL   : https://github.com/hafidzmulia-its/hisurabaya
+   Stack : Laravel 12, PHP 8.2, SQL Server, Blade, Tailwind CSS, Alpine.js, Leaflet, OpenStreetMap, Turf.js, Google OAuth
+   Focus : GIS hotel information system with point, route, and polygon search modes.
 
-name        : patahero_api
-private     : True
-description : 
-language    : PHP
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/patahero_api
-created_at  : 2026-01-06T16:12:33Z
-pushed_at   : 2026-01-07T04:07:43Z
+5. SIPerpustakaan [Public]
+   URL   : https://github.com/hafidzmulia-its/SIPerpustakaan
+   Live  : https://literasik.hafmul.site
+   Stack : Laravel 12, PHP 8.2+, MySQL, Blade, Tailwind CSS 3, Alpine.js 3, Vite 6, Axios
+   Focus : Library management system with lending, overdue fine calculation, analytics, and CRUD flows.
 
-name        : SIBPS
-private     : True
-description : Laravel 11 Project, Blog Section using Eloquent, CRUD, and 
-              Breeze Starter Kit Authentication
-language    : Blade
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/SIBPS
-created_at  : 2025-01-29T16:24:16Z
-pushed_at   : 2025-12-05T08:24:09Z
+6. SIBPS [Private]
+   URL   : https://github.com/hafidzmulia-its/SIBPS
+   Stack : Laravel 11.9, PHP 8.2, MySQL, Blade, Tailwind CSS 3.1, Flowbite, Alpine.js, Vite, S3-ready file storage
+   Focus : Student achievement and violation management system with approval workflow and PDF export.
 
-name        : greeting-site
-private     : True
-description : 
-language    : TypeScript
-topics      : 
-homepage    : https://greeting-site-two.vercel.app
-html_url    : https://github.com/hafidzmulia-its/greeting-site
-created_at  : 2025-07-25T19:26:22Z
-pushed_at   : 2025-07-28T09:28:50Z
+7. patahero_api [Private]
+   URL   : https://github.com/hafidzmulia-its/patahero_api
+   Stack : Laravel 12, PHP 8.2+, MySQL, Eloquent, Sanctum, Vite, PHPUnit, Laravel Pint
+   Focus : REST API backend for a mobile first-aid app with fracture guides, auth, and profile photo upload.
 
-name        : abilacomp
-private     : True
-description : This is my portofolio while do project for Abila Company
-language    : HTML
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/abilacomp
-created_at  : 2024-07-07T02:11:51Z
-pushed_at   : 2024-07-07T03:32:58Z
+8. elkpd [Private]
+   URL   : https://github.com/hafidzmulia-its/elkpd
+   Live  : https://elkpd.vercel.app
+   Stack : Next.js 15, React 19, TypeScript 5, Tailwind CSS 4, MongoDB, Mongoose, NextAuth, bcryptjs, Zod, SWR
+   Focus : Gamified LMS with level unlocking, teacher dashboard, group profiles, and real-time progress tracking.
 
-name        : testss
-private     : True
-description : 
-language    : HTML
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/testss
-created_at  : 2024-07-04T05:15:01Z
-pushed_at   : 2024-07-04T06:30:59Z
+9. premom [Private]
+   URL   : https://github.com/hafidzmulia-its/premom
+   Live  : https://premom.vercel.app
+   Stack : Next.js 16, TypeScript, Tailwind CSS 4, Appwrite, Iron Session, Coze API, Google Sheets API
+   Focus : Prenatal education platform developed with Kementerian Kesehatan RI collaboration.
 
-name        : haf
-private     : False
-description : Personal portfolio website showcasing my projects, skills, and 
-              contact information.
-language    : HTML
-topics      : boot, html-css-javascript, portfolio-site
-homepage    : https://hafmul.site/
-html_url    : https://github.com/hafidzmulia-its/haf
-created_at  : 2024-07-09T17:58:28Z
-pushed_at   : 2026-01-17T13:40:46Z
+10. nestbloom [Private]
+    URL   : https://github.com/hafidzmulia-its/nestbloom
+    Live  : https://nestbloom.vercel.app
+    Stack : Next.js 15, React 19, TypeScript, Tailwind CSS 4, Appwrite, Iron Session, Google Sheets API
+    Focus : Parenting education LMS for thesis research with gated learning path and admin CRUD.
 
-name        : hisurabaya
-private     : False
-description : 
-language    : Blade
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/hisurabaya
-created_at  : 2025-12-22T16:09:23Z
-pushed_at   : 2025-12-28T11:38:23Z
+11. thyva [Private]
+    URL   : https://github.com/hafidzmulia-its/thyva
+    Live  : https://thyva.vercel.app
+    Stack : Next.js 16, React 19, TypeScript, Tailwind CSS 4, Appwrite Cloud, Coze API, shadcn/ui
+    Focus : Educational chatbot for reproductive health with pre-test and post-test gating.
 
-name        : erapor
-private     : False
-description : Next.js-based reporting system for HIMATIKA with role-based 
-              access, PDF/Excel exports, and a centralized dashboard.
-language    : TypeScript
-topics      : mongodb, nextjs, pdf-generation, react, typescript
-homepage    : https://rapor-himatika.vercel.app
-html_url    : https://github.com/hafidzmulia-its/erapor
-created_at  : 2025-11-10T11:53:18Z
-pushed_at   : 2025-12-20T23:56:36Z
+12. soulmom-web [Private]
+    URL   : https://github.com/hafidzmulia-its/soulmom-web
+    Live  : https://soulmom-web.vercel.app
+    Stack : Next.js 16, TypeScript, Tailwind CSS 4, react-hook-form, Zod, Firebase Auth, Firestore, Google Sheets API
+    Focus : EPDS-based postpartum screening platform with admin-configurable content and risk classification.
 
-name        : e-kos
-private     : False
-description : Web GIS to find boarding houses around ITS with interactive 
-              maps, filters, and an admin dashboard.
-language    : TypeScript
-topics      : nextjs, postgis, postgresql-database, typescript, 
-              vercel-deployment
-homepage    : https://e-kos.vercel.app
-html_url    : https://github.com/hafidzmulia-its/e-kos
-created_at  : 2025-11-30T23:28:07Z
-pushed_at   : 2025-12-20T22:25:18Z
+13. keke-pwa [Private]
+    URL   : https://github.com/hafidzmulia-its/keke-pwa
+    Live  : https://realkeke.vercel.app
+    Stack : Next.js 16, React 19, TypeScript 5, Tailwind CSS 4, Firebase, Firestore, Firebase Cloud Messaging, Cloudinary
+    Focus : PWA for K3 incident reporting with role-based access, push notifications, and comment threads.
 
-name        : hafidzmulia-its
-private     : False
-description : 
-language    : 
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/hafidzmulia-its
-created_at  : 2025-12-09T23:04:52Z
-pushed_at   : 2025-12-09T23:16:54Z
+14. haf [Public]
+    URL   : https://github.com/hafidzmulia-its/haf
+    Live  : https://hafmul.site
+    Stack : HTML, CSS, JavaScript, Bootstrap 5.3, Formspree
+    Focus : Personal portfolio website used as a public showcase of work, experience, and CV download.
 
-name        : SIPerpustakaan
-private     : False
-description : Laravel-based school library system for managing books, 
-              students, lending, and late fees.
-language    : Blade
-topics      : alpinejs, laravel, management-system, system-information
-homepage    : https://literasik.hafmul.site
-html_url    : https://github.com/hafidzmulia-its/SIPerpustakaan
-created_at  : 2025-06-22T20:44:59Z
-pushed_at   : 2025-12-09T21:35:04Z
+================================================================
+PRIVATE CLIENT / RESEARCH REPOS
+================================================================
 
-name        : sina
-private     : False
-description : Children’s storybook platform with kid-friendly UI, reading 
-              progress tracking, and an admin panel to manage content.
-language    : Blade
-topics      : cloudinary, laravel, mysql, tailwindcss
-homepage    : https://sina.hafmul.site
-html_url    : https://github.com/hafidzmulia-its/sina
-created_at  : 2025-10-22T17:54:55Z
-pushed_at   : 2025-12-09T21:28:35Z
+- premom
+  Prenatal education platform with Appwrite, Coze chatbot, and Google Sheets export.
 
-name        : vue-tasty-recipes
-private     : False
-description : 
-language    : Vue
-topics      : 
-homepage    : https://vue-tasty-recipes.vercel.app
-html_url    : https://github.com/hafidzmulia-its/vue-tasty-recipes
-created_at  : 2025-07-25T06:49:48Z
-pushed_at   : 2025-12-05T08:11:31Z
+- thyva
+  Research chatbot platform for teenage reproductive health with gated intervention flow.
 
-name        : MergeBinaryLinear
-private     : False
-description : 
-language    : Java
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/MergeBinaryLinear
-created_at  : 2025-12-03T07:45:15Z
-pushed_at   : 2025-12-03T07:45:34Z
+- soulmom-web
+  Postpartum mental health screening tool using EPDS, Firebase, and Google Sheets.
 
-name        : SortingButCOol
-private     : False
-description : 
-language    : Java
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/SortingButCOol
-created_at  : 2025-12-03T05:41:07Z
-pushed_at   : 2025-12-03T06:17:21Z
+- nestbloom
+  Thesis-driven parenting LMS with gated content, tests, and progress tracking.
 
-name        : etsalpro
-private     : False
-description : 
-language    : Java
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/etsalpro
-created_at  : 2025-11-18T14:06:08Z
-pushed_at   : 2025-11-18T14:08:45Z
+- elkpd
+  Production client LMS with teacher dashboard, group profiles, and multiple quiz types.
 
-name        : daftarsiswa
-private     : False
-description : 
-language    : PHP
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/daftarsiswa
-created_at  : 2025-10-03T00:31:38Z
-pushed_at   : 2025-10-03T01:05:45Z
+- SIBPS
+  School behavior management system with approval workflow and PDF export.
 
-name        : tests
-private     : False
-description : 
-language    : CSS
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/tests
-created_at  : 2025-09-12T11:11:26Z
-pushed_at   : 2025-09-12T11:38:37Z
+- patahero_api
+  Laravel API backend for a first-aid mobile app, including auth and fracture-step endpoints.
 
-name        : SIPresensi
-private     : False
-description : 
-language    : Blade
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/SIPresensi
-created_at  : 2025-05-27T04:56:54Z
-pushed_at   : 2025-05-30T06:15:54Z
+- keke-pwa
+  Workplace safety reporting PWA for Poltekkes Kemenkes Surabaya.
 
-name        : statistical_distribution
-private     : False
-description : 
-language    : TeX
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/statistical_distribution
-created_at  : 2024-10-02T06:12:30Z
-pushed_at   : 2024-10-02T06:22:42Z
+- greeting-site
+  Private Next.js website project. Live: https://greeting-site-two.vercel.app
 
-name        : learn-npm
-private     : False
-description : Welcome, this is my repository + documentation of me learning 
-              npm for node.js
-language    : 
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/learn-npm
-created_at  : 2024-08-10T13:36:39Z
-pushed_at   : 2024-08-10T13:36:40Z
+- abilacomp
+  Private HTML company project / portfolio delivery repo.
 
-name        : CrossTheRoad
-private     : False
-description : Final Project for Praktikum Alpro 2
-language    : Java
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/CrossTheRoad
-created_at  : 2024-06-18T03:43:11Z
-pushed_at   : 2024-07-14T10:29:38Z
+- thesis
+  Private LaTeX thesis repository.
 
-name        : artikel
-private     : False
-description : 
-language    : HTML
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/artikel
-created_at  : 2024-07-03T12:23:55Z
-pushed_at   : 2024-07-12T17:57:57Z
+- testss
+  Private HTML test repo.
 
-name        : coffeeshop
-private     : False
-description : 
-language    : CSS
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/coffeeshop
-created_at  : 2024-07-06T09:33:40Z
-pushed_at   : 2024-07-06T10:30:06Z
+================================================================
+PUBLIC PRODUCTION / SHOWCASE REPOS
+================================================================
 
-name        : artikels
-private     : False
-description : 
-language    : HTML
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/artikels
-created_at  : 2024-07-04T09:09:09Z
-pushed_at   : 2024-07-04T09:10:49Z
+- sina
+  Children's storybook platform with Laravel, MySQL, Cloudinary, and admin CMS.
 
-name        : Tutorial-Alpro
-private     : False
-description : Berisi File Pembahasan Alpro via File java, apabila menggunakan 
-              hp dapat liat output di file .txt
-language    : Java
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/Tutorial-Alpro
-created_at  : 2024-06-15T07:31:46Z
-pushed_at   : 2024-06-20T12:05:24Z
+- e-kos
+  Web GIS kos platform with Next.js, Supabase, PostGIS, NextAuth, and Leaflet.
 
-name        : Kuliah
-private     : False
-description : 
-language    : 
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/Kuliah
-created_at  : 2024-05-07T05:38:35Z
-pushed_at   : 2024-05-22T16:23:51Z
+- erapor
+  Reporting system with Next.js, MongoDB, NextAuth, PDF export, and admin workflows.
 
-name        : test
-private     : False
-description : 
-language    : 
-topics      : 
-homepage    : 
-html_url    : https://github.com/hafidzmulia-its/test
-created_at  : 2024-03-30T07:03:10Z
-pushed_at   : 2024-03-30T07:03:10Z
+- hisurabaya
+  GIS hotel information system using Laravel, SQL Server, Leaflet, and Turf.js.
 
+- SIPerpustakaan
+  School library management system with lending, fines, and analytics.
 
+- haf
+  Personal portfolio website and public project showcase.
 
+- nechcode-web
+  Public TypeScript web project. Live: https://nechcode.vercel.app
+
+- SIPresensi
+  Internship-built Laravel attendance system for SMA IT Al Uswah.
+
+- hafidzmulia-its
+  GitHub profile repository.
+
+- cv
+  This CV / application workspace in TeX.
+
+- kbt
+  Public TeX repository.
+
+================================================================
+COLLABORATION / SHARED REPOS
+================================================================
+
+- fnvrxx/management-kos [Public]
+  PHP collaboration repo for a boarding-house management system, still in development.
+
+- abilarudi/admin-panel [Public]
+  TypeScript collaboration repo.
+
+- abilarudi/strapi [Public]
+  JavaScript / Strapi collaboration repo.
+
+- abilarudi/web-dev [Public]
+  HTML collaboration repo.
+
+================================================================
+LEARNING / COURSEWORK / SMALLER REPOS
+================================================================
+
+- vue-tasty-recipes [Public]
+  Vue.js recipe project. Live: https://vue-tasty-recipes.vercel.app
+
+- MergeBinaryLinear [Public]
+  Java algorithm practice repo.
+
+- SortingButCOol [Public]
+  Java sorting algorithm practice repo.
+
+- etsalpro [Public]
+  Java coursework / algorithm repo.
+
+- daftarsiswa [Public]
+  Simple PHP student registration repo.
+
+- tests [Public]
+  Small CSS test repo.
+
+- learn-npm [Public]
+  Node.js / npm learning notes repo.
+
+- CrossTheRoad [Public]
+  Java final project for Praktikum Alpro 2.
+
+- artikel [Public]
+  HTML project repo.
+
+- artikels [Public]
+  HTML / Bootstrap practice repo.
+
+- coffeeshop [Public]
+  Static HTML/CSS design exercise.
+
+- Tutorial-Alpro [Public]
+  Java tutorial repo for introductory programming.
+
+- statistical_distribution [Public]
+  TeX / statistics document repo.
+
+- Kuliah [Public]
+  General coursework repository.
+
+- test [Public]
+  Empty starter repo.
+
+================================================================
+QUICK CV SHORTLIST
+Use these first when tailoring a CV or portfolio to a job post.
+================================================================
+
+- Laravel / PHP jobs
+  sina, SIPerpustakaan, hisurabaya, SIBPS, patahero_api, SIPresensi
+
+- Next.js / TypeScript full-stack jobs
+  e-kos, erapor, elkpd, premom, nestbloom, thyva, soulmom-web, keke-pwa
+
+- GIS / mapping / spatial data jobs
+  e-kos, hisurabaya
+
+- Health / education / research platform jobs
+  premom, nestbloom, thyva, soulmom-web, elkpd
+
+- Admin dashboard / internal tools jobs
+  erapor, SIBPS, SIPerpustakaan, keke-pwa, elkpd
+
+- Portfolio / frontend showcase
+  haf, nechcode-web, vue-tasty-recipes

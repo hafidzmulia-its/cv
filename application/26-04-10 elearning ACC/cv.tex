@@ -1,0 +1,163 @@
+%-------------------------
+% CV Target: Freelance Developer - E-Learning Prototype
+% Author: Hafidz Mulia
+% Bahasa: Indonesia
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{C0392B}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Demo / Portofolio}} \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvskillcat}[2]{%
+  \noindent\textbf{#1:} #2\\[2pt]%
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Fullstack Developer - Prototipe E-Learning / MVP}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== RINGKASAN ====================
+\section{Ringkasan Profesional}
+Fullstack developer dengan pengalaman mengerjakan beberapa platform pembelajaran dan edukasi berbasis web, terutama \textbf{Soulmom, PREMOM, NestBloom,} dan \textbf{ELKPD}. Terbiasa terlibat dari tahap awal, mulai dari memahami kebutuhan, menyusun versi \textbf{MVP}, mengerjakan fitur utama, sampai deployment dan penyesuaian lanjutan. Teknologi yang paling sering saya gunakan adalah \textbf{Next.js, TypeScript, Appwrite, Firebase, MongoDB,} dan \textbf{Google Sheets API}. Saya cukup nyaman mengerjakan sistem yang memiliki alur materi, latihan atau asesmen, hasil penilaian, serta dashboard admin atau guru.
+
+%==================== KEAHLIAN ====================
+\section{Keahlian Relevan}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Frontend:} & Next.js, React, TypeScript, Tailwind CSS, responsive UI \\[3pt]
+\textbf{Backend:} & Next.js API Routes, Laravel, REST API, session-based auth \\[3pt]
+\textbf{Data \& Auth:} & MongoDB, Appwrite, Firebase Firestore, NextAuth, Iron Session \\[3pt]
+\textbf{Integrasi:} & Google Sheets API, Coze API, form validation, progress logging \\[3pt]
+\textbf{Kekuatan Kerja:} & Scoping MVP, requirement breakdown, admin dashboard, role-based access, deployment ke Vercel \\[3pt]
+\textbf{Bahasa:} & Indonesia (native), Inggris (membaca/menulis dokumentasi teknis) \\
+\end{tabularx}
+
+%==================== PROYEK ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {Soulmom - Platform Edukasi dan Screening Postpartum}
+  {2026}
+  {Fullstack Developer | Next.js 16, TypeScript, Firebase, Firestore, Google Sheets API}
+  {Membangun aplikasi berbasis form dan asesmen dengan validasi, klasifikasi hasil, pengaturan konten dari sisi admin, dan pencatatan data ke Google Sheets. Proyek ini membantu saya terbiasa membuat flow kuisioner atau latihan yang hasilnya rapi dan enak dipakai untuk analisis.}
+  {https://soulmom-web.vercel.app}
+
+\cvproject
+  {PREMOM - Platform Edukasi Prenatal}
+  {2026}
+  {Fullstack Developer | Next.js 16, TypeScript, Appwrite, Coze API, Google Sheets API}
+  {Mengerjakan platform edukasi prenatal yang berisi materi, tes, dashboard admin, dan chatbot. Dari proyek ini saya terbiasa menyusun alur belajar yang sederhana tapi tetap jelas, termasuk bagaimana hasil interaksi pengguna bisa dipakai untuk menentukan langkah atau materi berikutnya.}
+  {https://premom.vercel.app}
+
+\cvproject
+  {NestBloom - LMS Parenting untuk Riset/Tesis}
+  {2026}
+  {Fullstack Developer | Next.js 15, TypeScript, Appwrite, Iron Session, Google Sheets API}
+  {Membangun platform pembelajaran parenting dengan alur materi bertahap, login pengguna, panel admin, dan pencatatan data ke Google Sheets. Proyek ini saya kerjakan dengan pendekatan MVP dulu supaya bisa cepat dipakai untuk kebutuhan riset, lalu dilanjutkan perbaikan fitur setelah alurnya terasa pas.}
+  {https://nestbloom.vercel.app}
+
+\cvproject
+  {ELKPD - Gamified LMS berbasis Kuis}
+  {2025 -- 2026}
+  {Fullstack Developer | Next.js 15, TypeScript, MongoDB, NextAuth, Tailwind CSS}
+  {Mengerjakan platform LMS berbasis kuis untuk kebutuhan klien. Fitur yang saya buat mencakup login guru dan siswa, level pembelajaran, beberapa jenis asesmen, dashboard guru, profil kelompok, dan pemantauan progres belajar. Proyek ini paling dekat dengan kebutuhan e-learning karena fokusnya memang pada alur belajar dan evaluasi siswa.}
+  {https://elkpd.vercel.app}
+
+%==================== PENGALAMAN ====================
+\section{Pengalaman Relevan}
+
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode / Freelance Digital Agency}
+  {2026 -- Sekarang}
+  {Menangani proyek klien dan proyek riset dari tahap diskusi kebutuhan sampai deployment. Saya biasanya memulai dari versi MVP dulu supaya produk bisa cepat dicoba, lalu lanjut revisi berdasarkan feedback dan kebutuhan lapangan.}
+
+\cventry
+  {Programming \& Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajar dasar pemrograman, logika aplikasi, dan web development. Pengalaman ini cukup membantu saya memahami bagaimana menyusun materi dan membuat alur belajar yang lebih mudah diikuti pengguna.}
+
+\cventry
+  {Asisten Koordinator Laboratorium}
+  {Departemen Matematika ITS}
+  {2024 -- Sekarang}
+  {Membimbing mahasiswa dalam algoritma, debugging, dan komputasi visual. Dari sini saya jadi terbiasa menjelaskan hal teknis dengan runtut dan melihat langsung pola belajar di lingkungan akademik.}
+
+%==================== PENDIDIKAN ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika (Peminatan Komputasi dan Informatika)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Sekarang}
+  {Fokus pada pemrograman, basis data, dan komputasi terapan. Selama kuliah aktif mengerjakan proyek software untuk kebutuhan akademik, organisasi, dan klien nyata.}
+
+\end{document}

@@ -1,0 +1,16 @@
+Subject: Junior Web Developer_(Hafidz Mulia)
+
+Yth. Tim Rekrutmen PT Sosial Bisnis Indonesia (SOBI),
+
+Saya ingin mengajukan lamaran untuk posisi Junior Web Developer di SOBI.
+
+Pada email ini saya melampirkan CV dan cover letter untuk pertimbangan Bapak/Ibu. Saya memiliki pengalaman hands-on dalam membangun dan mendeploy aplikasi web full-stack, dengan pengalaman yang cukup kuat di Laravel, PHP, MySQL, REST API development, dan implementasi frontend yang responsif. Saya juga memiliki exposure langsung ke Vue.js dan pengalaman mengerjakan beberapa sistem live di bidang edukasi, reporting, dan content platform.
+
+Portofolio saya dapat dilihat di https://hafmul.site dan GitHub saya di https://github.com/hafidzmulia-its.
+
+Terima kasih atas waktu dan perhatiannya. Saya siap berdiskusi lebih lanjut apabila dibutuhkan.
+
+Hormat saya,
+Hafidz Mulia
++62 851 5833 5740
+hafidzmuliia@gmail.com

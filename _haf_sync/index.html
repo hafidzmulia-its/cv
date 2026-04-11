@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafidz Mulia - Fullstack Web Developer</title>
+    <meta name="description" content="Portfolio of Hafidz Mulia, a fullstack web developer building Laravel and Next.js applications across education, GIS, reporting, and health-tech products.">
+    <meta name="author" content="Hafidz Mulia">
+    <meta name="keywords" content="fullstack developer, laravel developer, next.js developer, portfolio, web gis, admin dashboard, indonesia">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hafidz Mulia - Fullstack Web Developer">
+    <meta property="og:description" content="Fullstack portfolio featuring Laravel, Next.js, GIS, reporting systems, and health-tech products.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/profile.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hafidz Mulia - Fullstack Web Developer">
+    <meta name="twitter:description" content="Portfolio featuring deployed Laravel and Next.js products by Hafidz Mulia.">
+    <meta name="twitter:image" content="img/profile.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <!-- Toast Notification Container -->
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+        <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+    </div>
+    
+    <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="nav-fixed transition-smooth bg-background/95 backdrop-blur-md shadow-md">
+            <div class="container">
+                <div class="nav-container">
+                    <button class="nav-brand font-montserrat" onclick="window.location.href='#home'">
+                        haf<span class="text-gradient">.</span>
+                    </button>
+                    
+                    <div class="nav-menu">
+                        <button class="nav-link" data-href="#about">About</button>
+                        <button class="nav-link" data-href="#experience">Experience</button>
+                        <button class="nav-link" data-href="#education">Education</button>
+                        <button class="nav-link" data-href="#skills">Skills</button>
+                        <button class="nav-link" data-href="#projects">Projects</button>
+                        <button class="nav-link" data-href="#contact">Contact</button>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero gradient-subtle animate-fade-in">
+                <div class="container">
+                    <div class="hero-content">
+                        <img
+                            src="img/profile.jpg"
+                            alt="Hafidz Mulia"
+                            class="object-fit-sm-contain rounded-circle img-thumbnail"
+                            width="180"
+                        />
+                        
+                        <h1 class="hero-title font-montserrat">Hafidz Mulia</h1>
+                        <p class="hero-subtitle">Fullstack Web Developer | Laravel and Next.js Builder</p>
+                        <p class="hero-description">
+                            I build and deploy full-stack products for education, internal operations, GIS, and health-tech use cases, combining product delivery, database design, and practical engineering execution.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; margin-right: 8px;">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                Get in Touch
+                            </button>
+                            <a href="img/CV.pdf" download="CV_Hafidz_Mulia_2026.pdf" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; margin-right: 8px;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" x2="12" y1="15" y2="3"></line>
+                                </svg>
+                                Download CV
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social">
+                            <a href="https://github.com/hafidzmulia-its" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hafidz-mulia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/haf.mul/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section-bg">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Professional <span class="text-gradient">Summary</span>
+                    </h2>
+                    <div class="card">
+                        <p class="card-content">
+                            I'm a fullstack developer focused on building practical web products end to end, from database modeling and authentication to admin dashboards, deployment, and maintenance. My strongest hands-on stack includes <span style="font-weight: 600; color: var(--primary);">Laravel, PHP, Next.js, TypeScript, Tailwind CSS, MySQL, MongoDB, PostgreSQL, PostGIS, Appwrite, and Firebase</span>.
+                        </p>
+                        <p class="card-content" style="margin-top: 1rem;">
+                            My recent work includes a Web GIS boarding-house platform, a reporting system for HIMATIKA, multiple Laravel information systems, and health or research platforms delivered through NechCode. Outside product work, I also teach programming and support practicum activities at ITS, which strengthens how I communicate technical decisions and debug systems clearly.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="gradient-subtle">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Work <span class="text-gradient">Experience</span>
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                    <!-- <div class="experience-icon"> -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                        </svg> -->
+                                        <img src="img/timedoor.jpg" alt="Timedoor Academy" class="experience-icon">
+                                    <!-- </div> -->
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Programming Teacher</h3>
+                                        <p class="experience-company">Timedoor Academy</p>
+                                        <p class="experience-date">Jan 2025 - Present</p>
+                                    </div>
+                                </div>
+                                <p class="experience-description">
+                                    Taught programming fundamentals to junior, kids, and teen learners; prepared lesson plans and mentored students on mini-projects
+                                </p>
+                                <ul class="experience-achievements">
+                                    <li><span class="achievement-bullet">▸</span> Instructed 20+ learners in Python & JavaScript fundamentals, data structures, and GUI projects.</li>
+                                    <li><span class="achievement-bullet">▸</span> Mentored students through final coding projects and delivered detailed performance feedback.</li>
+                                    <li><span class="achievement-bullet">▸</span> Improved learning outcomes and project completion rates via structured, interactive lessons.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/Provicom.png" alt="Provicom" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Laboratorium Assistant</h3>
+                                        <p class="experience-company">Programming and Visual Computing</p>
+                                        <p class="experience-date" id="coordinator-duration">Aug 2024 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Coordinator Assistant Laboratorium</h4>
+                                        <p class="experience-date">Aug 2025 - Present</p>
+                                        <p class="experience-description">Coordinate the Programming & Visual Computing Lab (ProviKom) at ITS Mathematics, overseeing practicum planning (Alpro 1 & 2), organizing workshops, and managing lab logistics and operations.</p>
+                                <!-- <ul class="experience-achievements">
+                                    <li><span class="achievement-bullet">▸</span> Completed 5+ successful projects</li>
+                                    <li><span class="achievement-bullet">▸</span> Maintained 5-star rating</li>
+                                    <li><span class="achievement-bullet">▸</span> Specialized in modern web technologies</li>
+                                </ul> -->
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Assistant Algorithms and Computer Programming 2 Even Semester 2024/2025</h4>
+                                        <p class="experience-date">Jan 2025 - Aug 2025</p>
+                                        <p class="experience-description">Mentored ~20 Mathematics ITS 2024 students through Java OOP fundamentals and supervised their final game development projects, leading to stronger coding practices and creative application.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Assistant Algorithms and Computer Programming 1 Odd Semester 2024/2025</h4>
+                                        <p class="experience-date">Aug 2024 - Jan 2025</p>
+                                        <p class="experience-description">Supported over 16 students in building strong programming fundamentals, contributing to a 40% increase in their understanding of algorithms.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/himatika.png" alt="HIMATIKA ITS" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Himpunan Mahasiswa Matematika (HIMATIKA)</h3>
+                                        <p class="experience-company">Institut Teknologi Sepuluh Nopember (ITS)</p>
+                                        <p class="experience-date" id="himatika-duration">May 2023 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">1st Vice Head of Sentrum Katalis HIMATIKA ITS 2025</h4>
+                                        <p class="experience-date">Feb 2025 - Present</p>
+                                        <p class="experience-description">Monitored cabinet staff performance and implemented skill-development programs to strengthen operational capacity while aligning staff activities with the Sentrum Katalis vision.</p>
+                               
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Leader of Mathematics 2022 / STI 57</h4>
+                                        <p class="experience-date">May 2023 - Present</p>
+                                        <p class="experience-description">Successfully facilitated communication and coordination among 150+ Mathematics students, leading to a 20% increase in participation within the Department of Mathematics and the student association (HIMATIKA)</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Speaker for Basic Media Schooling Training, HIMATIKA ITS 2024.</h4>
+                                        <p class="experience-date">Jul 2024</p>
+                                        <p class="experience-description">Enhancing fundamental knowledge of website development and conducting a workshop on creating a news reporting website.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/LKKI.png" alt="LKKI Matematika ITS" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Lembaga Kajian Kerohanian Islam (LKKI)</h3>
+                                        <p class="experience-company">Departemen Matematika ITS</p>
+                                        <p class="experience-date" id="himatika-duration">2 years</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Head of Regeneration Department</h4>
+                                        <p class="experience-date">Jan 2024 - Dec 2024</p>
+                                        <p class="experience-description">Led organizational development and member training programs, resulting in a 30% improvement in student engagement and participation.</p>
+                               
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Staff of Regeneration Department</h4>
+                                        <p class="experience-date">Jan 2023 - Dec 2023</p>
+                                        <p class="experience-description">Developed organizational development and member training programs</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/rebana.png" alt="UKM Rebana ITS" class="experience-icon">
+                                        
+                                        <div class="experience-info">
+                                            <h3 class="font-montserrat">UKM Rebana</h3>
+                                            <p class="experience-company">Institut Teknologi Sepuluh Nopember</p>
+                                            <p class="experience-date" id="himatika-duration">2 years</p>
+                                        </div>
+                                    </div>
+                                    <div class="subtimeline">
+                                        <!-- <div class="timeline-line"></div> -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <h4 class="font-montserrat">Vice Head of PM Department</h4>
+                                            <p class="experience-date">Jan 2024 - Dec 2024</p>
+                                            <p class="experience-description">Assisted in organizational development and resource planning, driving a 25% increase in team efficiency and participation.</p>
+                                            
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <h4 class="font-montserrat">Staff of PM Department</h4>
+                                            <p class="experience-date">Jan 2023 - Dec 2023</p>
+                                            <p class="experience-description">Learn and develop the development of human resources at UKM Rebana ITS</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Education Section -->
+                <section id="education" class="section-bg">
+                    <div class="container">
+                        <h2 class="section-title font-montserrat">
+                            <span class="text-gradient">Education</span>
+                        </h2>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="experience-header">
+                                    <img src="img/ITS.png" alt="ITS" class="experience-icon">
+                                   
+                                <div class="experience-info">
+                                    <h3 class="font-montserrat">Bachelor of Mathematics</h3>
+                                    <p class="experience-company">Institut Teknologi Sepuluh Nopember</p>
+                                    <p class="experience-date">2022 - Present</p>
+                                </div>
+                            </div>
+                            <p class="experience-description">
+                                I am pursuing a Bachelor's degree in Mathematics at ITS, where I am developing a solid foundation in problem-solving, analytical thinking, and quantitative reasoning. My coursework includes advanced calculus, statistical methods, and discrete mathematics. Additionally, I have applied my knowledge to real-world projects in web development, game design, and data analysis.
+                            </p>
+                            <ul class="experience-achievements">
+                                <li><span class="achievement-bullet">▸</span> GPA: 3.34/4.0</li>
+                                <li><span class="achievement-bullet">▸</span> Relevant coursework: Web Development, Database Systems, Fundamental Programming</li>
+                                <li><span class="achievement-bullet">▸</span> 1st Vice Head of Sentrum Katalis HIMATIKA ITS, Leader of STI 57, Lab Coordinator ProViKom ITS, Head of KD Dept LKKI Matematika ITS, Vice Head of PM Dept UKM Rebana ITS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="experience-header">
+                          <img src="img/aluswah.png" alt="Al Uswah" class="experience-icon">
+                                <div class="experience-info">
+                                    <h3 class="font-montserrat">High School Diploma</h3>
+                                    <p class="experience-company">SMA IT Al Uswah Surabaya</p>
+                                    <p class="experience-date">2019 - 2022</p>
+                                </div>
+                            </div>
+                            <p class="experience-description">
+                                During my time at SMA Islam Terpadu Al Uswah, I was an active member of several student organizations and developed leadership, financial management, and mentoring skills. I was privileged to receive admission to Sepuluh Nopember Institute of Technology (ITS) through the highly competitive SNMPTN 2022 Invitation Path, which recognized my academic and extracurricular achievements.
+                            </p>
+                            <ul class="experience-achievements">
+                                <li><span class="achievement-bullet">▸</span> Grade : 92.02/100</li>
+                                <li><span class="achievement-bullet">▸</span> Science track with focus on Mathematics</li>
+                                <li><span class="achievement-bullet">▸</span> Chairman of SKI 2020-2021, Mentor of BPI, Eligible for SNMPTN 2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="gradient-subtle">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Skills & <span class="text-gradient">Technologies</span>
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Frontend Development</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Next.js</div>
+                                <div class="skill-tag">React</div>
+                                <div class="skill-tag">TypeScript</div>
+                                <div class="skill-tag">JavaScript</div>
+                                <div class="skill-tag">Laravel Blade</div>
+                                <div class="skill-tag">Vue.js</div>
+                                <div class="skill-tag">Alpine.js</div>
+                                <div class="skill-tag">Tailwind CSS</div>
+                                <div class="skill-tag">Bootstrap</div>
+                                <div class="skill-tag">Leaflet.js</div>
+                                <div class="skill-tag">shadcn/ui</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Backend & Database</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Laravel</div>
+                                <div class="skill-tag">Node.js</div>
+                                <div class="skill-tag">NextAuth</div>
+                                <div class="skill-tag">MongoDB</div>
+                                <div class="skill-tag">PostgreSQL</div>
+                                <div class="skill-tag">MySQL</div>
+                                <div class="skill-tag">SQL Server</div>
+                                <div class="skill-tag">Supabase</div>
+                                <div class="skill-tag">PostGIS</div>
+                                <div class="skill-tag">Appwrite</div>
+                                <div class="skill-tag">Firebase</div>
+                                <div class="skill-tag">Sanctum</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Product & Mapping</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">UI/UX Design</div>
+                                <div class="skill-tag">Figma</div>
+                                <div class="skill-tag">Responsive Design</div>
+                                <div class="skill-tag">Web GIS</div>
+                                <div class="skill-tag">OpenStreetMap</div>
+                                <div class="skill-tag">Turf.js</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Tools & Other</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Git</div>
+                                <div class="skill-tag">REST APIs</div>
+                                <div class="skill-tag">Vercel</div>
+                                <div class="skill-tag">Cloudinary</div>
+                                <div class="skill-tag">Google Sheets API</div>
+                                <div class="skill-tag">Coze API</div>
+                                <div class="skill-tag">Firebase Cloud Messaging</div>
+                                <div class="skill-tag">Java</div>
+                                <div class="skill-tag">PHP</div>
+                                <div class="skill-tag">Deployment</div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <!-- Projects Section -->
+            <section id="projects" class="section-bg">
+                <div class="container">
+                    <div class="projects-header">
+                        <div>
+                            <h2 class="section-title font-montserrat">
+                                Project <span class="text-gradient">Catalog</span>
+                            </h2>
+                            <p class="projects-intro">
+                                The front view shows my latest featured work. Switch categories to browse the wider repo-backed project catalog.
+                            </p>
+                        </div>
+                        <p class="projects-count" id="project-results-count">Loading projects...</p>
+                    </div>
+                    <div class="project-filter-bar" id="project-filter-bar" aria-label="Project categories"></div>
+                    <div class="projects-grid" id="featured-projects-grid"></div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="gradient-subtle">
+                <div class="container">
+                    <div class="contact-form">
+                        <h2 class="section-title font-montserrat">
+                            Let's <span class="text-gradient">Connect</span>
+                        </h2>
+                        <p class="contact-intro">
+                            Have a project in mind or want to collaborate? Feel free to reach out!
+                        </p>
+                        
+                        <div class="card">
+                            <form action="https://formspree.io/f/xrbzgnaz" method="POST">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-input" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-input" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-textarea" id="message" name="message" placeholder="Hi there! I'm interested in discussing a project with you..." required></textarea>
+                                </div>
+                                
+                                <button class="form-submit" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                        <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+                                        <path d="m21.854 2.147-10.94 10.939"></path>
+                                    </svg>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="gradient-primary">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3 class="footer-title font-montserrat">Hafidz Mulia</h3>
+                        <p class="footer-subtitle">Fullstack Web Developer</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <a href="https://github.com/hafidzmulia-its" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hafidz-mulia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/haf.mul/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="mailto:hafidzmuliia@gmail.com" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="footer-copyright">
+                         Serving people through software, systems thinking, and practical teaching.
+                         <br>&copy; 2026 Hafidz Mulia. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/project-data.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+
+
