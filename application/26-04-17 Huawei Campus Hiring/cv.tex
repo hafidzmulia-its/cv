@@ -1,0 +1,184 @@
+%-------------------------
+% CV Target: Huawei Campus Hiring
+% Author: Hafidz Mulia
+% Language: English
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{C7002A}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{View Repository / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Software Engineer | Full-Stack Developer}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Professional Summary}
+Final-year Mathematics student at Institut Teknologi Sepuluh Nopember (ITS) with hands-on experience building and deploying full-stack software products across education, reporting, GIS, and health-tech domains. Strong in TypeScript, Next.js, Laravel, PHP, SQL, REST API development, authentication, admin dashboards, and production deployment. Built real-world systems for student organizations, schools, research initiatives, and freelance clients, with a practical approach to turning requirements into maintainable software.
+
+%==================== EDUCATION ====================
+\section{Education}
+\cventry
+  {Bachelor of Mathematics}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Present}
+  {GPA: 3.36 / 4.00 | Focus: Computational Mathematics and Informatics | Thesis: Improved data warehouse query performance using a PROADAPT-based memory-aware partitioning mechanism on PostgreSQL and TimescaleDB for 50M+ row time-series data}
+
+%==================== EXPERIENCE ====================
+\section{Relevant Experience}
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode --- Freelance Digital Agency}
+  {2026 -- Present}
+  {Founded and operate a freelance digital agency delivering web applications for UMKM and academic or research clients. Handle requirements gathering, architecture, development, database design, deployment, and iteration across products such as Nestbloom, Premom, Thyva, Soulmom, and Real Keke.}
+
+\cventry
+  {Programming and Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming fundamentals, algorithmic thinking, and introductory web development. Prepare lesson materials and guide students through logic building, debugging, and project-based practice.}
+
+\cventry
+  {Assistant Laboratory Coordinator}
+  {ITS Mathematics Department}
+  {2024 -- Present}
+  {Support programming and visual computing practicum activities, guide junior students in algorithm design and debugging, and help maintain practicum materials.}
+
+\cventry
+  {Full-Stack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Developed and delivered a Laravel-based attendance system, covering requirement gathering, database design, implementation, and user acceptance testing with school staff.}
+
+%==================== PROJECTS ====================
+\section{Selected Projects}
+\cvproject
+  {erapor --- Automated Reporting System}
+  {2025}
+  {Full-Stack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Developed a reporting platform for HIMATIKA with role-based dashboards, user management, and automated report generation. Improved internal reporting workflows through centralized data access and export features.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {ELKPD --- Gamified Learning Platform}
+  {2025 -- 2026}
+  {Full-Stack Developer | Next.js, TypeScript, MongoDB, Tailwind CSS}
+  {Built a production-ready learning platform for a real client with teacher dashboards, structured assessments, progress tracking, and data management. Combined product delivery, deployment, and iteration for a live educational workflow.}
+  {https://github.com/hafidzmulia-its/elkpd}
+
+\cvproject
+  {patahero\_api --- REST API Backend for Mobile App}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Built a RESTful backend for a mobile first-aid application, including structured endpoints, token-based authentication, user profile management, and image upload handling.}
+  {https://github.com/hafidzmulia-its/patahero\_api}
+
+\cvproject
+  {keke-pwa --- Safety Incident Reporting Platform}
+  {2026}
+  {Full-Stack Developer | Next.js, TypeScript, Firebase, Cloudinary, PWA}
+  {Built a mobile-first reporting system with status tracking, comment threads, push notifications, and admin communication workflows. Strengthened experience in operational software and real-use reporting flows.}
+  {https://github.com/hafidzmulia-its/keke-pwa}
+
+%==================== SKILLS ====================
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Languages:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS \\[3pt]
+\textbf{Frameworks:} & Laravel, Next.js, React, Blade, Alpine.js, Tailwind CSS, Bootstrap \\[3pt]
+\textbf{Databases:} & MySQL, PostgreSQL, TimescaleDB, MongoDB, Microsoft SQL Server, Firebase Firestore, Appwrite \\[3pt]
+\textbf{API \& Auth:} & REST API design, Laravel Sanctum, Laravel Breeze, NextAuth.js, Iron Session, Google OAuth \\[3pt]
+\textbf{Tools \& Cloud:} & Git, GitHub, Composer, npm, Vite, Vercel, Cloudinary, Vercel Blob, Google Sheets API \\[3pt]
+\textbf{Core Strengths:} & Full-stack application development, database modeling, admin dashboards, debugging, deployment, technical documentation, analytical problem-solving \\
+\end{tabularx}
+
+%==================== ACTIVITIES ====================
+\section{Leadership \& Activities}
+\cventry
+  {1st Vice Head}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Present}
+  {Support organizational operations and staff coordination for a 100+ member student organization, including workflow improvement and internal reporting support.}
+
+\cventry
+  {Campus Hiring Engagement}
+  {Bursa Karir ITS 46 --- Huawei career session and job fair}
+  {Apr 2026}
+  {Participated in the ITS job fair and followed Huawei campus hiring activities as part of career preparation for entry-level technology roles.}
+
+%==================== LANGUAGES ====================
+\section{Languages}
+\begin{tabularx}{\textwidth}{@{}l l@{}}
+\textbf{Indonesian:} & Native \\
+\textbf{English:} & Professional working proficiency for technical reading and writing \\
+\end{tabularx}
+
+\end{document}

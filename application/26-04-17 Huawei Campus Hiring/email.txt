@@ -1,0 +1,16 @@
+Subject: Huawei Campus Hiring Application - Hafidz Mulia
+
+Dear Huawei Recruitment Team,
+
+I would like to submit my application for Huawei campus hiring / FGDP opportunities.
+
+I am a final-year Mathematics student at Institut Teknologi Sepuluh Nopember (ITS) with hands-on experience in full-stack software development. My strongest fit is for Software Engineer and other entry-level technology roles related to software delivery, backend development, and operational systems. I have built and deployed real-world applications using Next.js, TypeScript, Laravel, PHP, SQL, REST APIs, authentication, and admin dashboards across education, reporting, and health-tech projects.
+
+I have attached my CV and cover letter for your consideration. My portfolio is available at https://hafmul.site and my GitHub is available at https://github.com/hafidzmulia-its.
+
+Thank you for your time and consideration. I would be glad to discuss my background further if needed.
+
+Sincerely,
+Hafidz Mulia
++62 851 5833 5740
+hafidzmuliia@gmail.com

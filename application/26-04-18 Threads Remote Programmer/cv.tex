@@ -1,0 +1,157 @@
+%-------------------------
+% CV Target: Threads Remote Programmer
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{View Repository / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Remote Programmer | Full-Stack Web Developer}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Professional Summary}
+Final-year Mathematics student at ITS with hands-on experience building and deploying full-stack web applications. Strong in PHP, Laravel, JavaScript, TypeScript, SQL, REST APIs, authentication, admin dashboards, and production deployment. Comfortable working independently in remote setups and delivering practical software from requirements and database design through implementation, debugging, and release.
+
+%==================== EXPERIENCE ====================
+\section{Relevant Experience}
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode --- Freelance Digital Agency}
+  {2026 -- Present}
+  {Deliver web software projects end-to-end for clients and research teams, covering requirements gathering, architecture, backend and frontend development, database modeling, deployment, and post-launch iteration. Built working systems across internal tools, learning platforms, health platforms, and operational workflows.}
+
+\cventry
+  {Programming and Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming fundamentals, algorithmic thinking, debugging, and introductory web development. This work strengthened my code communication, structured problem solving, and ability to explain technical issues clearly in remote-friendly ways.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Developed and delivered a Laravel-based attendance system from requirement gathering through implementation and user testing, giving direct experience shipping PHP software for a real institution.}
+
+%==================== PROJECTS ====================
+\section{Selected Projects}
+\cvproject
+  {sina --- Children's Storybook Platform}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Blade, Tailwind CSS, Alpine.js}
+  {Built a responsive content platform with reading progress tracking, role-based access control, media management, and an admin CMS. Handled backend logic, relational data modeling, and deployment for a live release.}
+  {https://github.com/hafidzmulia-its/sina}
+
+\cvproject
+  {erapor --- Automated Reporting System}
+  {2025}
+  {Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Developed a reporting platform with role-based dashboards, user management, and automated document export workflows. This project demonstrates practical JavaScript and TypeScript delivery for internal operations software.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {hisurabaya --- GIS Hotel Information System}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, SQL Server, Tailwind CSS, Leaflet, Turf.js}
+  {Built a GIS-based hotel information system with point, route, and area search modes. Combined Laravel and interactive mapping workflows to deliver a stronger spatial-search product than a standard CRUD application.}
+  {https://github.com/hafidzmulia-its/hisurabaya}
+
+\cvproject
+  {patahero\_api --- REST API Backend for Mobile App}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Built a RESTful backend for a mobile first-aid application, including structured treatment endpoints, token-based authentication, user profile management, and image upload handling.}
+  {https://github.com/hafidzmulia-its/patahero_api}
+
+%==================== SKILLS ====================
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Languages:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS \\[3pt]
+\textbf{Frameworks:} & Laravel, Next.js, React, Blade, Alpine.js, Tailwind CSS, Bootstrap \\[3pt]
+\textbf{Databases:} & MySQL, PostgreSQL, PostGIS, MongoDB, Microsoft SQL Server, Appwrite, Firebase Firestore \\[3pt]
+\textbf{Auth \& API:} & REST API design, Laravel Sanctum, Laravel Breeze, NextAuth.js, Iron Session, Google OAuth \\[3pt]
+\textbf{Tools \& Cloud:} & Git, GitHub, Composer, npm, Vite, Vercel, Cloudinary, Vercel Blob, Google Sheets API \\[3pt]
+\textbf{Working Style:} & Independent delivery, async communication, debugging, database modeling, admin dashboards, deployment \\[3pt]
+\textbf{Languages:} & Indonesian (native), English (professional working proficiency for technical reading and writing) \\
+\end{tabularx}
+
+%==================== EDUCATION ====================
+\section{Education}
+\cventry
+  {Bachelor of Mathematics}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Present}
+  {GPA: 3.36 / 4.00 | Focus: Computational Mathematics and Informatics | Thesis work includes improving data warehouse query performance on PostgreSQL and TimescaleDB for large-scale time-series data.}
+
+\end{document}

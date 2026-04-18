@@ -1,0 +1,37 @@
+Huawei Campus Hiring Target Brief
+Prepared for: Hafidz Mulia
+Date: 17 April 2026
+
+Primary target role
+- Software Engineer
+
+Backup target role
+- Project Controller / Technical Project Support
+
+Why this version fits
+- Your strongest proof is software delivery, not telecom operations.
+- Your Mathematics degree still fits the technical and analytical profile for entry-level technology roles.
+- ITS is a positive signal because Huawei had campus hiring visibility at Bursa Karir ITS 46.
+- Mentioning the Huawei / BKI engagement works best as motivation, not as the main qualification.
+
+Main CV themes
+- Final-year Mathematics student at ITS
+- Full-stack software engineering experience
+- Analytical problem-solving and implementation discipline
+- End-to-end project delivery from requirements to deployment
+- English-ready application materials
+- Real systems built for organizations, clients, and research initiatives
+
+Projects emphasized in this folder
+- erapor: reporting platform, role-based dashboards, exports
+- ELKPD: client-facing product delivery and live platform development
+- patahero_api: backend API and authentication
+- keke-pwa: operational workflow software and mobile-first reporting
+
+Claims intentionally avoided
+- Telecom engineering specialization
+- Deep RF / core-network / optical expertise
+- Advanced Linux / network-operations experience without proof
+
+Suggested positioning sentence
+Final-year Mathematics student at Institut Teknologi Sepuluh Nopember (ITS) with hands-on experience in full-stack software development, analytical problem-solving, and end-to-end project delivery. Interested in contributing to Huawei through software engineering and technology-driven operational support roles in a fast-paced, high-impact environment.

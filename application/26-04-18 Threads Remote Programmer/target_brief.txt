@@ -1,0 +1,38 @@
+Threads Remote Programmer Target Brief
+Prepared for: Hafidz Mulia
+Date: 18 April 2026
+
+Source post summary
+- Remote Programmer
+- Web or software development
+- Python, JavaScript, or PHP is a plus
+- Budget listed: $15-$40/hour
+- Application channel: Threads DM
+
+Primary positioning
+- Full-stack web developer for remote programming work
+
+Why this version fits
+- Your strongest evidence is shipped web software, especially PHP and JavaScript projects.
+- The post is informal and broad, so the CV should be practical and easy to scan.
+- You have direct proof for Laravel, PHP, JavaScript, TypeScript, SQL, REST APIs, admin systems, and deployment.
+- You should not overclaim Python if your public proof is mainly PHP and JavaScript.
+
+Main CV themes
+- Remote-ready full-stack programmer
+- Strongest stacks: PHP / Laravel and JavaScript / TypeScript / Next.js
+- Real production systems, not tutorial-only work
+- End-to-end delivery: requirements, database design, auth, APIs, UI, deployment
+- Comfortable working independently and asynchronously
+
+Projects emphasized in this folder
+- sina
+- erapor
+- hisurabaya
+- patahero_api
+- SIPerpustakaan
+
+Claims intentionally avoided
+- Python-heavy backend experience without direct proof
+- Enterprise team scale claims without evidence
+- Senior-level architecture claims
