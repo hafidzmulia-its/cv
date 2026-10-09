@@ -1,0 +1,7 @@
+Your project is very close to work I already do. I built e-kos with Next.js 16, React 19, TypeScript, Supabase, PostgreSQL/PostGIS and NextAuth, including CRUD workflows, relational/spatial queries, authentication, map-based search and Vercel deployment. I also maintain multiple Next.js production apps with different data backends and third-party integrations.
+
+My approach would be to first reproduce the current issues, map the critical flows and data boundaries, inspect the Next.js/Supabase/Prisma setup, then fix the highest-risk reliability problems in small verifiable changes. I can commit 10-20 hours/week and start immediately.
+
+Relevant repo: https://github.com/hafidzmulia-its/e-kos
+Portfolio: https://hafmul.site
+Suggested rate: $20/hour.
