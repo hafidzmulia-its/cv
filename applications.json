@@ -1,5 +1,101 @@
 {
   "version": 1,
   "updated_at": "2026-10-09",
-  "applications": []
+  "applications": [
+    {
+      "date": "2026-10-09",
+      "company": "Upwork Client (US)",
+      "role": "Internal Tools & Integrations Developer",
+      "source_url": "https://www.upwork.com/jobs/~022107916182627861656",
+      "model": "hourly/as-needed",
+      "fit_score": 92,
+      "cv_path": "application/26-10-09 01-upwork-internal-tools-laravel/cv.tex",
+      "apply_method": "Upwork",
+      "status": "ready_manual_connects",
+      "applied_at": null,
+      "notes": "$10-25/hr; 26 Connects; excellent client history; strong Laravel/internal tools fit; prefers EST. Proposal contains a contradictory AI-detection keyword in JD, so manual review required."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Galoras",
+      "role": "Technical Operations Lead - Supabase / React / Netlify",
+      "source_url": "https://www.upwork.com/jobs/~022108282648991569856",
+      "model": "hourly/part-time 10h week",
+      "fit_score": 83,
+      "cv_path": "application/26-10-09 02-upwork-galoras-tech-ops/cv.tex",
+      "apply_method": "Upwork",
+      "status": "ready_manual_connects",
+      "applied_at": null,
+      "notes": "$50-60/hr; 13 Connects; paid 4h trial; strong React/Postgres/Supabase fit. Honest gaps: Supabase Edge Functions, Netlify, Stripe production-live."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Upwork Client (US)",
+      "role": "Private Car Service Booking System Developer",
+      "source_url": "https://www.upwork.com/jobs/~022108335661433129211",
+      "model": "hourly/part-time",
+      "fit_score": 88,
+      "cv_path": "application/26-10-09 03-upwork-private-car-booking/cv.tex",
+      "apply_method": "Upwork",
+      "status": "ready_manual_connects",
+      "applied_at": null,
+      "notes": "$15-35/hr; 14 Connects; booking/customer/driver/scheduling/payment workflow."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Upwork Client (Pakistan)",
+      "role": "Next.js Supabase Prisma Website Support",
+      "source_url": "https://www.upwork.com/jobs/~022108109576271719961",
+      "model": "hourly/part-time",
+      "fit_score": 93,
+      "cv_path": "application/26-10-09 04-upwork-next-supabase-support/cv.tex",
+      "apply_method": "Upwork",
+      "status": "ready_manual_connects",
+      "applied_at": null,
+      "notes": "$15-55/hr; 13 Connects; strongest direct stack match via e-kos; Prisma is a learnable gap."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Sachamama",
+      "role": "Laravel Developer with AI - Conversational Agent Engine",
+      "source_url": "https://www.upwork.com/jobs/~022108324985570531264",
+      "model": "fixed project",
+      "fit_score": 82,
+      "cv_path": "application/26-10-09 05-upwork-sachamama-laravel-ai/cv.tex",
+      "apply_method": "Upwork",
+      "status": "ready_manual_connects",
+      "applied_at": null,
+      "notes": "$650 fixed; 26 Connects; Laravel + AI/API strong match; Filament 5 is a framework-specific gap."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Santri Gresik Digital Agency",
+      "role": "Backend Engineer / Web Developer Collaborator",
+      "source_url": "https://santrigresik.id/karier",
+      "model": "remote collaborator/part-time",
+      "fit_score": 95,
+      "cv_path": "application/26-10-09 06-santri-gresik-backend/cv.tex",
+      "apply_method": "Website/WhatsApp",
+      "status": "ready_manual_form",
+      "applied_at": null,
+      "contact": {
+        "name": "Muhammad Mustafid Ibnu Khozin",
+        "linkedin": "https://id.linkedin.com/in/binkhozin"
+      },
+      "notes": "Very strong Laravel + education/internal-system fit. Public application page offers WhatsApp/email, but exact email was not safely recoverable; manual apply."
+    },
+    {
+      "date": "2026-10-09",
+      "company": "Hillir Digital",
+      "role": "Fullstack Developer",
+      "source_url": "https://glints.com/id/en/opportunities/jobs/fullstack-developer/cb08e37b-4fc7-4cac-ba2d-732151aa6220",
+      "model": "remote contract",
+      "fit_score": 86,
+      "cv_path": "application/26-10-09 07-hillir-fullstack/cv.tex",
+      "apply_method": "Glints",
+      "status": "ready_manual_form",
+      "applied_at": null,
+      "notes": "Rp5-6.5m/month listing; React/Node/PHP/MySQL/business logic fit; Prisma gap. Workload not explicit, so confirm compatibility with 10-20h/week."
+    }
+  ]
 }
