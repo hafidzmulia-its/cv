@@ -1,0 +1,13 @@
+Cover note:
+I am a full-stack engineer focused on production web systems, with hands-on React/TypeScript and PostgreSQL experience. I built e-kos with Next.js, Supabase, PostgreSQL/PostGIS, authentication, CRUD workflows and production deployment, and I regularly own systems from data model through deployment and verification. The 10-hour/week scope fits my current freelance availability, and I can start immediately.
+
+Screening answers:
+1) I built and deployed e-kos using Next.js, Supabase and PostgreSQL/PostGIS. I owned the application/data model, authentication integration, CRUD workflows, spatial queries, deployment and production debugging. I also completed PostgreSQL/TimescaleDB research on 50M+ rows, which strengthened my approach to query behavior and safe data changes.
+
+2) I have not yet deployed Supabase Edge Functions in production. My production deployments have used Next.js APIs/Vercel and other backend services. I would keep every function source-controlled in Git, deploy through a documented environment-specific process, and verify the deployed version against the repository and acceptance criteria after each release.
+
+3) Before a production SQL change I would confirm the exact affected rows, reproduce/validate the issue, take or verify a recoverable backup, prepare a reversible statement/transaction, and get sign-off. During execution I would constrain the change, inspect affected-row counts and logs, and avoid unrelated writes. Afterward I would run validation queries, verify application behavior, document the change, and keep the rollback path ready until the result is confirmed.
+
+4) I have not personally taken Stripe from test mode to live yet. I have implemented API/auth/integration-heavy systems, so I understand the need to verify secrets, webhook endpoints, idempotency, environment separation and end-to-end payment flows, but I would not claim production Stripe experience I do not have.
+
+5) Yes, I can commit 10 hours/week from late October through 31 December. Self-rating: React/TypeScript 4/5; Postgres/RLS 3/5; Netlify 2/5; GitHub 4/5; Stripe 2/5. Relevant project: https://github.com/hafidzmulia-its/e-kos
