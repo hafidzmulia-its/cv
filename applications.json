@@ -76,13 +76,13 @@
       "fit_score": 95,
       "cv_path": "application/26-10-09 06-santri-gresik-backend/cv.tex",
       "apply_method": "Website/WhatsApp",
-      "status": "ready_manual_form",
-      "applied_at": null,
+      "status": "selection_test_submitted",
+      "applied_at": "2026-10-09",
       "contact": {
         "name": "Muhammad Mustafid Ibnu Khozin",
         "linkedin": "https://id.linkedin.com/in/binkhozin"
       },
-      "notes": "Very strong Laravel + education/internal-system fit. Public application page offers WhatsApp/email, but exact email was not safely recoverable; manual apply."
+      "notes": "Very strong Laravel + education/internal-system fit. Public application page offers WhatsApp/email, but exact email was not safely recoverable; manual apply. | User confirmed application/contact completed and screen-record selection step completed."
     },
     {
       "date": "2026-10-09",
@@ -107,9 +107,9 @@
       "fit_score": 93,
       "cv_path": "local run package: 01-remotenex-freelance-fullstack/cv.pdf",
       "apply_method": "web form",
-      "status": "ready_manual_form",
-      "applied_at": null,
-      "notes": "$40-60/hr. Repeat project bench; no guaranteed hours. Strong Laravel/Next fit; deeper Vue/Inertia is a gap."
+      "status": "applied_manual",
+      "applied_at": "2026-10-09",
+      "notes": "$40-60/hr. Repeat project bench; no guaranteed hours. Strong Laravel/Next fit; deeper Vue/Inertia is a gap. | User confirmed application submitted manually."
     },
     {
       "date": "2026-10-09",
