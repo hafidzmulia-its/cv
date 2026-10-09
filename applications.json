@@ -121,9 +121,9 @@
       "fit_score": 90,
       "cv_path": "local run package: 02-codenzia-laravel-tall/cv.pdf",
       "apply_method": "web form",
-      "status": "ready_manual_form",
-      "applied_at": null,
-      "notes": "Laravel/Filament alignment with SILOG. Stretch: 3-5 years heavy Laravel and deep Livewire/Filament."
+      "status": "applied_manual",
+      "applied_at": "2026-10-09",
+      "notes": "Laravel/Filament alignment with SILOG. Stretch: 3-5 years heavy Laravel and deep Livewire/Filament. | User confirmed application submitted manually."
     },
     {
       "date": "2026-10-09",
