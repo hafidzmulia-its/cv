@@ -1,0 +1,8 @@
+I am a Laravel/full-stack developer with hands-on API, RBAC, admin-system and AI-integration experience. I have built Laravel REST backends with Sanctum/MySQL and production platforms that integrate conversational AI APIs, persistent data and admin workflows. I am comfortable working inside an existing architecture and reviewing AI-assisted changes rather than accepting generated code blindly.
+
+Relevant work includes patahero_api (Laravel 12 + Sanctum + MySQL) and AI-assisted education/health platforms using Next.js, Appwrite and Coze API. I would approach your deliverable by mapping the Agente module contracts first, implementing the provider abstraction and knowledge/admin layers in small tested units, then validating the intent/language behavior against the supplied evaluation set before PR handoff.
+
+I can start immediately and commit 10-20 hours/week. I have not used Filament 5 in a production project yet, so I would treat that as a framework-specific learning gap while bringing strong Laravel fundamentals.
+
+GitHub: https://github.com/hafidzmulia-its
+Portfolio: https://hafmul.site
