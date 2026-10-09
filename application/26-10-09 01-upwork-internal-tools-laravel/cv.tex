@@ -1,0 +1,73 @@
+%-------------------------
+% Tailored CV - generated 2026-10-09
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode cv.tex
+%-------------------------
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.45in,bottom=0.45in,left=0.55in,right=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\definecolor{accent}{HTML}{0F4C81}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\newcommand{\cvname}[1]{{\centering\LARGE\bfseries #1\par\vspace{1pt}}}
+\newcommand{\cvtitle}[1]{{\centering\normalsize\color{accent} #1\par\vspace{2pt}}}
+\newcommand{\cvcontact}[1]{{\centering\small #1\par\vspace{4pt}}}
+\newcommand{\cventry}[4]{\noindent\textbf{#1} \hfill \textit{#3} \\\textit{#2}\ifx&#4& \else \\ {\small #4} \fi\vspace{4pt}}
+\newcommand{\cvproject}[5]{\noindent\textbf{#1} \hfill \textit{#2} \\\textit{\small #3} \\{\small #4}\ifx&#5& \else \par\noindent{\small \href{#5}{Repository / Demo}} \fi\vspace{4pt}}
+\begin{document}
+\cvname{Hafidz Mulia}
+\cvtitle{Backend / Full-Stack Engineer - Laravel, APIs \& Internal Tools}
+\cvcontact{\href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad Surabaya, Indonesia \quad\textbar\quad \href{https://hafmul.site}{hafmul.site} \\
+\href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}}
+
+\section{Professional Summary}
+Full-stack engineer with 10+ deployed web applications and internal tools across operations, education, health-tech, and reporting. Strong in Laravel/PHP, REST APIs, MySQL/PostgreSQL, authentication, RBAC, debugging, and translating business workflows into maintainable systems. Currently also supporting system development work for PT Semen Indonesia Logistik. Comfortable owning tasks from investigation and schema/API design through implementation, deployment, and documentation.
+
+\section{Professional Experience}
+\cventry
+  {Part-time Software Engineer}
+  {NechCode --- Digital Solutions Agency}
+  {Feb 2026 -- Present}
+  {Partner directly with MSMEs, educational institutions, and healthcare-related clients to translate operational problems into functional digital platforms. Handle end-to-end delivery from requirement gathering and database/API design to frontend implementation, deployment, and iteration.}
+
+\cventry
+  {Programming Teacher}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming fundamentals and web development to junior and teen learners, strengthening technical communication, debugging, and mentoring skills.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Jan 2025 -- Feb 2025}
+  {Delivered a Laravel-based attendance management system from requirements and database design through implementation and user acceptance testing.}
+
+\section{Selected Projects}
+\cvproject{patahero\_api --- REST API Backend}{2026}{Laravel 12, PHP 8.2, MySQL, Sanctum, PHPUnit}{Built an API-first backend with token authentication, structured resource endpoints, profile management, and image upload handling.}{https://github.com/hafidzmulia-its/patahero_api}
+\cvproject{SIPerpustakaan --- Internal Management System}{2025}{Laravel 12, PHP, MySQL, Blade, Tailwind CSS}{Built workflow-heavy CRUD for books, students, lending, overdue fines, analytics, and role-based operations.}{https://github.com/hafidzmulia-its/SIPerpustakaan}
+\cvproject{erapor --- Automated Reporting System}{2025}{Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}{Built role-based dashboards and reporting automation for 70+ committees, including centralized data access and multi-format exports.}{https://github.com/hafidzmulia-its/erapor}
+\cvproject{keke-pwa --- Operational Reporting PWA}{2026}{Next.js, TypeScript, Firebase, FCM, Cloudinary}{Built a mobile-first incident reporting workflow with RBAC, status transitions, notifications, comments, and media handling.}{}
+
+\section{Education}
+\cventry
+  {Bachelor of Mathematics}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {GPA: 3.40 / 4.00. Thesis: PostgreSQL/TimescaleDB query optimization using a PROADAPT-based memory-aware partitioning mechanism on 50M+ rows of time-series data.}
+
+\section{Technical Skills}
+PHP, Laravel, JavaScript/TypeScript, REST APIs, MySQL, PostgreSQL, Git/GitHub, authentication/RBAC, debugging, database modeling, API integration, deployment, Linux fundamentals
+
+\section{Languages}
+Indonesian: Native \quad\textbar\quad English: Professional working proficiency for technical reading, writing, and remote collaboration.
+\end{document}
