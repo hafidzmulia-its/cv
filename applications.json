@@ -212,6 +212,20 @@
         "linkedin": "https://id.linkedin.com/in/athron98"
       },
       "notes": "IDR 4-7m/month. Laravel/API/MySQL/Postgres strong match, Vue secondary; confirm <=20h/week and rate applies to part-time before applying. Founder independently visible on LinkedIn. Form produces PDF with applicant ID/archive password; do not disclose sensitive credentials. Not submitted."
+    },
+    {
+      "date": "2026-10-10",
+      "company": "Digital 368",
+      "role": "Freelance Full-Stack Developer - Python & JavaScript",
+      "source_url": "https://digital-368.workable.com/jobs/6169187",
+      "source_type": "company ATS (Workable)",
+      "model": "freelance; user stated 10-20h/week",
+      "fit_score": null,
+      "cv_path": "Hafidz_Mulia_CV_Digital368.pdf (as shown in application confirmation email)",
+      "apply_method": "Workable form",
+      "status": "applied_manual",
+      "applied_at": "2026-10-10",
+      "notes": "Recovered from Gmail application confirmation dated 2026-10-10 14:54 UTC. User specified IDR 175,000/hour, available ASAP for 10-20h/week. No rejection or acceptance inferred."
     }
   ]
 }
