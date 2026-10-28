@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-29",
   "applications": [
     {
       "date": "2026-10-09",
@@ -194,6 +194,24 @@
       "status": "ready_manual_form",
       "applied_at": null,
       "notes": "Rp4.5-6m/month. Excellent work-model fit but meaningful Odoo/Python gap. Listing appears ~2 weeks old; low priority stretch."
+    },
+    {
+      "date": "2026-10-29",
+      "company": "Athronsoft IT Solution (BrokenLight Hub)",
+      "role": "Full-Stack Web Developer (Vue & Laravel)",
+      "source_url": "https://brokenlight.biz.id/id/involve/careers/full-stack-web-developer",
+      "source_type": "company career page",
+      "model": "remote contract/freelance, flexible, 3 months; weekly hours unspecified",
+      "fit_score": 90,
+      "cv_path": "local: application/26-10-29 Athronsoft IT Solution - Full-Stack Web Developer/cv.tex and cv.pdf",
+      "apply_method": "company web form then PDF instructions",
+      "status": "needs_hafidz",
+      "applied_at": null,
+      "contact": {
+        "name": "Gilang A.",
+        "linkedin": "https://id.linkedin.com/in/athron98"
+      },
+      "notes": "IDR 4-7m/month. Laravel/API/MySQL/Postgres strong match, Vue secondary; confirm <=20h/week and rate applies to part-time before applying. Founder independently visible on LinkedIn. Form produces PDF with applicant ID/archive password; do not disclose sensitive credentials. Not submitted."
     }
   ]
 }
