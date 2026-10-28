@@ -1,0 +1,188 @@
+%-------------------------
+% CV: General Professional Profile
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "CV_Hafidz_Mulia_General_2026.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{GitHub}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Business Analysis \textbar\ Digital Solutions \textbar\ People Development}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Professional Summary}
+Mathematics graduate from Institut Teknologi Sepuluh Nopember (ITS) with experience in system development, digital product delivery, teaching, and organizational leadership. I work with stakeholders to understand operational problems, clarify requirements, and turn them into practical workflows and tools. Alongside technical delivery, I have coordinated teams, mentored learners, and contributed to process improvements in education and student organizations.
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\cventry
+  {System Development (Full-time)}
+  {PT SILOG}
+  {Sep 2026 -- Present}
+  {}
+
+\cventry
+  {Founder \& Software Developer (Part-time)}
+  {NechCode --- Digital Solutions Agency}
+  {Feb 2026 -- Present}
+  {Work with education, health-support, and local-business stakeholders to clarify needs and deliver digital solutions. Coordinate requirements, workflow design, implementation, deployment, and iteration across projects.}
+
+\cventry
+  {Programming Teacher (Part-time)}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming and computational thinking to children and teens. Adapt lessons to different learning needs and guide students through debugging and hands-on projects.}
+
+\cventry
+  {Coordinator, Programming \& Visual Computing Laboratory Assistants}
+  {ITS Mathematics Department}
+  {Aug 2024 -- Dec 2025}
+  {Coordinated practicum activities and laboratory assistants; supported 100+ junior students in applying programming concepts to practical problems.}
+
+\cventry
+  {Full-Stack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Jan 2025 -- Feb 2025}
+  {Gathered requirements from school administrators and delivered a digital attendance workflow, from system design to user acceptance testing.}
+
+%==================== EDUCATION ====================
+\section{Education}
+\cventry
+  {Bachelor of Mathematics}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {GPA: 3.40 / 4.00. Undergraduate research on memory-aware data partitioning in PostgreSQL/TimescaleDB for time-series datasets exceeding 50 million rows.}
+
+%==================== LEADERSHIP ====================
+\section{Leadership \& People Development}
+
+\cventry
+  {1st Vice Head, Sentrum Katalis}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Dec 2025}
+  {Supported internal governance and coordination in a 150+ member organization. Helped improve administrative workflows and internal reporting through digital tools.}
+
+\cventry
+  {Leader, Mathematics 2022 Cohort}
+  {Institut Teknologi Sepuluh Nopember}
+  {May 2023 -- Present}
+  {Facilitate communication and coordination among 150+ peers, supporting academic activities and collaboration.}
+
+\cventry
+  {Head of Regeneration Department}
+  {LKKI Matematika ITS}
+  {Jan 2024 -- Dec 2024}
+  {Planned member-development and engagement activities, with a focus on participation, team continuity, and individual growth.}
+
+\cventry
+  {Workshop Facilitator \& Technical Speaker}
+  {University Organizations}
+  {Jul 2024 -- Nov 2025}
+  {Delivered sessions on web development, human resource management, and team leadership for 100+ participants across campus events.}
+
+%==================== PROJECTS ====================
+\section{Selected Projects}
+
+\cvproject
+  {eRapor --- Automated Reporting Platform}
+  {2025}
+  {Internal Operations \textbar\ Next.js, TypeScript, MongoDB}
+  {Built role-based dashboards and automated PDF/Excel reporting for a student organization, reducing repetitive manual administration and centralizing access to information.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {Portal TPQ --- Education Management Portal}
+  {2026}
+  {Education Operations \textbar\ Laravel, MySQL}
+  {Digitized student progress tracking, teacher scheduling, and reporting workflows in a unified administrative platform.}
+  {}
+
+\cvproject
+  {SIDEDIKK --- Health Education \& Screening Platforms}
+  {2026}
+  {User-Centered Products \textbar\ Next.js, Laravel, PWA}
+  {Built mobile-first screening and education interfaces that present complex information through accessible user journeys.}
+  {}
+
+%==================== SKILLS ====================
+\section{Core Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Business \& Delivery:} & Requirement gathering, stakeholder communication, workflow analysis, process improvement, project scoping, user acceptance testing \\[3pt]
+\textbf{Leadership \& People:} & Team coordination, mentoring, facilitation, teaching, internal governance, organizational communication \\[3pt]
+\textbf{Technology \& Data:} & SQL, Python, PostgreSQL, MySQL, SQL Server, Next.js, Laravel, REST APIs, dashboards and reporting \\[3pt]
+\textbf{Languages:} & Indonesian (native); English (professional and technical reading/writing) \\
+\end{tabularx}
+
+\end{document}
