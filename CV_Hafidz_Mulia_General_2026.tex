@@ -35,7 +35,7 @@
   {}
   [\titlerule]
 
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\section}{0pt}{13pt}{7pt}
 
 %----------- CUSTOM COMMANDS -----------
 \newcommand{\cvname}[1]{%
@@ -47,14 +47,14 @@
 }
 
 \newcommand{\cvcontact}[1]{%
-  {\centering\small #1\par\vspace{6pt}}%
+  {\centering\small #1\par\vspace{10pt}}%
 }
 
 \newcommand{\cventry}[4]{%
   \noindent\textbf{#1} \hfill \textit{#3} \\
   \textit{#2}
   \ifx&#4& \else \\ \small #4 \fi
-  \vspace{6pt}
+  \vspace{10pt}
 }
 
 \newcommand{\cvproject}[5]{%
@@ -62,7 +62,7 @@
   \textit{\small #3} \\
   {\small #4}
   \ifx&#5& \else \par\noindent{\small \href{#5}{GitHub}} \fi
-  \vspace{6pt}
+  \vspace{10pt}
 }
 
 %----------- DOCUMENT START -----------
@@ -126,6 +126,7 @@ Mathematics graduate from Institut Teknologi Sepuluh Nopember (ITS) with experie
   {GPA: 3.40 / 4.00. Undergraduate research on memory-aware data partitioning in PostgreSQL/TimescaleDB for time-series datasets exceeding 50 million rows.}
 
 %==================== LEADERSHIP ====================
+\newpage
 \section{Leadership \& People Development}
 
 \cventry
