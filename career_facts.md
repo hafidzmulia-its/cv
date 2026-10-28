@@ -4,12 +4,13 @@ This file records user-confirmed facts for future CV tailoring. Treat missing de
 
 ## PT SILOG
 
-- Company: PT SILOG
-- Work area: System Development (the formal job title is not yet confirmed)
+- Company: PT Semen Indonesia Logistik (SILOG)
+- Role label previously used in application CV: Web Application Developer / System Development (formal HR title not independently verified)
 - Employment type: Full-time
 - Start date: September 2026
 - End date: Ongoing as of October 2026 (confirm before reusing in a later application)
-- Responsibilities, projects, and quantified results: Not yet supplied
+- Work described in earlier application CVs: develop and maintain Laravel/Filament-based internal and operational web applications; troubleshoot bugs and issues in production; support team deployment, cloud, and DevOps workflows.
+- Project names, quantified outcomes, and the scope of infrastructure ownership: Not yet verified. Avoid adding these as claims.
 
 ## Management trainee application note (October 2026)
 
