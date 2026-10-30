@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-10-31",
   "applications": [
     {
       "date": "2026-10-09",
@@ -226,6 +226,20 @@
       "status": "applied_manual",
       "applied_at": "2026-10-10",
       "notes": "Recovered from Gmail application confirmation dated 2026-10-10 14:54 UTC. User specified IDR 175,000/hour, available ASAP for 10-20h/week. No rejection or acceptance inferred."
+    },
+    {
+      "date": "2026-10-31",
+      "company": "White Code Labs",
+      "role": "Frontend Developer – React / Next.js – 3+ Years Experience",
+      "source_url": "https://id.jobstreet.com/job/95152445",
+      "source_type": "JobStreet / company job listing",
+      "model": "remote, part-time; weekly hours unspecified",
+      "fit_score": 79,
+      "cv_path": "local: application/26-10-31 White Code Labs - Frontend Developer React Nextjs/cv.tex and cv.pdf",
+      "apply_method": "JobStreet Quick Apply",
+      "status": "needs_hafidz",
+      "applied_at": null,
+      "notes": "IDR 3.0–3.5m/month. Core React/Next.js/TypeScript, responsive UI, deployment and production debugging fit. Explicit 3+ years professional frontend and hands-on Socket.IO requirements are gaps. Confirm <=20h/week and acceptable experience level before submitting; manual JobStreet only. Public GitHub links only; live demo inaccessible during verification."
     }
   ]
 }
