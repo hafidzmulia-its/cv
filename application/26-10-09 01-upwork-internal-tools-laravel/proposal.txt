@@ -1,0 +1,9 @@
+I build and maintain workflow-heavy web systems rather than only greenfield landing pages. My recent work includes Laravel REST APIs, internal reporting/admin systems, RBAC, relational database design, third-party integrations, and production debugging across client and organizational projects. I can commit 10-20 hours/week and start immediately.
+
+Relevant example: I built a Laravel API backend with Sanctum authentication, structured resource endpoints, profile/media handling, and MySQL, and I have also delivered internal management/reporting systems where I owned requirements, database design, implementation, testing, and deployment. I am comfortable reading existing code, tracing data issues, and documenting fixes clearly.
+
+GitHub: https://github.com/hafidzmulia-its
+Portfolio: https://hafmul.site
+Suggested rate: $15/hour (within your posted range).
+
+Note for Hafidz: the JD contains a contradictory AI-detection keyword instruction. I intentionally did not insert a false 'not AI' claim; review that line manually before submitting.

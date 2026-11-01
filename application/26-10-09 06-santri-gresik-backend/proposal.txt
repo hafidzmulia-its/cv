@@ -1,0 +1,6 @@
+Assalamu'alaikum, saya Hafidz Mulia, full-stack developer yang banyak mengerjakan Laravel dan sistem operasional/pendidikan. Saya telah membangun 10+ aplikasi, termasuk Portal TPQ, sistem perpustakaan, student management, reporting system, serta REST API Laravel dengan MySQL dan authentication/RBAC. Saat ini saya juga terlibat dalam system development di PT Semen Indonesia Logistik dan menjalankan project delivery melalui NechCode.
+
+Saya tertarik bergabung sebagai kolaborator Backend Engineer / Web Developer karena scope Santri Gresik sangat dekat dengan pengalaman saya: sistem internal, education workflow, Laravel, database, API, deployment, dan maintenance. Saya available sekitar 10-20 jam/minggu dan bisa mulai secepatnya.
+
+Portfolio: https://hafmul.site
+GitHub: https://github.com/hafidzmulia-its

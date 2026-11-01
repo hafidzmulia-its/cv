@@ -1,0 +1,53 @@
+%-------------------------
+% Tailored CV - generated 2026-10-09
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode cv.tex
+%-------------------------
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.45in,bottom=0.45in,left=0.55in,right=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\definecolor{accent}{HTML}{0F4C81}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\newcommand{\cvname}[1]{{\centering\LARGE\bfseries #1\par\vspace{1pt}}}
+\newcommand{\cvtitle}[1]{{\centering\normalsize\color{accent} #1\par\vspace{2pt}}}
+\newcommand{\cvcontact}[1]{{\centering\small #1\par\vspace{4pt}}}
+\newcommand{\cventry}[4]{\noindent\textbf{#1} \hfill \textit{#3} \\\textit{#2}\ifx&#4& \else \\ {\small #4} \fi\vspace{4pt}}
+\newcommand{\cvproject}[5]{\noindent\textbf{#1} \hfill \textit{#2} \\\textit{\small #3} \\{\small #4}\ifx&#5& \else \par\noindent{\small \href{#5}{Repository / Demo}} \fi\vspace{4pt}}
+\begin{document}
+\cvname{Hafidz Mulia}
+\cvtitle{Full-Stack Developer - Next.js, TypeScript, Supabase \& PostgreSQL}
+\cvcontact{\href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad Surabaya, Indonesia \quad\textbar\quad \href{https://hafmul.site}{hafmul.site} \\
+\href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}}
+
+\section{Professional Summary}
+Full-stack engineer with hands-on production experience in Next.js, React, TypeScript, Supabase, PostgreSQL/PostGIS, authentication, API-backed workflows, and Vercel deployment. Built and maintained multiple data-heavy applications, dashboards, PWAs, and internal tools, with a focus on debugging, reliability, and maintainable data flows. Currently also supporting system development work for PT Semen Indonesia Logistik.
+
+\section{Professional Experience}
+\cventry{Part-time Software Engineer}{NechCode --- Digital Solutions Agency}{Feb 2026 -- Present}{Partner directly with MSMEs, educational institutions, and healthcare-related clients to translate operational problems into functional digital platforms. Handle end-to-end delivery from requirement gathering and database/API design to frontend implementation, deployment, and iteration.}
+\cventry{Programming Teacher}{Timedoor Academy}{Jan 2025 -- Present}{Teach programming fundamentals and web development to junior and teen learners, strengthening technical communication, debugging, and mentoring skills.}
+\cventry{Fullstack Developer Intern}{SMA IT Al Uswah Surabaya}{Jan 2025 -- Feb 2025}{Delivered a Laravel-based attendance management system from requirements and database design through implementation and user acceptance testing.}
+
+\section{Selected Projects}
+\cvproject{e-kos --- Web GIS Platform}{2026}{Next.js 16, React 19, TypeScript, Supabase, PostgreSQL/PostGIS, NextAuth}{Built and deployed a production web GIS with relational/spatial data, authentication, CRUD listing flows, image upload, filters, and interactive maps.}{https://github.com/hafidzmulia-its/e-kos}
+\cvproject{erapor --- Automated Reporting System}{2025}{Next.js, React, TypeScript, MongoDB, NextAuth}{Built and deployed a production reporting platform with RBAC, dashboards, validation, exports, and maintainable API-backed workflows.}{https://github.com/hafidzmulia-its/erapor}
+\cvproject{soulmom-web --- Screening Platform}{2026}{Next.js 16, TypeScript, Firebase Auth, Firestore, Zod}{Implemented form-heavy workflows, validation, authentication, data persistence, risk classification, and Google Sheets integration.}{}
+\cvproject{keke-pwa --- Operational Reporting PWA}{2026}{Next.js 16, React 19, TypeScript, Firebase, FCM}{Delivered a mobile-first PWA with role-based access, notifications, comments, status workflows, and production deployment.}{}
+
+\section{Education}
+\cventry{Bachelor of Mathematics}{Institut Teknologi Sepuluh Nopember (ITS), Surabaya}{2022 -- 2026}{GPA: 3.40 / 4.00. Thesis: PostgreSQL/TimescaleDB query optimization using a PROADAPT-based memory-aware partitioning mechanism on 50M+ rows of time-series data.}
+\section{Technical Skills}
+Next.js, React, TypeScript, Supabase, PostgreSQL/PostGIS, REST APIs, NextAuth, Git/GitHub, Vercel, debugging, performance-minded development, database modeling
+\section{Languages}
+Indonesian: Native \quad\textbar\quad English: Professional working proficiency for technical reading, writing, and remote collaboration.
+\end{document}
