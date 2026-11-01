@@ -1,0 +1,155 @@
+%-------------------------
+% CV Target: IT Software Engineer - PT Avia Avian Tbk
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "Hafidz_Mulia_CV.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81} % Avian Green/Blue alternative
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Repositori / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{IT Software Engineer | Spesialis Laravel \& MySQL}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Ringkasan Profesional}
+\textit{Software Engineer} dengan \textbf{pengalaman lebih dari 1 tahun} dalam pengembangan sistem operasional dan digitalisasi proses bisnis. Lulusan \textbf{S1 Matematika} yang memadukan \textbf{analisa yang kuat} dengan keahlian teknis secara mendalam pada \textbf{bahasa pemrograman Laravel, MySQL, dan optimasi Query}. Terlatih menangani proyek secara \textit{end-to-end}, mulai dari merancang arsitektur basis data hingga membangun fungsionalitas operasional yang menekan waktu kerja administratif. Aktif sebagai pengajar pemrograman (IT Educator) yang membuktikan \textbf{kemampuan komunikasi yang baik} dalam menerjemahkan bahasa teknis kepada tim maupun klien. Berdomisili di \textbf{Surabaya}.
+
+%==================== EXPERIENCE ====================
+\section{Pengalaman Profesional}
+
+\cventry
+  {Freelance Software Engineer}
+  {NechCode}
+  {Feb 2026 -- Agu 2026 (7 Bulan)}
+  {Memberikan solusi rekayasa perangkat lunak (\textit{software engineering}) untuk mendigitalisasi operasional klien UMKM dan institusi pendidikan. Menggunakan \textbf{analisa yang kuat} untuk mendiagnosis masalah operasional klien, lalu mengeksekusinya menggunakan \textbf{Laravel} dan \textbf{MySQL}. Mengoptimalkan penulisan \textbf{Query} database untuk memastikan aplikasi internal berjalan efisien dan stabil.}
+
+\cventry
+  {Guru Pemrograman (IT Educator)}
+  {Timedoor Academy}
+  {Jan 2025 -- Agu 2026 (1 Tahun 7 Bulan)}
+  {Menyederhanakan konsep algoritma dan ilmu komputer (seperti \textit{logic}, Python, JS) kepada puluhan siswa junior. Melalui peran ini, saya mengembangkan \textbf{kemampuan komunikasi yang baik} yang terbukti efektif saat saya harus berkolaborasi, mendiskusikan struktur kode, atau melakukan \textit{requirement gathering} bersama pengguna non-teknis.}
+
+\cventry
+  {Ketua Divisi Digitalisasi \& IT Project Manager}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Des 2025 (11 Bulan)}
+  {Mengidentifikasi inefisiensi administratif dari 150+ anggota tim dan merancang sistem pelaporan digital ("erapor"). Menggunakan \textbf{kemampuan komunikasi yang baik} untuk menyelaraskan kebutuhan panitia, menghasilkan sistem yang memangkas beban waktu operasional hingga 60\%.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Mei 2025}
+  {Menganalisa kesulitan tata usaha sekolah dan merancang sistem manajemen presensi digital berbasis \textbf{Laravel}. Menangani langsung struktur basis data \textbf{MySQL}, menjamin lalu lintas dan keamanan pencatatan data harian sekolah.}
+
+%==================== EDUCATION ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika (Fokus: Matematika Komputasi \& Informatika)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {Agt 2022 -- Agu 2026}
+  {IPK: 3.40 / 4.00 | Memiliki \textbf{analisa yang kuat} dalam memecahkan masalah komputasi masif. Skripsi berfokus pada teknik optimasi \textbf{Query} tingkat lanjut (Mekanisme Partisi Memory-Aware PROADAPT) pada basis data relasional untuk memproses performa pembacaan data hingga lebih dari 50 juta baris.}
+
+%==================== PROJECTS ====================
+\section{Proyek Operasional Terpilih}
+
+\cvproject
+  {Portal TPQ --- Sistem Manajemen Operasional Edukasi}
+  {2026}
+  {Software Engineer | \textbf{Laravel} 12, \textbf{MySQL}, Tailwind CSS}
+  {Sistem operasional yang dibangun khusus untuk merampingkan hambatan birokrasi institusi pendidikan. Merancang relasi \textbf{MySQL} yang efisien untuk mencatat pencapaian siswa, jadwal guru, dan menghasilkan laporan operasional terpusat.}
+  {https://tpqnh.my.id}
+
+\cvproject
+  {sidedikk --- Aplikasi \& Dashboard Internal}
+  {2026}
+  {Software Engineer | \textbf{Laravel} 12, \textbf{MySQL}, Blade}
+  {Dashboard pusat untuk mengelola data pengguna dan operasional harian kantor. Dilengkapi penulisan \textbf{Query} yang efisien untuk memfilter dan menampilkan riwayat data administratif agar tetap rapi, aman, dan mudah diakses oleh staf non-teknis.}
+  {https://github.com/hafidzmulia-its/sidedikk}
+
+\cvproject
+  {HISurabaya --- Platform Pencarian Spasial Web GIS}
+  {2025}
+  {Software Engineer | \textbf{Laravel} 12, \textbf{SQL/Query}, Leaflet, Turf.js}
+  {Aplikasi informasi berbasis geografis yang memadukan \textbf{Laravel} dengan pengolahan titik koordinat. Mengandalkan \textbf{analisa yang kuat} untuk menyusun \textbf{Query} pencarian spasial agar sistem mampu menyortir lokasi berdasarkan radius dan rute perjalanan pengguna.}
+  {https://github.com/hafidzmulia-its/hisurabaya}
+
+%==================== SKILLS ====================
+\section{Keahlian Teknis \& Kompetensi}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Kualifikasi Utama:} & \textbf{Analisa yang Kuat}, \textbf{Kemampuan Komunikasi yang Baik}, \textit{Problem Solving} \\[3pt]
+\textbf{Bahasa \& Framework:} & \textbf{Laravel}, \textbf{MySQL}, \textbf{Query Optimization}, PHP, Next.js, Python, JavaScript \\[3pt]
+\textbf{Arsitektur \& Data:} & Desain Database Relasional, Manajemen Operasional, Ekstraksi Data (PDF/Excel) \\[3pt]
+\textbf{Tools \& Lingkungan:} & Git, GitHub, Postman, Dasar-dasar ICT, Pengembangan Aplikasi \textit{End-to-End} \\
+\end{tabularx}
+
+\end{document}

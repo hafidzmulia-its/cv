@@ -1,0 +1,53 @@
+RainDev Studio - Fullstack Software Engineer
+Sumber: unggahan lowongan RainDev Studio
+Tanggal disimpan: 1 Juni 2026
+
+Ringkasan posisi
+- Posisi: Fullstack Software Engineer
+- Jumlah posisi: 1
+- Kontrak: 1 tahun
+- Lokasi: full remote, seluruh Indonesia
+- Email lamaran: consultant@raindev.studio
+- Subject email: Fullstack Software Engineer - [Nama Kamu]
+
+Tentang perusahaan
+RainDev Studio adalah technology partner yang membantu bisnis membangun sistem digital sebagai aset jangka panjang, bukan sekadar tools. Engineer yang dicari diharapkan peduli terhadap sistem yang dibangun, termasuk setelah development selesai.
+
+Tech stack
+- ReactJS
+- TypeScript
+- NodeJS
+- PHP
+- MySQL
+- MongoDB
+- Caching
+
+Kualifikasi teknis
+- Algoritma, struktur data, optimisasi query dan kode
+- Deploy webapp ke server dan konfigurasi Nginx mandiri
+- Git workflow: branching, PR, commit convention
+- Integrasi external API
+- Clean code dan web app responsif
+- AI tools (ClaudeCode) sebagai multiplier, bukan pengganti
+
+Kualifikasi non-teknis
+- Punya perspektif pengguna dan peduli pengalaman user
+- Berpikir kritis, komunikatif, dan memiliki inisiatif tinggi
+- Async workflow; daily standup menjadi satu-satunya sync wajib
+
+Cara melamar
+Kirim email ke consultant@raindev.studio dengan subject:
+Fullstack Software Engineer - Hafidz Mulia
+
+Sertakan:
+- Alasan relevan dan tertarik bergabung
+- Link GitHub
+- Project atau pengalaman paling relevan
+- Gunakan bahasa Indonesia yang baik dan benar
+
+Catatan tailoring CV
+- Tonjolkan React, TypeScript, Next.js API routes sebagai bukti kerja pada ekosistem Node.js.
+- Tonjolkan Laravel/PHP dan MySQL melalui sina serta patahero_api.
+- Tonjolkan MongoDB melalui erapor.
+- Tonjolkan ownership pascarilis, deployment, API integration, responsive UI, dan workflow operasional.
+- Jangan melebihkan pengalaman Node.js standalone, caching production, atau konfigurasi Nginx bila belum memiliki bukti langsung.

@@ -1,0 +1,16 @@
+Assalamualaikum mas, izin kirim portfolio.
+
+Saya Hafidz, full-stack developer. Stack utama saya Laravel/PHP untuk backend API dan React/Next.js untuk frontend. Untuk domain LMS, proof paling relevan saya saat ini adalah LearnNext yang saya kerjakan untuk tesis, dengan scope auth, role, pretest/tryout/posttest, assessment flow, autosave/state persistence, dan integrasi data.
+
+Portofolio yang bisa dicek:
+https://hafmul.site
+https://soulmom-web.vercel.app
+https://elkpd.vercel.app
+
+GitHub:
+https://github.com/hafidzmulia-its
+
+Kalau mas berkenan, saya tertarik lihat scope of work-nya dulu. Rate card bisa saya sesuaikan dengan scope dan budget.
+Kalau mas berkenan, saya tertarik lihat scope of work-nya dulu. Untuk rate, kisaran saya Rp2.000.000 - Rp3.000.000 tergantung scope of work dan kompleksitasnya.
+
+Terima kasih mas.

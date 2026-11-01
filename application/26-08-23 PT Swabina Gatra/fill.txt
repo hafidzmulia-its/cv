@@ -1,0 +1,31 @@
+Hafidz Mulia
+Software Engineer Fullstack
+Surabaya, Jawa Timur
+
+Surabaya, 28 Agustus 2026
+
+HRD Recruitment (Ibu Tutus)
+PT Swabina Gatra (Semen Indonesia Group)
+Jl. RA Kartini No.21A, Injen Timur, Sidomoro
+Kec. Kebomas, Kabupaten Gresik, Jawa Timur 61122
+
+Hal: Lamaran Pekerjaan - Pengembangan Aplikasi
+
+Yth. Ibu Tutus,
+
+Saya Hafidz Mulia, lulusan S1 Matematika ITS dengan spesialisasi sebagai Software Engineer Fullstack. Melalui surat ini, saya menyampaikan ketertarikan untuk bergabung mengisi posisi Pengembangan Aplikasi di PT Swabina Gatra.
+
+Berbekal fondasi logika matematika komputasi, saya terbiasa menulis kode dan merancang arsitektur aplikasi dari awal. Pada riset tugas akhir saya, saya mengoptimasi kueri data warehouse menggunakan mekanisme PROADAPT di PostgreSQL untuk menangani data skala besar. Hal ini melatih saya untuk memastikan keamanan data terjaga dan mencegah aplikasi agar tidak mudah crash saat menanggung beban tinggi.
+
+Sebagai Freelance Developer di NechCode dan Intern di SMA IT Al Uswah, saya menangani seluruh siklus pengembangan perangkat lunak. Saya terbiasa mengumpulkan kebutuhan user non-teknis untuk membuat antarmuka UI/UX yang mudah dan nyaman dipakai. Salah satu sistem yang saya bangun, "erapor", sukses memangkas waktu administratif hingga 60% berkat keberhasilan menghubungkan data dari aplikasi ke server eksternal melalui API secara mulus.
+
+Selain itu, pengalaman saya sebagai Guru Pemrograman di Timedoor Academy melatih saya untuk teliti dalam pengujian aplikasi, mencari bug, dan memperbaiki masalah secara cepat, sekaligus mengomunikasikan solusi teknis dengan bahasa yang sederhana kepada tim lintas fungsi.
+
+Saya sangat siap untuk berkontribusi dalam pembaruan fitur dan pemeliharaan aplikasi di lingkungan Semen Indonesia Group. Terima kasih atas waktu dan pertimbangan Ibu. Saya menantikan kesempatan untuk mendiskusikan portofolio saya lebih lanjut pada sesi wawancara.
+
+Hormat saya,
+
+Hafidz Mulia
++62 851 5833 5740
+hafidzmuliia@gmail.com
+linkedin.com/in/hafidz-mulia

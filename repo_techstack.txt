@@ -1,14 +1,15 @@
 ================================================================
 HAFIDZ MULIA - REPO TECH STACK REFERENCE
-Fetched: April 1, 2026
-Source: GitHub connector README + metadata snapshot
+Fetched: August 23, 2026
+Source: GitHub API (Bearer PAT) - hafidzmulia-its (46 owned repos)
 Purpose: Fast technical lookup for CV tailoring and portfolio writing
 ================================================================
 
 NOTES
-- The detailed sections below are based on README content fetched on April 1, 2026.
+- The detailed sections below are based on README + API metadata fetched on August 23, 2026.
 - Repos with empty or template README files are kept as metadata-only references.
 - This file is optimized for job applications: stack, features, domains, and proof points.
+- Previous snapshot: April 1, 2026. Delta: +4 owned repos (synced haf 2026-08-23) since then.
 
 ================================================================
 CORE STACK ACROSS REPOS
@@ -62,9 +63,59 @@ Domains repeatedly represented
 - Health / screening / chatbot tools
 - Admin dashboards
 - Portfolio / marketing sites
+- TPQ / School management
+
+Languages detected across owned repos (August 23, 2026): Blade, CSS, HTML, Java, JavaScript, PHP, Python, TeX, TypeScript, Vue
 
 ================================================================
 FEATURED REPOS - README BACKED
+================================================================
+
+---------- arahbelajar ----------
+URL      : https://github.com/hafidzmulia-its/arahbelajar
+Live     : https://arahbelajar.vercel.app
+Language : TypeScript / Next.js
+Summary  : Adaptive learning platform with pretest/tryout/recommendation/scaffolding/posttest workflows.
+Updated  : 2026-06-01
+Tech Stack : Next.js 15, React 19, TypeScript, Tailwind CSS 4, Firebase, Google Sheets API
+
+---------- mainbipa ----------
+URL      : https://github.com/hafidzmulia-its/mainbipa
+Live     : https://mainbipa.id
+Language : TypeScript / Next.js
+Summary  : BIPA language-learning platform with structured modules.
+Updated  : 2026-06-05
+Tech Stack : Next.js 15, TypeScript, Tailwind CSS 4, Firebase
+
+---------- smartbalita-app ----------
+URL      : https://github.com/hafidzmulia-its/smartbalita-app
+Language : TypeScript / Next.js + Laravel
+Summary  : SmartBalita child growth & KPSP development platform (Laravel API + Expo mobile).
+Updated  : 2026-06-05
+Tech Stack : Next.js 16, Laravel 12, MySQL, Expo React Native
+
+---------- portal-tpq ----------
+URL      : https://github.com/hafidzmulia-its/portal-tpq
+Language : Blade / Laravel
+Summary  : TPQ management portal.
+Updated  : 2026-08-15
+Tech Stack : Laravel 12, PHP 8.2, MySQL, Blade, Tailwind CSS
+
+---------- sidedikk ----------
+URL      : https://github.com/hafidzmulia-its/sidedikk
+Live     : https://sidedikk.my.id
+Language : PHP / Laravel + PWA
+Summary  : Early pregnancy-complication screening PWA (Laravel 13 PWA, HPHT, 20 Q, 4-level risk, Chart.js admin, 58 tests, shared-hosting).
+Updated  : 2026-08-21
+Tech Stack : Laravel 13.8, PHP 8.3, MySQL 8, Tailwind CSS 4.3, Alpine.js 3.15, Vite 8, Chart.js 4.5, Breeze 2.4, PWA
+
+---------- SADARIYuk ----------
+URL      : https://github.com/hafidzmulia-its/SADARIYuk
+Language : TypeScript / Next.js
+Summary  : Breast self-examination education platform.
+Updated  : 2026-05-20
+Tech Stack : Next.js 16, TypeScript, Tailwind CSS 4, Coze API
+
 ================================================================
 
 ---------- sina ----------
@@ -311,45 +362,22 @@ Signals for CV
   - Good fit for operational systems and mobile-first interfaces
   - Shows practical reporting workflow and status transitions
 
-================================================================
-METADATA-ONLY REPOS
-================================================================
+================
 
-These repos currently add breadth, but they are weaker than the featured set for job-facing CV bullets.
-
-Public
-- nechcode-web : TypeScript public website project, live at https://nechcode.vercel.app, README is default Next.js template.
-- SIPresensi : Laravel internship project, but README is still the default Laravel README.
-- hafidzmulia-its : GitHub profile repo.
-- cv : TeX-based CV workspace.
-- kbt : TeX repo.
-- vue-tasty-recipes : Vue.js recipe project.
-- MergeBinaryLinear : Java practice repo.
-- SortingButCOol : Java sorting practice repo.
-- etsalpro : Java coursework repo.
-- daftarsiswa : Simple PHP repo.
-- tests : CSS test repo.
-- learn-npm : Node.js / npm learning notes.
-- CrossTheRoad : Java final project.
-- artikel : HTML project repo.
-- artikels : HTML / Bootstrap practice repo.
-- coffeeshop : HTML/CSS design practice.
-- Tutorial-Alpro : Java tutorial repo.
-- statistical_distribution : TeX / statistics repo.
-- Kuliah : Coursework repo.
-- test : Empty starter repo.
+- patahero_api : PHP - no description
+- cv : HTML - no description
 
 Private
-- greeting-site : Private Next.js site, live at https://greeting-site-two.vercel.app
-- abilacomp : Private HTML company project
-- thesis : Private LaTeX thesis repo
-- testss : Private HTML test repo
 
-Collaborations
-- fnvrxx/management-kos : PHP collaboration repo, still in development
-- abilarudi/admin-panel : TypeScript collaboration repo
-- abilarudi/strapi : JavaScript / Strapi collaboration repo
-- abilarudi/web-dev : HTML collaboration repo
+Collaborations (8)
+- fnvrxx/management-kos
+- abilarudi/admin-panel
+- abilarudi/strapi
+- abilarudi/web-dev
+- abilarudi/abila-admin
+- AsistenProvikom/project-2024
+- AsistenProvikom/asistenprovikom.github.io
+- Iwannnwn/omits23
 
 ================================================================
 CV TAILORING MAP
@@ -363,6 +391,8 @@ Laravel / PHP full-stack roles
 - SIBPS
 - patahero_api
 - SIPresensi
+- portal-tpq
+- sidedikk
 
 Next.js / React / TypeScript roles
 - e-kos
@@ -374,6 +404,10 @@ Next.js / React / TypeScript roles
 - soulmom-web
 - keke-pwa
 - nechcode-web
+- arahbelajar
+- mainbipa
+- smartbalita-app
+- SADARIYuk
 
 GIS / maps / spatial search roles
 - e-kos
@@ -385,6 +419,10 @@ Health-tech / education-tech / research platforms
 - thyva
 - soulmom-web
 - elkpd
+- arahbelajar
+- mainbipa
+- smartbalita-app
+- SADARIYuk
 
 Admin dashboards / internal tools / reporting systems
 - erapor
@@ -392,6 +430,8 @@ Admin dashboards / internal tools / reporting systems
 - SIBPS
 - elkpd
 - keke-pwa
+- portal-tpq
+- sidedikk
 
 API / backend-focused roles
 - patahero_api
@@ -399,10 +439,13 @@ API / backend-focused roles
 - SIBPS
 - erapor
 - e-kos
+- smartbalita-app (Laravel API)
 
 Firebase / push / real-time / mobile-first roles
 - soulmom-web
 - keke-pwa
+- arahbelajar
+- mainbipa
 
 MongoDB / document data roles
 - erapor
@@ -426,7 +469,6 @@ BEST DEFAULT SHORTLIST FOR MOST FULL-STACK JOB APPLICATIONS
 ================================================================
 
 - sina
-- e-kos
 - erapor
 - hisurabaya
 - SIPerpustakaan
@@ -435,3 +477,6 @@ BEST DEFAULT SHORTLIST FOR MOST FULL-STACK JOB APPLICATIONS
 - elkpd
 - premom
 - keke-pwa
+- arahbelajar
+- mainbipa
+- smartbalita-app

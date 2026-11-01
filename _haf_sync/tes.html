@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hafidz Mulia — Portfolio</title>
+    <meta name="description" content="Hafidz Mulia - Web Developer, UI/UX Designer & Data Scientist" />
+
+    <!-- Tailwind Play CDN (no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind config for custom colors & font
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#7900fb',
+              'primary-dark': '#5f00d6',
+              accent: '#cb8bff'
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'ui-sans-serif', 'system-ui']
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="img/logo.png" />
+
+    <style>
+      /* small utility for the SVG waves to avoid stretching on very short sections */
+      .wave-svg{ display:block; width:100%; height:90px }
+    </style>
+  </head>
+  <body class="antialiased text-slate-800 bg-white font-sans">
+
+    <!-- NAVBAR -->
+    <header class="fixed inset-x-0 top-0 z-40 bg-gradient-to-r from-primary to-primary-dark text-white shadow">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#hero" class="flex items-center gap-3">
+            <img src="img/logofull.svg" alt="haf. logo" class="h-8 w-auto" />
+            <span class="hidden md:inline font-semibold">haf.mul</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6">
+            <a href="#hero" class="hover:underline">Home</a>
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+          </nav>
+
+          <!-- mobile toggle -->
+          <div class="md:hidden">
+            <button id="nav-toggle" aria-label="Open menu" class="p-2 rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden bg-primary/95 text-white hidden">
+        <div class="px-4 pt-3 pb-4 space-y-2">
+          <a href="#hero" class="block py-2">Home</a>
+          <a href="#about" class="block py-2">About</a>
+          <a href="#projects" class="block py-2">Projects</a>
+          <a href="#contact" class="block py-2">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="pt-20">
+      <section id="hero" class="bg-gradient-to-b from-primary/6 to-transparent">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 pb-10">
+          <img src="img/profile.jpg" alt="Hafidz Mulia" class="mx-auto w-48 h-48 object-cover rounded-full border-8 border-white shadow-lg" />
+
+          <h1 class="mt-6 text-3xl sm:text-4xl font-extrabold text-slate-900">Hafidz Mulia</h1>
+          <p class="mt-2 text-lg text-slate-600">Web Developer • UI/UX Designer • Data Scientist</p>
+
+          <div class="mt-4 flex items-center justify-center gap-3">
+            <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-white font-semibold hover:bg-primary-dark">View Projects</a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-primary text-primary hover:bg-primary/10">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- decorative wave -->
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#fff" d="M0,64L48,74.7C96,85,192,107,288,122.7C384,139,480,149,576,154.7C672,160,768,160,864,138.7C960,117,1056,75,1152,53.3C1248,32,1344,32,1392,32L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path></svg>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div class="text-center">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="mt-3 text-slate-600 max-w-2xl mx-auto">I’m an entry-level Web Developer with a strong interest in UI/UX and data-driven solutions. I build responsive, accessible interfaces and enjoy learning new tools and patterns. Recent work includes responsive websites, Java-based games, and small data projects.</p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-3">
+              <h3 class="font-semibold">Contact</h3>
+              <ul class="text-slate-600">
+                <li>Email: <a href="mailto:hafidzmuliia@gmail.com" class="text-primary">hafidzmuliia@gmail.com</a></li>
+                <li>Location: Surabaya, Indonesia</li>
+              </ul>
+            </div>
+
+            <div class="space-y-3">
+              <h3 class="font-semibold">Skills</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full border text-sm">HTML</span>
+                <span class="px-3 py-1 rounded-full border text-sm">CSS</span>
+                <span class="px-3 py-1 rounded-full border text-sm">JavaScript</span>
+                <span class="px-3 py-1 rounded-full border text-sm">Tailwind</span>
+                <span class="px-3 py-1 rounded-full border text-sm">Bootstrap</span>
+                <span class="px-3 py-1 rounded-full border text-sm">Laravel</span>
+                <span class="px-3 py-1 rounded-full border text-sm">MySQL</span>
+                <span class="px-3 py-1 rounded-full border text-sm">Data Science</span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <h3 class="font-semibold">Education & Roles</h3>
+              <p class="text-slate-600 text-sm">B.Sc. Mathematics — Sepuluh Nopember Institute of Technology (ITS). Assistant Laboratory Instructor — Algorithm & Programming.</p>
+            </div>
+          </div>
+        </div>
+
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#F8F9FA" d="M0,0L26.7,21.3C53.3,43,107,85,160,96C213.3,107,267,85,320,90.7C373.3,96,427,128,480,117.3C533.3,107,587,53,640,26.7C693.3,0,747,0,800,21.3C853.3,43,907,85,960,122.7C1013.3,160,1067,192,1120,170.7C1173.3,149,1227,75,1280,48C1333.3,21,1387,43,1413,53.3L1440,64L1440,120L0,120Z"></path></svg>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div class="text-center">
+            <h2 class="text-2xl font-bold">Selected Projects</h2>
+            <p class="mt-2 text-slate-600">A few highlights — full list on GitHub.</p>
+          </div>
+
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Project Card 1 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <img src="img/artikel.png" alt="Artikel project" class="w-full h-40 object-cover" />
+              <div class="p-4">
+                <h3 class="font-semibold">Responsive News Reporting</h3>
+                <p class="text-sm text-slate-600 mt-2">Self project — responsive news reporting website with modern UI.</p>
+                <div class="mt-3 flex items-center gap-2">
+                  <a href="https://hafidzmulia-its.github.io/artikel/" class="text-sm text-primary font-medium">View demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <img src="img/crosstheroad.png" alt="CrossTheRoad" class="w-full h-40 object-cover" />
+              <div class="p-4">
+                <h3 class="font-semibold">Cross The Road (Java)</h3>
+                <p class="text-sm text-slate-600 mt-2">A platform-based strategy game built with Java Swing.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/hafidzmulia-its/CrossTheRoad" class="text-sm text-primary font-medium">View repo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <img src="img/coffeeshop.png" alt="Coffeeshop" class="w-full h-40 object-cover" />
+              <div class="p-4">
+                <h3 class="font-semibold">Coffeeshop Website</h3>
+                <p class="text-sm text-slate-600 mt-2">Responsive coffee shop website built with HTML, CSS & JS.</p>
+                <div class="mt-3">
+                  <a href="https://hafidzmulia-its.github.io/coffeeshop/" class="text-sm text-primary font-medium">View demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#fff" d="M0,192L26.7,181.3C53.3,171,107,149,160,133.3C213.3,117,267,107,320,101.3C373.3,96,427,96,480,122.7C533.3,149,587,203,640,224C693.3,245,747,235,800,202.7C853.3,171,907,117,960,96C1013.3,75,1067,85,1120,122.7C1173.3,160,1227,224,1280,229.3C1333.3,235,1387,181,1413,154.7L1440,128L1440,120L0,120Z"></path></svg>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div class="text-center">
+            <h2 class="text-2xl font-bold">Let's Connect</h2>
+            <p class="mt-2 text-slate-600">Have a project or just want to say hi? Send a message.</p>
+          </div>
+
+          <form action="https://formspree.io/f/xrbzgnaz" method="POST" class="mt-8 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" name="name" required placeholder="Your name" class="w-full rounded-md border border-slate-200 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="email" name="email" required placeholder="Your email" class="w-full rounded-md border border-slate-200 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" />
+            </div>
+            <textarea name="message" required rows="6" placeholder="Tell me about your project..." class="w-full rounded-md border border-slate-200 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+            <div class="flex items-center justify-between">
+              <button type="submit" class="px-6 py-2 rounded-md bg-primary text-white font-semibold hover:bg-primary-dark">Send Message</button>
+              <div class="flex gap-3 text-2xl">
+                <a href="https://www.instagram.com/haf.mul/" class="text-slate-500 hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hafidz-mulia/" class="text-slate-500 hover:text-primary"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/hafidzmulia-its" class="text-slate-500 hover:text-primary"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#7900fb" d="M0,128L26.7,128C53.3,128,107,128,160,122.7C213.3,117,267,107,320,117.3C373.3,128,427,160,480,170.7C533.3,181,587,171,640,170.7C693.3,171,747,181,800,186.7C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,133.3C1173.3,117,1227,107,1280,85.3C1333.3,64,1387,32,1413,16L1440,0L1440,120L1413.3,120C1386.7,120,1333,120,1280,120C1226.7,120,1173,120,1120,120C1066.7,120,1013,120,960,120C906.7,120,853,120,800,120C746.7,120,693,120,640,120C586.7,120,533,120,480,120C426.7,120,373,120,320,120C266.7,120,213,120,160,120C106.7,120,53,120,27,120L0,120Z"></path></svg>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-primary text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+          <div class="mb-3 flex items-center justify-center gap-6 text-2xl">
+            <a href="https://www.instagram.com/haf.mul/" aria-label="instagram" class="hover:text-accent"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/hafidz-mulia/" aria-label="linkedin" class="hover:text-accent"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/hafidzmulia-its" aria-label="github" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <p class="text-sm">Created with <i class="fa-solid fa-heart text-red-500"></i> by <a href="https://www.instagram.com/haf.mul/" class="font-semibold text-accent">@haf.mul</a></p>
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      const navToggle = document.getElementById('nav-toggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      navToggle && navToggle.addEventListener('click', ()=>{
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu on navigation click
+      document.querySelectorAll('#mobileMenu a').forEach(a=>{
+        a.addEventListener('click', ()=> mobileMenu.classList.add('hidden'))
+      });
+
+      // Smooth scroll for older browsers
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const href = this.getAttribute('href');
+          if(href && href.startsWith('#')){
+            e.preventDefault();
+            const el = document.querySelector(href);
+            if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

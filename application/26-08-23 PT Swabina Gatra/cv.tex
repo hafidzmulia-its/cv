@@ -1,0 +1,170 @@
+%-------------------------
+% CV Target: Application Development - PT. Swabina Gatra - Optimized (Indonesian)
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "Hafidz_Mulia_CV.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \textcolor{accent}{\url{#5}}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Software Engineer Fullstack | Spesialis Laravel}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Ringkasan Profesional}
+\textit{Software Engineer Fullstack} dengan latar belakang Matematika dari ITS. Memiliki spesialisasi dalam \textbf{backend serta frontend programming menggunakan Laravel}. Terbukti mampu melakukan \textbf{design, relation, and management database, khususnya PostgreSQL}. Terampil dalam \textbf{interface programming, API \& JSON}, serta memahami \textbf{UI/UX Design \& Filament}. Berpengalaman mengaplikasikan teknik \textbf{user requirement gathering} untuk membangun sistem internal yang efisien dan terukur. Proaktif, memiliki kemampuan \textbf{Bahasa Inggris (aktif)}, menguasai \textbf{Microsoft Office} \& \textbf{dasar-dasar ICT}, serta siap untuk \textbf{penempatan di Gresik}.
+
+%==================== EDUCATION ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Sekarang}
+  {IPK: 3.40 / 4.00 | Fokus: Matematika Komputasi dan Informatika}
+
+%==================== PROJECTS ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {sidedikk --- Aplikasi \& Dashboard Internal}
+  {2026}
+  {Fullstack Developer | \textbf{Laravel} 12, \textbf{PostgreSQL}, Blade}
+  {Dashboard pusat yang aman untuk mengelola data pengguna dan operasional harian kantor. Dirancang untuk menjaga catatan administratif tetap rapi dan mudah diakses oleh staf non-teknis. Fitur utama: manajemen pengguna dan \textbf{management database} relasional.}
+  {https://sidedikk.my.id}
+
+\cvproject
+  {SIPerpustakaan --- Dashboard Data \& Analitik}
+  {2025}
+  {Fullstack Developer | \textbf{Laravel} 12, \textbf{PostgreSQL}, Tailwind CSS}
+  {Sistem manajemen perpustakaan yang menghitung denda secara otomatis dan menampilkan data analitik. Dibangun dengan \textbf{UI/UX Design} yang bersih dan efisien, mengoptimalkan operasi basis data untuk pengambilan data yang cepat.}
+  {https://literasik.hafmul.site}
+
+\cvproject
+  {erapor --- Sistem Pelaporan Otomatis}
+  {2025}
+  {Fullstack Developer | Next.js, MongoDB, NextAuth}
+  {Platform yang menggantikan pengetikan data manual dengan dashboard digital. Dilengkapi fitur otomatisasi laporan PDF dan Excel (CSV), menyederhanakan pencatatan dan ekstraksi data dari database.}
+  {https://rapor-himatika.vercel.app}
+
+\cvproject
+  {soulmom-web --- Sistem Pencatatan Data}
+  {2026}
+  {Fullstack Developer | Next.js, Firebase, Google Sheets API}
+  {Formulir penyaringan digital yang menyimpan respons secara otomatis langsung ke Google Sheets melalui \textbf{interface programming (API)}. Dibangun untuk membantu tim administratif memantau data yang masuk secara real-time.}
+  {https://soulmom.vercel.app}
+
+%==================== EXPERIENCE ====================
+\section{Pengalaman Profesional}
+
+\cventry
+  {Freelance Software Engineer}
+  {NechCode}
+  {Feb 2026 -- Sekarang}
+  {Memberikan solusi \textit{software engineering} lengkap untuk aplikasi web kustom. Berpengalaman merancang \textbf{design, relation, and management database}, serta membangun \textbf{backend serta frontend programming menggunakan Laravel} (soulmom, premom, elbelapa) beserta sistem pelaporannya.}
+
+\cventry
+  {Guru Pemrograman (Programming Teacher)}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajarkan pemrograman dan \textbf{dasar-dasar ICT} kepada pemula dan siswa non-teknis. Pengalaman ini melatih komunikasi teknis saya untuk menjelaskan masalah kompleks dengan sederhana, yang sangat berguna saat memberikan dukungan TIK kepada rekan kerja.}
+
+\cventry
+  {Wakil Ketua Himpunan 1}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Des 2025}
+  {Menyadari inefisiensi pengelolaan data untuk 150+ anggota, saya menginisiasi dan mengelola proyek erapor. Mengaplikasikan teknik \textbf{user requirement gathering} dan desain database yang berhasil memangkas 60\% waktu administratif melalui sistem otomatis.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Mei 2025}
+  {Bekerja erat dengan staf sekolah untuk memahami tantangan administratif harian mereka. Mengelola seluruh siklus hidup pengembangan perangkat lunak untuk membangun sistem presensi dan manajemen siswa berbasis \textbf{Laravel} yang presisi sesuai kebutuhan mereka.}
+
+%==================== SKILLS ====================
+\section{Keahlian Teknis}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Kompetensi Inti:} & \textbf{User Requirement Gathering}, Problem Solving, \textbf{UI/UX Design}, \textbf{Microsoft Office} \\[3pt]
+\textbf{Pemrograman \& Framework:} & \textbf{Laravel}, \textbf{Filament}, Next.js, React, Blade, Tailwind CSS, Alpine.js \\[3pt]
+\textbf{Backend \& Data:} & \textbf{Interface programming, API \& JSON}, \textbf{PostgreSQL}, MySQL, SQL Server, MongoDB, Google Sheets API, Ekspor PDF/CSV \\[3pt]
+\textbf{Bahasa Pemrograman:} & PHP, TypeScript, JavaScript, SQL, Python, HTML, CSS \\[3pt]
+\textbf{Tools \& Lainnya:} & \textbf{Dasar-dasar ICT}, Git, GitHub, Dasar-dasar Linux \\
+\end{tabularx}
+
+%==================== ADDITIONAL ====================
+\section{Informasi Tambahan}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Domisili \& Penempatan:} & Surabaya (Bersedia dan siap untuk \textbf{penempatan di Gresik}) \\[3pt]
+\textbf{Bahasa:} & Indonesia (Penutur asli), \textbf{Bahasa Inggris (aktif - kecakapan kerja profesional)} \\
+\end{tabularx}
+
+\end{document}

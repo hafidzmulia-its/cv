@@ -1,0 +1,16 @@
+Subject: Backend Developer - Hafidz Mulia
+
+Dear OMNI Recruitment Team,
+
+I would like to apply for the Backend Developer position at OMNI IT Consulting.
+
+I am a final-year Mathematics student at Institut Teknologi Sepuluh Nopember (ITS) based in Surabaya with hands-on experience in backend and full-stack web development. My strongest fit for this role is in Laravel, PHP, MySQL, REST API development, database design, and admin system implementation. I have built and deployed real applications across education, reporting, GIS, and health-tech use cases, and I am comfortable handling development from requirements through implementation, debugging, and release.
+
+I have attached my CV for your consideration. My portfolio is available at https://hafmul.site and my GitHub is available at https://github.com/hafidzmulia-its.
+
+Thank you for your time and consideration. I would be glad to discuss my background further if needed.
+
+Sincerely,
+Hafidz Mulia
++62 851 5833 5740
+hafidzmuliia@gmail.com

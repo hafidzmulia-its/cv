@@ -1,0 +1,52 @@
+Lagi cari freelancer Full-Stack (Mid-to-Senior) atau vendor buat ngerjain project Enhancement LMS eksisting & bangun Mobile App (APK) Profiling Guru dari nol. 
+1
+/
+6
+fufufukalifu
+5h
+Back-End: Laravel (API).
+Front-End: React JS + React Native + Expo (Target output wajib APK).
+Environment: Kita udah sedia Repo & existing env pakai Docker. Tinggal clone, jalankan container, gas ngoding! 
+2
+/
+6
+fufufukalifu
+5h
+Tantangannya:
+1. Integrasi WebRTC di React Native/Expo buat Camera Proctoring + sensor anti-cheat (deteksi pindah aplikasi).
+2. Logic client-side buat scoring Psikotes DASS-21.
+3. Multi-step form esai panjang dengan autosave Local Storage/AsyncStorage.
+4. Async file upload dari device.
+scope of work sudah gw susun dengan rapi.  
+ 
+3
+/
+6
+fufufukalifu
+5h
+Fase 1: Tweaking logic UI/UX di web LMS eksisting kita.
+Fase 2: Bangun Mobile App (APK) pakai React Native + Expo, terintegrasi API dengan ekosistem Laravel kita. Modul ujiannya lumayan tricky karena butuh akses kamera HP (Proctoring), sensor deteksi keluar aplikasi, auto-save jawaban esai, dan kalkulasi hasil psikotes langsung di sisi client.  
+ 
+4
+/
+6
+fufufukalifu
+5h
+Kalo temen-temen tertarik dm your portfo kemudian gw bisa kirimkan scope of work-nya / kita bisa short call untuk diskusi. 
+5
+/
+6
+fufufukalifu
+5h
+Thank you 
+6
+/
+6
+fufufukalifu
+1h
+·
+Author
+Kakak-kakak, makasih banyak udah banyak yang DM..
+keep it comin, dm aja portfolionya ya kak..
+kalo ada rate card juga boleh biar aku enak untuk pilih-pilihnya.
+Thank u

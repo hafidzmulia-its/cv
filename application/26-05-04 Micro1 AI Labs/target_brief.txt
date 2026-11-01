@@ -1,0 +1,45 @@
+Micro1 / Crossing Hurdles Target Brief
+Prepared for: Hafidz Mulia
+Date: 4 May 2026
+
+Source summary
+- Third-party recruiter outreach from Crossing Hurdles
+- Client: Micro1
+- Role: Senior Full-Stack Software Engineer
+- Type: Contractor
+- Pay shown: $20 - $55/hour
+- Location: Remote
+- Stated focus: React, JavaScript, Node.js or Python, scalable architecture, API design, mentoring, remote communication
+
+What this likely is
+- This looks like a recruiter-sourcing email for a contractor pipeline, not a direct personalized offer.
+- The wording is broad and probably sent to many candidates with adjacent full-stack profiles.
+- The role may be partly real product engineering and partly AI-evaluation / AI-training work depending on the actual project they place candidates into.
+
+Best positioning for this application
+- Full-Stack Software Engineer with strong React / Next.js / TypeScript delivery proof
+- Production-minded builder across frontend, backend, APIs, auth, data modeling, deployment, and debugging
+- Remote-ready communicator with teaching and mentoring signals from instructor and lab roles
+- Honest note: strong JavaScript / TypeScript evidence, stronger Laravel backend proof than pure Node.js / Python proof
+
+Main CV themes
+- Final-year Mathematics student with real shipped full-stack applications
+- Strong JavaScript, TypeScript, React, Next.js, REST API, auth, and database experience
+- Built and deployed systems across internal tools, GIS, reporting, health-tech, and education
+- Comfortable owning features end to end in async and low-supervision environments
+- Strong communication, debugging, and technical explanation skills
+
+Projects emphasized in this folder
+- e-kos: Next.js, TypeScript, PostGIS, auth, admin workflows, map-based product architecture
+- erapor: Next.js, MongoDB, dashboards, exports, internal operations platform
+- keke-pwa: Next.js, Firebase, notifications, mobile-first operational workflow
+- patahero_api: Laravel REST API, auth, structured endpoints, backend-oriented proof
+
+Claims intentionally avoided
+- Senior/staff-level team leadership claims without direct evidence
+- Deep Python backend expertise without proof
+- Pure Node.js backend specialization beyond Next.js route and integration work
+- Microservices / large-enterprise architecture claims without direct experience
+
+Suggested application angle
+Apply if you are open to a contractor screening process and if the actual work still values practical full-stack delivery rather than only senior-title filtering. The strongest honest case is that you already ship real JavaScript/TypeScript full-stack systems and can contribute well in remote product or AI-evaluation environments.

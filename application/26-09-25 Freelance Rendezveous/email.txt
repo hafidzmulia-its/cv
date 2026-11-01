@@ -1,0 +1,17 @@
+To: rendra28set@gmail.com
+Subject: Full Stack Developer - Hafidz Mulia
+
+Yth. Tim Rendezvous,
+
+Perkenalkan, saya Hafidz Mulia. Saya mengajukan lamaran untuk posisi Software Developer (Full-Stack). Saya tertarik dengan kesempatan untuk membangun software yang benar-benar digunakan dalam alur kerja bisnis dan terlibat dari frontend hingga backend, API, database, serta deployment.
+
+Saya memiliki pengalaman full-stack dengan JavaScript/TypeScript, React/Next.js, Laravel/PHP, dan database relasional. Saat ini saya mengembangkan sistem aplikasi untuk kasus bisnis di PT Semen Indonesia Logistik menggunakan Docker, Linux, dan Laravel Filament. Portofolio saya juga mencakup aplikasi Laravel, dashboard manajemen, REST API, PWA, dan platform Next.js. Saya terbiasa menggunakan Git, melakukan debugging, dan memverifikasi hasil kerja saat menggunakan AI coding tools yaitu codex.
+
+CV terlampir untuk pertimbangan. Portofolio: https://hafmul.site dan GitHub: https://github.com/hafidzmulia-its.
+
+Terima kasih atas waktu dan pertimbangannya.
+
+Hormat saya,
+Hafidz Mulia
++62 851 5833 5740
+hafidzmuliia@gmail.com

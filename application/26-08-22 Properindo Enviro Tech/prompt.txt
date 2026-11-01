@@ -1,0 +1,106 @@
+You are an expert Resume Writer and LaTeX Developer. I have a base LaTeX CV template and I need you to rewrite its content to perfectly target an "IT Staff" position at an Environmental Consulting Company. 
+
+The target job requires:
+- Building simple internal information systems and digital forms.
+- Automating administrative tasks and database management.
+- Integrating data from Microsoft Excel, Google Sheets, and online forms.
+- Creating automated reports and dashboards.
+- IT Support for internal users.
+
+CRITICAL INSTRUCTIONS:
+1. DO NOT change the LaTeX styling, packages, or document structure. Only modify the content inside the sections.
+2. COMPLETELY REMOVE any mention of my Thesis in the Education section.
+3. Use the EXACT diction, phrasing, and links provided below. Do not hallucinate or change the wording.
+
+Here is the exact content to inject into the respective sections:
+
+---
+SECTION: Professional Summary
+Replace the summary with this EXACT text:
+Final-year Mathematics student at ITS based in Surabaya with hands-on experience building internal information systems, admin dashboards, and automated reporting workflows. Strong expertise in database management (MySQL, PostgreSQL), REST APIs, and automating administrative tasks using Laravel, Next.js, and Google Sheets API integrations. Proven track record in translating internal user requirements into secure, efficient digital solutions and providing technical support.
+
+---
+SECTION: Professional Experience
+Replace the entire experience section with these 4 entries ONLY, using this EXACT text:
+
+Entry 1:
+Title: Freelance Software Engineer
+Company: NechCode
+Dates: Feb 2026 -- Present
+Description: Develop custom internal tools and digital forms for client operational workflows. Architect relational databases, build REST APIs, and integrate web applications with Google Sheets API for real-time data logging and administrative automation.
+
+Entry 2:
+Title: Programming Teacher
+Company: Timedoor Academy
+Dates: Jan 2025 -- Present
+Description: Teach programming fundamentals and computational logic. Develop strong technical communication and troubleshooting skills by breaking down complex technical concepts for non-technical learners, directly translating to effective IT support capabilities.
+
+Entry 3:
+Title: 1st Vice Head (Digitalization Lead)
+Company: HIMATIKA ITS
+Dates: Feb 2025 -- Dec 2025
+Description: Spearheaded the digital transformation of organizational data management by engineering the 'Rapor HIMATIKA' system. Automated the data input, processing, and evaluation workflows for 150+ members, reducing manual reporting time by 60\% through automated Microsoft Excel and PDF exports.
+
+Entry 4:
+Title: Fullstack Developer Intern
+Company: SMA IT Al Uswah Surabaya
+Dates: May 2025
+Description: Coordinated with internal users (school staff) to identify system requirements and translated them into a technical solution. Developed a secure, Laravel-based attendance and student management system from database design to user acceptance testing.
+
+---
+SECTION: Selected Projects
+Replace the entire projects section with these 4 specific projects ONLY, using this EXACT text:
+
+---
+SECTION: Selected Projects
+Replace the entire projects section with these 4 specific projects ONLY, using this EXACT text:
+
+Project 1:
+Name: erapor --- Automated Reporting System
+Year: 2025
+Subtitle: Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth
+Description: Engineered a centralized reporting automation platform featuring Role-Based Access Control (RBAC). Replaced manual data entry with dynamic dashboards and automated bulk exports to Microsoft Excel (CSV) and PDF formats.
+Link: https://rapor-himatika.vercel.app
+
+Project 2:
+Name: soulmom-web --- Data Logging \& Assessment System
+Year: 2026
+Subtitle: Fullstack Developer | Next.js, TypeScript, Firebase, Google Sheets API
+Description: Developed a digital form and screening platform integrated directly with the Google Sheets API. Automated real-time data capture and recapitulation to streamline administrative monitoring and data visualization.
+Link: https://soulmom.vercel.app
+
+Project 3:
+Name: sidedikk --- Internal Information System
+Year: 2026
+Subtitle: Fullstack Developer | Laravel 12, PHP, MySQL, Blade
+Description: Developed a centralized information system with an administrative dashboard. Architected relational databases to manage user data, operational workflows, and secure administrative records efficiently.
+Link: https://sidedikk.my.id
+
+Project 4:
+Name: SIPerpustakaan --- Data \& Analytics Dashboard
+Year: 2025
+Subtitle: Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Tailwind CSS
+Description: Developed a management dashboard with automated fine calculations, analytics, and lending workflows. Provided technical documentation and a clean interface for non-technical internal users to manage records safely.
+Link: https://literasik.hafmul.site
+
+---
+SECTION: Education
+Replace the Education entry with this EXACT text (Notice the thesis is removed and GPA is updated):
+
+Title: Bachelor of Mathematics
+Institution: Institut Teknologi Sepuluh Nopember (ITS), Surabaya
+Dates: 2022 -- Present
+Description: GPA: 3.40 / 4.00 | Focus: Computational Mathematics and Informatics
+
+---
+SECTION: Technical Skills
+Replace the skills table with this EXACT content:
+
+\textbf{Languages:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS, Python \\[3pt]
+\textbf{Data \& Automation:} & Relational Database Management, Google Sheets API, Microsoft Excel (Pivot, Query, Formula), Automated PDF/CSV Exports \\[3pt]
+\textbf{Backend \& DB:} & Laravel, MySQL, PostgreSQL, SQL Server, MongoDB, REST API, Authentication \\[3pt]
+\textbf{Frontend:} & Next.js, React, Blade, Tailwind CSS, Alpine.js \\[3pt]
+\textbf{Tools \& Support:} & Git, GitHub, Vercel, Postman, IT Support, System Documentation, Data Backup \\
+
+---
+Now, please output the ENTIRE LaTeX code from \documentclass to \end{document} with all these exact modifications applied. Do not add any conversational text before or after the code block.

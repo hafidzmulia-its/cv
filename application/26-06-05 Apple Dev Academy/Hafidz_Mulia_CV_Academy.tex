@@ -1,0 +1,152 @@
+%-------------------------
+% CV Target: Apple Developer Academy Indonesia
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode -halt-on-error Hafidz_Mulia_CV_Academy.tex
+%-------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.96]{helvet}
+\usepackage[top=0.48in,bottom=0.48in,left=0.58in,right=0.58in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\definecolor{accent}{HTML}{1D5F73}
+\definecolor{textgray}{HTML}{333333}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\cvname}[1]{{\centering\LARGE\bfseries #1\par\vspace{2pt}}}
+\newcommand{\cvtitle}[1]{{\centering\large\color{accent} #1\par\vspace{4pt}}}
+\newcommand{\cvcontact}[1]{{\centering\small #1\par\vspace{5pt}}}
+\newcommand{\entry}[4]{%
+  \textbf{#1} \hfill \textit{#3}\\
+  \textit{#2}\\
+  {\small #4}\vspace{4pt}
+}
+\newcommand{\project}[5]{%
+  \textbf{#1} \hfill \textit{#2}\\
+  \textit{\small #3}\\
+  {\small #4}
+  \ifx&#5& \else \par{\small \href{#5}{Project Link}} \fi
+  \vspace{4pt}
+}
+
+\begin{document}
+\color{textgray}
+
+\cvname{Hafidz Mulia}
+\cvtitle{Product Builder, Technical Problem Solver, and Student Leader}
+\cvcontact{%
+  Surabaya, Indonesia \quad | \quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad | \quad
+  \href{tel:+6285158335740}{+62 851 5833 5740}\\
+  \href{https://hafmul.site}{hafmul.site} \quad | \quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad | \quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+\section{Profile}
+Final-year Mathematics student at Institut Teknologi Sepuluh Nopember with a focus on computational mathematics and strong interest in programming and visual computing. I use technology to turn real user and workflow problems into usable digital products across education, health, GIS, and operational contexts, with strengths in product thinking, execution, teaching, and leadership.
+
+\section{Education}
+\entry
+  {Bachelor of Mathematics}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {GPA: 3.36 / 4.00. Focus: Computational Mathematics and Informatics. Thesis work explores PostgreSQL and TimescaleDB query-performance optimization on 50M+ row time-series data.}
+
+\section{Professional Experience}
+\entry
+  {Founder and Lead Developer}
+  {NechCode.id / Independent Client and Research Projects}
+  {2026 -- Present}
+  {Lead end-to-end delivery for client and research-oriented digital products, covering requirements, product scope, database design, frontend and backend development, deployment, debugging, and post-release iteration.}
+
+\entry
+  {Assistant Laboratory Coordinator}
+  {PROVIKOM Laboratory, ITS Mathematics Department}
+  {2024 -- Dec 2025}
+  {Coordinate and support practicum activities in algorithms, programming, and visual computing. Mentor students in problem solving, debugging, and structured technical learning with the laboratory assistant team.}
+
+\entry
+  {Programming and Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Teach programming fundamentals, algorithmic thinking, introductory web development, and selected Python-based AI or computer-vision modules. Guide students through debugging, project practice, and technical explanation.}
+
+\section{Leadership Experience}
+\entry
+  {1st Vice Head}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Dec 2025}
+  {Monitored cabinet performance, supported cross-division execution, and helped keep internal programs, reporting discipline, and team coordination aligned with shared organizational goals.}
+
+\entry
+  {Leader of Mathematics 2022 / STI 57}
+  {Mathematics 2022 Cohort}
+  {May 2023 -- Present}
+  {Facilitated communication and coordination across 150+ students, helping improve participation, information flow, and peer connection throughout the cohort.}
+
+\section{Selected Projects}
+\project
+  {mainbipa.id - Indonesian Language Learning Platform}
+  {2026}
+  {Product Builder | Learning Flow, Content Structure, User Experience}
+  {Built a BIPA-focused learning platform for real educational use, with structured modules, guided practice, and learner-friendly interaction patterns for non-native Indonesian learners.}
+  {https://mainbipa.id}
+
+\project
+  {ArahBelajar - Adaptive Learning Platform}
+  {2026}
+  {Full-Stack Developer | Next.js, React, TypeScript, Firebase, Google Sheets API}
+  {Built an adaptive learning platform with pretest, tryout, recommendation, scaffolding, posttest, and dashboard flows, turning a research-driven learning model into a usable product for day-to-day academic workflows.}
+  {https://arahbelajar.vercel.app}
+
+\project
+  {REAL KEKE - Workplace Safety Incident Reporting}
+  {2026}
+  {Full-Stack Developer | Next.js, React, TypeScript, Firebase, Cloudinary, PWA}
+  {Developed a mobile-first K3 incident reporting workflow with role-based access, media upload, status tracking, comment threads, and push notifications for operational communication and follow-up.}
+  {https://realkeke.vercel.app}
+
+\project
+  {SMARTBALITA - Child-Focused Mobile App}
+  {2026}
+  {Mobile App Developer | React Native, Mobile UI Flow, Research Support Workflow}
+  {Built a React Native mobile application with structured user flows and practical mobile interaction design for real child-focused support scenarios.}
+  {}
+
+\project
+  {erapor - Automated Reporting System}
+  {2025}
+  {Full-Stack Developer | Next.js, React, TypeScript, MongoDB, NextAuth}
+  {Created a reporting platform with role-based dashboards, user management, and PDF/Excel exports to reduce manual internal reporting work through a more centralized and sustainable workflow.}
+  {https://rapor-himatika.vercel.app}
+
+\section{Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Product \& Leadership} & Requirement discovery, MVP scoping, team coordination, mentoring, technical communication, iterative delivery \\[2pt]
+\textbf{Frontend} & React, React Native, Next.js, TypeScript, Tailwind CSS, responsive UI, form validation, dashboard UX \\[2pt]
+\textbf{Backend \& Data} & Laravel, PHP, Next.js API Routes, REST API, MySQL, PostgreSQL, PostGIS, MongoDB, Firebase, Appwrite \\[2pt]
+\textbf{Tools} & Git, GitHub, Vercel, Cloudinary, Google Sheets API, Firebase Cloud Messaging, Composer, npm \\[2pt]
+\textbf{Languages} & Indonesian (native), English (professional reading and writing)
+\end{tabularx}
+
+\end{document}

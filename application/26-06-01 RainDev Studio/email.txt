@@ -1,0 +1,25 @@
+To: consultant@raindev.studio
+Subject: Fullstack Software Engineer - Hafidz Mulia
+
+Yth. Tim RainDev Studio,
+
+Perkenalkan, saya Hafidz Mulia. Saya tertarik melamar posisi Fullstack Software Engineer karena pendekatan RainDev Studio selaras dengan cara saya bekerja: membangun sistem yang dapat dirawat dan dikembangkan setelah rilis, bukan hanya selesai pada tahap development.
+
+Saya memiliki pengalaman mengembangkan aplikasi full-stack menggunakan React, Next.js, TypeScript, API routes pada ekosistem Node.js, Laravel/PHP, MySQL, dan MongoDB. Saya terbiasa menangani requirement, implementasi frontend dan backend, desain basis data, integrasi API, deployment, serta revisi pascarilis. Pengalaman sebagai Assistant Laboratory Coordinator di Laboratorium PROVIKOM ITS juga memperkuat kemampuan saya dalam algoritma, debugging, dan komunikasi teknis.
+
+Proyek yang paling relevan:
+- erapor: sistem pelaporan internal berbasis Next.js, TypeScript, dan MongoDB dengan dashboard berbasis role serta export PDF/Excel.
+- sina: platform Laravel/PHP dan MySQL dengan RBAC, CMS, progress tracking, serta upload media.
+- keke-pwa: aplikasi pelaporan mobile-first berbasis React dan TypeScript dengan workflow status, upload media, serta push notification.
+- patahero_api: REST API Laravel/MySQL untuk aplikasi mobile dengan autentikasi Sanctum dan upload gambar.
+
+Portofolio: https://hafmul.site
+GitHub: https://github.com/hafidzmulia-its
+
+CV saya lampirkan pada email ini. Saya terbuka untuk berdiskusi lebih lanjut mengenai kebutuhan tim dan proyek aktif di RainDev Studio.
+
+Terima kasih atas waktunya.
+
+Hormat saya,
+Hafidz Mulia
++62 851 5833 5740

@@ -1,0 +1,22 @@
+<div id="site-header">
+<nav class="nav-fixed transition-smooth bg-background/95 backdrop-blur-md shadow-md nav-scrolled">
+  <div class="container">
+    <div class="nav-container">
+      <button class="nav-brand font-montserrat" onclick="window.location.href='index.html#home'">
+                        haf<span class="text-gradient">.</span>
+                    </button>
+      <div class="nav-menu" id="site-nav-menu">
+        <a class="nav-link" href="index.html#about" data-nav="about">About</a>
+        <a class="nav-link" href="index.html#experience" data-nav="experience">Experience</a>
+        <a class="nav-link" href="index.html#education" data-nav="education">Education</a>
+        <a class="nav-link" href="index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav-link" href="index.html#projects" data-nav="projects">Projects</a>
+        <a class="nav-link" href="portfolio.html" data-nav="portfolio">Portfolio</a>
+        <a class="nav-link" href="index.html#contact" data-nav="contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="site-mobile-btn" aria-label="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</nav></div>

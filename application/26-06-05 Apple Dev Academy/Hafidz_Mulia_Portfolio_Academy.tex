@@ -1,0 +1,273 @@
+%-------------------------
+% Portfolio Target: Apple Developer Academy Indonesia
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode -halt-on-error Hafidz_Mulia_Portfolio_Academy.tex
+%-------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.96]{helvet}
+\usepackage[landscape,top=0.55in,bottom=0.48in,left=0.62in,right=0.62in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage{enumitem}
+
+\usetikzlibrary{calc}
+
+\definecolor{textprimary}{HTML}{121212}
+\definecolor{textmuted}{HTML}{666666}
+\definecolor{linegray}{HTML}{BEBEBE}
+\definecolor{softline}{HTML}{D7D7D7}
+\definecolor{placeholder}{HTML}{EAEAEA}
+\definecolor{pagewhite}{HTML}{FFFFFF}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=2pt,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagecolor{pagewhite}
+\color{textprimary}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\MetaField}[2]{
+  \vspace{0.18cm}
+  {\normalsize\bfseries #1\par}
+  \vspace{0.06cm}
+  {\raggedright\small\itshape\color{textmuted} #2\par}
+}
+
+\newcommand{\FooterBlock}[2]{%
+  \begin{minipage}[t]{0.225\textwidth}
+    {\raggedright\normalsize\bfseries #1\par}
+    \vspace{0.05cm}
+    {\raggedright\small\itshape\color{textmuted} #2\par}
+  \end{minipage}
+}
+
+\newcommand{\PortfolioFooter}{%
+  \vspace{0.35cm}
+  {\color{linegray}\rule{\textwidth}{0.5pt}}
+  \vspace{0.18cm}
+  \noindent
+  \FooterBlock{Hafidz Mulia}{Full-stack developer and mathematics student.}
+  \hfill
+  \FooterBlock{Background}{Computational mathematics, programming, and visual computing.}
+  \hfill
+  \FooterBlock{Contact Information}{hafidzmuliia@gmail.com\\+62 851 5833 5740 | hafmul.site}
+  \hfill
+  \begin{minipage}[t]{0.19\textwidth}
+    \raggedleft
+    {\small\color{textmuted} Portfolio Submission for\par}
+    {\normalsize\bfseries Apple Developer Academy\par}
+    {\normalsize\bfseries Indonesia\par}
+  \end{minipage}
+}
+
+\newcommand{\ImageSlot}[4]{%
+  \begin{tikzpicture}
+    \node[
+      draw=linegray,
+      fill=placeholder,
+      rounded corners=1pt,
+      minimum width=#1,
+      minimum height=#2,
+      inner sep=0pt,
+      outer sep=0pt,
+      anchor=south west
+    ] (frame) at (0,0) {};
+    \IfFileExists{#3}{%
+      \node[anchor=center] at ($(frame.south west)!0.5!(frame.north east)$) {\includegraphics[width=#1,height=#2,keepaspectratio]{#3}};
+    }{%
+      \node[
+        align=center,
+        text width=\dimexpr#1-1.3cm\relax
+      ] at ($(frame.south west)!0.5!(frame.north east)$) {%
+        {\Large\bfseries #4\par}
+        \vspace{0.15cm}
+        {\small\itshape\color{textmuted} Placeholder until the image asset is added.\par}
+      };
+    }%
+  \end{tikzpicture}%
+}
+
+\newcommand{\WebWideSlot}[2]{%
+  \ImageSlot{10.00cm}{5.625cm}{#1}{#2}
+}
+
+\newcommand{\WebSmallSlot}[2]{%
+  \ImageSlot{6.40cm}{3.60cm}{#1}{#2}
+}
+
+\newcommand{\PhoneSlot}[2]{%
+  \ImageSlot{0.242\linewidth}{6.6cm}{#1}{#2}
+}
+
+\newcommand{\ProjectCanvasStart}[5]{%
+  \clearpage
+  \thispagestyle{empty}
+  \noindent
+  \begin{minipage}[t][0.80\textheight][t]{0.16\textwidth}
+    #1
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t][0.80\textheight][t]{0.78\textwidth}
+    \begin{minipage}[t]{0.20\linewidth}
+      {\normalsize\bfseries Artwork/Project Title\par}
+      \vspace{0.05cm}
+      {\raggedright\small\itshape\color{textmuted} #2\par}
+      \vspace{0.12cm}
+      {\raggedright\small\itshape\color{textmuted} #3\par}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.56\linewidth}
+      {\normalsize\bfseries Artwork/Project Description\par}
+      \vspace{0.05cm}
+      {\raggedright\small\itshape\color{textmuted} #4\par}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.18\linewidth}
+      \raggedleft
+      {\small\color{textmuted} #5\par}
+    \end{minipage}
+
+    \vspace{0.38cm}
+}
+
+\newcommand{\ProjectCanvasEnd}{%
+  \end{minipage}
+  \vfill
+  \PortfolioFooter
+}
+
+\newcommand{\WebEvidenceGrid}[5]{%
+  \WebWideSlot{#1}{Desktop view 01}
+  \hspace{0.34cm}
+  \WebWideSlot{#2}{Desktop view 02}
+  \vspace{0.14cm}
+
+  \noindent
+  \WebSmallSlot{#3}{Supporting view 03}
+  \hspace{0.22cm}
+  \WebSmallSlot{#4}{Supporting view 04}
+  \hspace{0.22cm}
+  \WebSmallSlot{#5}{Supporting view 05}
+}
+
+\newcommand{\MobileEvidenceGrid}[5]{%
+  \PhoneSlot{#1}{Mobile screen 01}
+  \hspace{0.02\linewidth}
+  \PhoneSlot{#2}{Mobile screen 02}
+  \hspace{0.02\linewidth}
+  \PhoneSlot{#3}{Mobile screen 03}
+  \vspace{0.16cm}
+
+  \noindent\hspace*{0.131\linewidth}%
+  \PhoneSlot{#4}{Mobile screen 04}
+  \hspace{0.02\linewidth}
+  \PhoneSlot{#5}{Mobile screen 05}
+}
+
+\begin{document}
+
+\ProjectCanvasStart
+  {
+    \MetaField{Year Accomplished}{2026}
+    \MetaField{Role/Position}{Product Builder}
+    \MetaField{Project Type}{Education product for real user needs}
+    \MetaField{Publication Link}{\href{https://mainbipa.id}{mainbipa.id}}
+  }
+  {mainbipa.id}
+  {Indonesian language learning platform for BIPA learners}
+  {mainbipa.id is a language-learning platform designed for real educational use. It helps BIPA learners practice Indonesian through structured modules, guided progression, and practical learning context, with the emphasis on usable learning flow rather than a portfolio-only concept.}
+  {Project 1 of 5}
+\WebEvidenceGrid
+  {assets/mainbipa/01.png}
+  {assets/mainbipa/02.png}
+  {assets/mainbipa/03.png}
+  {assets/mainbipa/04.png}
+  {assets/mainbipa/05.png}
+\ProjectCanvasEnd
+
+\ProjectCanvasStart
+  {
+    \MetaField{Year Accomplished}{2026}
+    \MetaField{Role/Position}{Full-Stack Developer}
+    \MetaField{Project Type}{Adaptive learning platform}
+    \MetaField{Publication Link}{\href{https://arahbelajar.vercel.app}{arahbelajar.vercel.app}}
+  }
+  {ArahBelajar}
+  {Adaptive learning platform for academic research}
+  {ArahBelajar turns a research-driven learning model into a usable product. It combines pretest, tryout, recommendation, scaffolding, and posttest flows in one platform, with dashboards and learner-facing usability that support measurable day-to-day academic use.}
+  {Project 2 of 5}
+\WebEvidenceGrid
+  {assets/arahbelajar/01.png}
+  {assets/arahbelajar/02.png}
+  {assets/arahbelajar/03.png}
+  {assets/arahbelajar/04.png}
+  {assets/arahbelajar/05.png}
+\ProjectCanvasEnd
+
+\ProjectCanvasStart
+  {
+    \MetaField{Year Accomplished}{2026}
+    \MetaField{Role/Position}{Full-Stack Developer}
+    \MetaField{Project Type}{Applied mobile product}
+    \MetaField{Publication Link}{\href{https://realkeke.vercel.app}{realkeke.vercel.app}}
+  }
+  {REAL KEKE}
+  {Mobile-first workplace safety incident reporting}
+  {REAL KEKE is a mobile-first incident reporting product built for practical operational use. It supports submission, media evidence, status tracking, comments, and update notifications so field reporting becomes faster, clearer, and easier to monitor.}
+  {Project 3 of 5}
+\MobileEvidenceGrid
+  {assets/real-keke/01.png}
+  {assets/real-keke/02.png}
+  {assets/real-keke/03.png}
+  {assets/real-keke/04.png}
+  {assets/real-keke/05.png}
+\ProjectCanvasEnd
+
+\ProjectCanvasStart
+  {
+    \MetaField{Year Accomplished}{2026}
+    \MetaField{Role/Position}{Mobile App Developer}
+    \MetaField{Project Type}{Child-focused mobile support app}
+    \MetaField{Publication Link}{Private / available on request}
+  }
+  {SMARTBALITA}
+  {Mobile app for child-focused research support}
+  {SMARTBALITA is a mobile application designed for child-focused support scenarios. The product emphasizes structured user flows, accessible mobile interaction patterns, and practical data capture while keeping the wording appropriately general for confidentiality.}
+  {Project 4 of 5}
+\MobileEvidenceGrid
+  {assets/smartbalita/01.png}
+  {assets/smartbalita/02.png}
+  {assets/smartbalita/03.png}
+  {assets/smartbalita/04.png}
+  {assets/smartbalita/05.png}
+\ProjectCanvasEnd
+
+\ProjectCanvasStart
+  {
+    \MetaField{Year Accomplished}{2025}
+    \MetaField{Role/Position}{Full-Stack Developer}
+    \MetaField{Project Type}{Workflow automation product}
+    \MetaField{Publication Link}{\href{https://rapor-himatika.vercel.app}{rapor-himatika.vercel.app}}
+  }
+  {erapor}
+  {Automated reporting system for internal operations}
+  {erapor came from a reporting workflow I experienced directly. Manual recap, repeated formatting, and scattered files made the process slow and fragile, so I turned it into a centralized product with dashboards, exports, and a more practical reporting flow.}
+  {Project 5 of 5}
+\WebEvidenceGrid
+  {assets/erapor/01.png}
+  {assets/erapor/02.png}
+  {assets/erapor/03.png}
+  {assets/erapor/04.png}
+  {assets/erapor/05.png}
+\ProjectCanvasEnd
+
+\end{document}

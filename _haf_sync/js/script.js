@@ -57,11 +57,7 @@ function initializeNavigation() {
         lastScrollY = currentScrollY;
     });
     
-    // Mobile menu toggle
-    mobileMenuBtn?.addEventListener('click', () => {
-        navMenu?.classList.toggle('nav-menu-open');
-        mobileMenuBtn?.classList.toggle('active');
-    });
+    // Mobile menu toggle handled by js/layout.js component (avoid double-toggle)
     
     // Navigation link clicks
     navLinks.forEach(link => {
@@ -519,15 +515,23 @@ function renderFeaturedProjects() {
     };
 
     const renderFilterButtons = () => {
-        filterBar.innerHTML = filters.map((filter) => {
+        filterBar.innerHTML = filters.map((filter, idx) => {
             const isActive = filter.id === activeFilter;
-            return `<button class="project-filter-btn${isActive ? ' active' : ''}" data-project-filter="${filter.id}" type="button">${filter.label}</button>`;
+            const btn = `<button class="project-filter-btn${isActive ? ' active' : ''}" data-project-filter="${filter.id}" type="button">${filter.label}</button>`;
+            const divider = idx === 1 ? `<span class="filter-divider" aria-hidden="true"></span>` : ``;
+            return btn + divider;
         }).join('');
     };
 
+    const isMobileShowcase = (project) => {
+            const cat = (project.category||'').toLowerCase();
+            const tags = (project.tags||[]).join(' ').toLowerCase();
+            return project.slug==='smartbalita-app' || cat.includes('mobile') || tags.includes('react native') || tags.includes('expo');
+        };
     const createProjectCard = (project) => {
+        const mobile = isMobileShowcase(project);
         const imageMarkup = project.coverImage
-            ? `<img src="${project.coverImage}" alt="${escapeProjectText(project.title)}" class="project-image">`
+            ? `<img src="${project.coverImage}" alt="${escapeProjectText(project.title)}" class="${mobile?'project-image project-image-mobile':'project-image'}">`
             : `<div class="project-image project-image-placeholder"><span>${escapeProjectText(project.coverLabel || project.title)}</span></div>`;
 
         const pills = [
@@ -550,7 +554,7 @@ function renderFeaturedProjects() {
             : '';
 
         return `
-            <article class="project-card project-card-catalog">
+            <article class="project-card project-card-catalog${mobile?' is-mobile-showcase':''}">
                 <div class="project-image-container">
                     ${imageMarkup}
                     <div class="project-overlay"></div>
@@ -581,6 +585,24 @@ function renderFeaturedProjects() {
         count.textContent = `${visibleProjects.length} project${visibleProjects.length !== 1 ? 's' : ''}`;
     };
 
+
+    function setupFilterArrows(){
+      if(document.querySelector('.filter-wrap')) return;
+      const fb=document.getElementById('project-filter-bar');
+      if(!fb) return;
+      const wrap=document.createElement('div'); wrap.className='filter-wrap';
+      fb.parentNode.insertBefore(wrap, fb);
+      wrap.appendChild(fb);
+      const left=document.createElement('button'); left.className='filter-arrow left'; left.type='button'; left.innerHTML='‹'; left.setAttribute('aria-label','Scroll left');
+      const right=document.createElement('button'); right.className='filter-arrow right'; right.type='button'; right.innerHTML='›'; right.setAttribute('aria-label','Scroll right');
+      wrap.prepend(left); wrap.append(right);
+      left.addEventListener('click',()=> fb.scrollBy({left:-220,behavior:'smooth'}));
+      right.addEventListener('click',()=> fb.scrollBy({left:220,behavior:'smooth'}));
+      const upd=()=>{ left.disabled=fb.scrollLeft<=2; right.disabled=fb.scrollLeft+fb.clientWidth>=fb.scrollWidth-2; };
+      fb.addEventListener('scroll', upd); window.addEventListener('resize', upd); upd();
+    }
+    setupFilterArrows();
+
     filterBar.addEventListener('click', (event) => {
         const button = event.target.closest('[data-project-filter]');
         if (!button) {
@@ -590,7 +612,17 @@ function renderFeaturedProjects() {
         activeFilter = button.getAttribute('data-project-filter') || 'featured';
         renderFilterButtons();
         renderProjects();
-    });
+    
+  // shopee mobile: tap card to go to detail (since links hidden)
+  document.addEventListener('click', (e)=>{
+    if(window.innerWidth>767) return;
+    const card=e.target.closest('.project-card');
+    if(!card) return;
+    if(e.target.closest('a, button')) return;
+    const slug = card.querySelector('[href*="porto-show.html?project="]')?.getAttribute('href')?.match(/project=([^&]+)/)?.[1];
+    if(slug) location.href=`porto-show.html?project=${slug}`;
+  });
+});
 
     renderFilterButtons();
     renderProjects();

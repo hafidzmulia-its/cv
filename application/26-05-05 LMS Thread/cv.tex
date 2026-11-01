@@ -1,0 +1,159 @@
+%-------------------------
+% CV Target: LMS Enhancement and React Native Support
+% Author: Hafidz Mulia
+% Bahasa: Indonesia
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Demo / Portofolio}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Fullstack Developer - LMS, Laravel API, dan React Ecosystem}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== RINGKASAN ====================
+\section{Ringkasan Profesional}
+Fullstack developer dengan pengalaman paling kuat di \textbf{Laravel/PHP untuk backend API} dan \textbf{React/Next.js untuk frontend web}, terutama untuk produk edukasi, LMS, dashboard admin, dan alur asesmen. Saya terbiasa mengerjakan flow yang butuh \textbf{auth}, \textbf{role-based access}, \textbf{pretest/tryout/posttest}, \textbf{scoring atau result logic}, \textbf{draft persistence / autosave}, dan integrasi data antar modul. Untuk kebutuhan mobile, proof saya paling dekat ada pada backend API untuk aplikasi mobile dan perancangan flow yang sinkron dengan state pengguna, upload data, serta penyimpanan progres, sehingga saya cukup nyaman masuk ke ekosistem produk yang menggabungkan web LMS dan aplikasi pendamping.
+
+%==================== KEAHLIAN ====================
+\section{Keahlian Relevan}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Frontend Web:} & React, Next.js, TypeScript, Tailwind CSS, form handling, dashboard UI \\[3pt]
+\textbf{Backend \& API:} & Laravel, PHP, REST API design, Next.js API Routes, authentication, CRUD dan workflow logic \\[3pt]
+\textbf{Assessment Flow:} & Multi-step form, scoring logic, result classification, progress tracking, autosave dan state persistence \\[3pt]
+\textbf{Data \& Auth:} & MySQL, MongoDB, Appwrite, Firebase Firestore, NextAuth, Iron Session, Laravel Sanctum \\[3pt]
+\textbf{Delivery:} & Requirement breakdown, admin panel, debugging, deployment, iterasi fitur, komunikasi teknis dengan klien \\[3pt]
+\textbf{Bahasa:} & Indonesia (native), Inggris (membaca/menulis dokumentasi teknis) \\
+\end{tabularx}
+
+%==================== PROYEK ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {LearnNext - LMS untuk Kebutuhan Tesis}
+  {2026}
+  {Fullstack Developer | Next.js, React, TypeScript, Appwrite, Google Sheets API}
+  {Mengerjakan mayoritas implementasi sistem end-to-end, meliputi auth, role siswa/admin/tutor, dashboard, pretest, tryout, posttest, recommendation flow, scaffolding flow, material library, progress tracking, serta draft persistence atau autosave. UI/UX design dibantu rekan, tetapi logic aplikasi dan integrasi sistem utamanya saya kerjakan sendiri.}
+  {}
+
+\cvproject
+  {ELKPD - LMS Gamified untuk Klien}
+  {2025 -- 2026}
+  {Fullstack Developer | Next.js, React, TypeScript, MongoDB, NextAuth}
+  {Membangun platform pembelajaran untuk klien nyata dengan teacher dashboard, group profile, multi-level assessment, monitoring progres, dan alur evaluasi yang dipakai langsung oleh pengguna. Proyek ini menjadi proof paling kuat untuk delivery produk edukasi yang benar-benar dipakai di lapangan.}
+  {https://elkpd.vercel.app}
+
+\cvproject
+  {Soulmom - Platform Screening dan Edukasi}
+  {2026}
+  {Fullstack Developer | Next.js, TypeScript, Firebase, Firestore, Google Sheets API}
+  {Membangun platform berbasis asesmen dengan flow pertanyaan terstruktur, logic hasil, pencatatan data, dan dashboard admin. Relevan untuk kebutuhan scoring client-side, result flow, dan pengalaman pengguna yang bergantung pada state input yang konsisten.}
+  {https://soulmom-web.vercel.app}
+
+\cvproject
+  {patahero\_api - REST API Backend untuk Aplikasi Mobile}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Membangun backend API untuk aplikasi mobile, termasuk endpoint terstruktur, token-based authentication, manajemen profil pengguna, dan upload handling. Proyek ini memberi proof langsung untuk dukungan Laravel API pada aplikasi yang dikonsumsi dari sisi mobile.}
+  {https://github.com/hafidzmulia-its/patahero_api}
+
+%==================== PENGALAMAN ====================
+\section{Pengalaman Relevan}
+
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode.id / Freelance Digital Agency}
+  {2026 -- Sekarang}
+  {Menangani proyek klien dan riset dari tahap requirement, perancangan sistem, implementasi frontend dan backend, sampai deployment. Beberapa delivery paling relevan ada di domain edukasi, asesmen, dashboard, dan integrasi workflow berbasis web.}
+
+\cventry
+  {Programming \& Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajar dasar pemrograman, logika aplikasi, debugging, dan web development. Pengalaman ini ikut memperkuat pemahaman saya terhadap alur belajar digital, kebutuhan user pendidikan, dan cara menjelaskan logic teknis secara runtut.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Mengembangkan sistem berbasis Laravel untuk kebutuhan sekolah, mulai dari requirement gathering, desain basis data, implementasi fitur, sampai user testing. Memberi pengalaman langsung dalam delivery software untuk lingkungan pendidikan.}
+
+%==================== PENDIDIKAN ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- Sekarang}
+  {Peminatan Komputasi dan Informatika | GPA 3.36 / 4.00 | Aktif mengerjakan proyek software untuk kebutuhan riset, organisasi, dan klien nyata.}
+
+\end{document}

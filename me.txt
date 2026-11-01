@@ -1,0 +1,109 @@
+HAFIDZ MULIA
+
+Biodata
+- Full name: Hafidz Mulia
+- Location: Surabaya, Indonesia
+- Phone: +62 851 5833 5740
+- Email: hafidzmuliia@gmail.com
+- Portfolio: https://hafmul.site
+- Portfolio filtered (Properindo): https://hafmul.site/portfolio.html?properindo
+- GitHub: https://github.com/hafidzmulia-its
+- LinkedIn: https://www.linkedin.com/in/hafidz-mulia/
+
+Professional Profile
+Software Developer & Empathetic Problem Solver based in Surabaya. I write code to solve human problems — combining a Mathematics background at ITS with practical software engineering to build intuitive digital tools for educators, health professionals, and local communities. My strongest hands-on stack is Laravel, Next.js, TypeScript, MySQL, PostgreSQL, PostGIS, Appwrite, Firebase, and Tailwind CSS, delivered through product thinking, technical execution, and team coordination. Outside product work I teach programming to kids/teens and mentor university practicum, which sharpens how I communicate technical decisions and lead execution clearly.
+
+Education
+- Bachelor of Mathematics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya
+- Period: 2022 - 2026
+- GPA: 3.40 / 4.00
+- Focus: Computational Mathematics, Data Architecture, and Logic
+- Thesis: Improved data warehouse query performance using a PROADAPT-based memory-aware partitioning mechanism on PostgreSQL and TimescaleDB for 50M+ row time-series data
+- High School: SMA IT Al Uswah Surabaya, 2019 - 2022, Grade 92.02/100, Science track Mathematics, Chairman SKI 2020-2021, Mentor BPI, SNMPTN 2022
+
+Work Experience (updated 2026-09-25)
+1. Web Application Developer — PT Semen Indonesia Logistik (SILOG)
+   Sep 2026 - Present | Full-time | Gresik, East Java (On-site)
+   ICT Department, Application Development Unit
+   Develop application systems for real business cases at SILOG. Use Docker and a Linux development environment, and build management systems with Laravel Filament.
+
+2. Freelance Software Engineer — NechCode
+   Feb 2026 - Present
+   Started a digital agency to help MSMEs and local organizations overcome technical hurdles. Handle full lifecycle from listening to core problems to writing code and launching final website. Partner directly with clients to translate messy workflows into clean digital platforms with ownership of database design, API architecture, and frontend usability.
+
+3. Programming Teacher — Timedoor Academy
+   Jan 2025 - Present
+   Breaking down complex CS concepts into fun, digestible lessons for kids/teens, fostering supportive environment. Guided 20+ young learners through debugging, celebrating wins; introduced basic AI and computer-vision (NumPy, OpenCV) as magic rather than math.
+
+4. Fullstack Developer Intern — SMA IT Al Uswah Surabaya
+   Jan 2025 - Feb 2025
+   Listened to frustrations of school administrators regarding manual data entry and built a digital attendance management system to make mornings less stressful. Handled full lifecycle from gathering requirements to UAT; delivered reliable Laravel backend that replaced paperwork.
+
+5. Laboratory Assistant — Programming and Visual Computing ITS
+   Aug 2024 - Present (Coordinator Assistant Lab Aug 2025 - Dec 2025, Assistant Alpro 1 & 2 Aug 2024 - Aug 2025)
+   Managed lab operations and guided 100+ students through Java/Python hurdles, ensuring no one left behind in core programming logic. Sat side-by-side to debug code, bridging theory and practical development.
+
+6. HIMATIKA ITS — 1st Vice Head of Sentrum Katalis
+   Feb 2025 - Dec 2025 (Leader of Mathematics 2022 / STI 57 May 2023 - Present)
+   Noticed burnout from manual paperwork and developed 'Rapor HIMATIKA', an automated system that gave members back 60% of their time. Acted as bridge for 150+ students, maintaining cohesive community.
+
+7. LKKI Matematika ITS — Head of Regeneration Department
+   Jan 2023 - Dec 2024 (Staff 2023)
+   Designed training programs centered around personal growth and empathy, boosting active participation by 30%.
+
+8. UKM Rebana ITS — Vice Head of PM Department
+   Jan 2023 - Dec 2024
+   Helped plan resources and events to lighten team workload, increasing efficiency by 25%.
+
+Experience Highlights (haf-portfolio backed)
+- Built backend systems using Laravel 13, PHP 8.3, MySQL, PostgreSQL, PostGIS, TimescaleDB, MongoDB, Appwrite, Firebase with Sanctum/Breeze/NextAuth.
+- PWA health screening (SIDEDIKK — Deteksi Dini Komplikasi Kehamilan) at sidedikk.my.id / app.sidedikk.my.id: versioned 20-question flow, 4-level risk, Chart.js admin, 58 tests, shared-hosting hardened.
+- Web GIS (e-kos, HISurabaya) with Leaflet, PostGIS, Supabase/SQL Server and Turf.js.
+- Reporting automation (erapor) with RBAC, PDF/Excel exports for 150+ members.
+- Health/education LMS (arahbelajar, mainbipa.id, premom, nestbloom, thyva, soulmom, smartbalita-app) with gated flows, Appwrite/Firebase, Coze AI.
+- Admin dashboards, internal systems (portal-tpq at tpqnh.my.id, sidedikk, SIBPS, SIPerpustakaan) with CRUD, approvals, CSV exports.
+- Taught programming via structured instruction and private tutoring, including Python + OpenCV exercises.
+
+Technical Skills (from haf 2026-08-23)
+- Languages: PHP, JavaScript, TypeScript, Python, SQL, HTML, CSS
+- Frontend: Next.js, React, TypeScript, Laravel Blade, Vue.js, Alpine.js, Tailwind CSS, Bootstrap, Leaflet.js, shadcn/ui
+- Backend & DB: Laravel 13 / 11, Next.js API Routes, Node.js, NextAuth, Iron Session, MongoDB, PostgreSQL + PostGIS + TimescaleDB, MySQL, SQL Server, Supabase, Appwrite, Firebase, Sanctum, Breeze
+- Product & Mapping: UI/UX Design, Figma, Responsive Design, Web GIS, OpenStreetMap, Turf.js
+- Tools & Other: Git, GitHub, Docker, Linux development environment, Laravel Filament, REST APIs, Vercel, Cloudinary, Google Sheets API, Coze API, Firebase Cloud Messaging, Vite, PHPUnit, Pint, Chart.js 4.5, PWA (manifest/sw.js)
+- Other Strengths: Database modeling, CRUD, admin dashboards, deployment (cPanel split-domain), debugging, responsive UI, data warehouse research
+
+Portfolio Highlights (haf 2026-08-23, 33 projects)
+- Featured: sidedikk (Health-Tech PWA Screening, Laravel 13 / PWA), portal-tpq (TPQ Management), sadariyuk (SADARI), arahbelajar, mainbipa.id, nechcode.id, thyva, soulmom, real-keke (PWA), premom, smartbalita-app (React Native), nestbloom, elkpd, patahero_api, hisurabaya, erapor, sina, e-kos, literasik, sibps, sipresensi
+- Live links updated: sidedikk.my.id, tpqnh.my.id, sadariyul.vercel.app, arahbelajar.vercel.app, mainbipa.id, nechcode.id, thyva/soulmom/premom/nestbloom/elkpd etc per project-data.js 2026-08-23
+- Covers standardized to 4:3, grid 1:1 on mobile Shopee-like 2-col, segmented filter tabs (Vercel/Apple style) with divider between All Repos | Next.js/React
+
+Strengths
+- Backend development with Laravel and PHP (13.8 on sidedikk)
+- Relational database design and SQL work
+- REST API and PWA implementation
+- Admin dashboard and CRUD system development
+- Responsive frontend implementation
+- Debugging and iterative product delivery
+- Independent work in remote or low-supervision environments
+
+Domains
+- Education technology
+- Reporting and internal systems
+- GIS and map-based platforms
+- Health-tech and screening platforms (SIDEDIKK, SADARIYuk, premom, soulmom, smartbalita)
+- Research and data-driven web products
+
+Language
+- Indonesian: Native
+- English: Professional working proficiency for technical reading and writing
+
+Links Updated 2026-08-23
+- Portfolio: https://hafmul.site
+- Portfolio (all): https://hafmul.site/portfolio.html
+- Portfolio (Properindo filtered): https://hafmul.site/portfolio.html?properindo
+- CV PDF: https://hafmul.site/img/CV.pdf (also D:/Downloads/cv/CV_Hafidz_Mulia.pdf)
+- GitHub sidedikk corrected: https://github.com/hafidzmulia-its/sidedikk (not sidedikk-pwa)
+
+Neutral Experience Wording For Sensitive Applications
+Use this instead of mentioning NechCode:
+"Freelance Web and Mobile Apps Developer with hands-on experience delivering client and research-oriented systems across backend, full-stack web, and mobile-app-support workflows. Handle project delivery from requirements and database design to implementation, deployment, and maintenance."

@@ -1,0 +1,126 @@
+                          Hafidz Mulia
+
+Full-Stack Developer, Computational Mathematics Student, and Student Leader
+
+                 Surabaya, Indonesia | hafidzmuliia@gmail.com | +62 851 5833 5740
+              hafmul.site | github.com/hafidzmulia-its | linkedin.com/in/hafidz-mulia
+
+Profile
+
+Final-year Mathematics student at Institut Teknologi Sepuluh Nopember with a strong record of turning real user
+problems into working digital products. I build full-stack web and mobile-support systems across education, health,
+GIS, and organizational workflows, while also leading teams through HIMATIKA ITS and coordinating programming
+practicum activities at PROVIKOM Laboratory. My strongest fit for Apple Developer Academy is the combination
+of technical execution, product thinking, teaching experience, and leadership in collaborative environments.
+
+Education
+
+Bachelor of Mathematics                                                                                      2022 ­ 2026
+
+Institut Teknologi Sepuluh Nopember (ITS), Surabaya
+
+GPA: 3.36 / 4.00. Focus: Computational Mathematics and Informatics. Thesis work explores PostgreSQL and TimescaleDB
+
+query-performance optimization on 50M+ row time-series data.
+
+Leadership and Experience
+
+1st Vice Head                                                                                     Feb 2025 ­ Dec 2025
+
+HIMATIKA ITS
+
+Support organizational direction and cross-division coordination for a 100+ member student organization. Help maintain internal
+
+workflows, reporting discipline, and team execution across academic and organizational programs.
+
+Founder and Lead Developer                                                                                   2026 ­ Present
+
+NechCode.id / Independent Client and Research Projects
+
+Lead end-to-end delivery for client and research-oriented digital products, covering requirements, product scope, database design,
+
+frontend and backend development, deployment, debugging, and post-release iteration.
+
+Programming and Web Development Instructor                                                        Jan 2025 ­ Present
+
+Timedoor Academy
+
+Teach programming fundamentals, algorithmic thinking, introductory web development, and selected Python-based AI or
+
+computer-vision modules. Guide students through debugging, project practice, and technical explanation.
+
+Assistant Laboratory Coordinator                                                                         2024 ­ Dec 2025
+
+PROVIKOM Laboratory, ITS Mathematics Department
+
+Coordinate and support practicum activities in algorithms, programming, and visual computing. Mentor students in problem
+
+solving, debugging, and structured technical learning with the laboratory assistant team.
+
+Selected Projects
+
+mainbipa.id - Indonesian Language Learning Platform                                                          2026
+
+Product Builder | Learning Flow, Content Structure, User Experience
+
+Built a BIPA-focused learning product direction for helping non-native speakers practice Indonesian through structured modules,
+
+practical context, and learner-friendly interaction design. The project is useful beyond a showcase because it targets real
+
+language-learning needs for international learners.
+
+Project Link
+
+ArahBelajar - Adaptive Learning Platform                                                                     2026
+
+Full-Stack Developer | Next.js, React, TypeScript, Firebase, Google Sheets API
+
+Built a thesis-driven learning platform with pretest, tryout, posttest, recommendations, scaffolding, progress tracking, ad-
+
+min/tutor/student dashboards, and research data logging for a real academic learning and analysis workflow.
+
+Project Link
+
+REAL KEKE - Workplace Safety Incident Reporting                                                              2026
+
+Full-Stack Developer | Next.js, React, TypeScript, Firebase, Cloudinary, PWA
+
+Developed a mobile-first K3 incident reporting workflow with role-based access, media upload, status tracking, comment threads,
+
+and push notifications for operational communication and follow-up.
+
+Project Link
+
+SMARTBALITA - Child-Focused Mobile App                                                                       2026
+
+Mobile App Developer | React Native, Mobile UI Flow, Research Support Workflow
+
+Built a React Native mobile application in a child-focused research support context, with structured mobile user flows and
+
+practical app-level interaction design for real usage scenarios.
+
+                                                                  1
+erapor - Automated Reporting System                                   2025
+
+Full-Stack Developer | Next.js, React, TypeScript, MongoDB, NextAuth
+
+Created a reporting platform with role-based dashboards, user management, and PDF/Excel exports to reduce manual organi-
+
+zational reporting work inside HIMATIKA ITS.
+
+Project Link
+
+Skills
+
+Product & Leadership  Requirement discovery, MVP scoping, team coordination, mentoring, technical communi-
+Frontend              cation, iterative delivery
+Backend & Data        React, React Native, Next.js, TypeScript, Tailwind CSS, responsive UI, form validation,
+Tools                 dashboard UX
+Languages             Laravel, PHP, Next.js API Routes, REST API, MySQL, PostgreSQL, PostGIS, MongoDB,
+                      Firebase, Appwrite
+                      Git, GitHub, Vercel, Cloudinary, Google Sheets API, Firebase Cloud Messaging, Com-
+                      poser, npm
+                      Indonesian (native), English (professional reading and writing)
+
+                                              2
+

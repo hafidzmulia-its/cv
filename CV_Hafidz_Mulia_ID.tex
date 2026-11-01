@@ -1,0 +1,191 @@
+%-----------------
+% CV Target: General Application / Product-Minded Software Developer (Indonesian)
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "CV_Hafidz_Mulia.tex"
+%-----------------
+\documentclass[a4paper,11pt]{article}
+
+%-------- PACKAGES --------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%-------- COLORS --------
+\definecolor{accent}{HTML}{0F4C81} % Biru profesional
+
+%-------- PAGE STYLE --------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%-------- SECTION FORMATTING --------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%-------- CUSTOM COMMANDS --------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Repositori / Demo}} \fi
+  \vspace{6pt}
+}
+
+%-------- DOCUMENT START --------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Software Developer \& Empathetic Problem Solver}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Ringkasan Profesional}
+Saya membangun perangkat lunak (\textit{software}) untuk menyelesaikan masalah pengguna. Lulusan Matematika yang memadukan keakuratan logika dengan pengembangan aplikasi web \textit{Fullstack} untuk menciptakan sistem IT yang skalabel dan efisien. Berpengalaman mengembangkan platform pelaporan otomatis, aplikasi \textit{mobile-first} kesehatan, hingga sistem manajemen edukasi, dengan fokus pada penyelesaian masalah (\textit{problem solving}) dan UX yang baik. Menguasai arsitektur modern (Laravel, Next.js, PostgreSQL) sebagai alat untuk memberikan dampak bisnis yang nyata. Selain rekayasa perangkat lunak, saya aktif mendidik dan menjadi mentor, membawa kemampuan komunikasi teknis dan kerja sama tim ke setiap proyek yang saya tangani.
+
+%==================== EXPERIENCE ====================
+\section{Pengalaman Kerja}
+
+\cventry
+  {Part-time Software Engineer}
+  {NechCode -- Digital Solutions Agency}
+  {Feb 2026 -- Saat Ini}
+  {Bermitra langsung dengan UMKM, institusi pendidikan, dan klien layanan kesehatan untuk mendigitalisasi alur kerja operasional mereka menjadi platform yang fungsional. Mengelola siklus pengembangan perangkat lunak secara menyeluruh (\textit{end-to-end})---mulai dari perancangan arsitektur \textit{database/Backend} hingga implementasi \textit{Frontend}---menjembatani kebutuhan bisnis dengan praktik eksekusi teknologi yang andal.}
+
+\cventry
+  {Part-time Programming Teacher}
+  {Timedoor Academy}
+  {Jan 2025 -- Saat Ini}
+  {Menyederhanakan konsep ilmu komputer yang kompleks menjadi materi pembelajaran yang menyenangkan bagi siswa remaja. Membimbing siswa memecahkan masalah \textit{bug} pada kode mereka (debugging) serta memperkenalkan dasar kecerdasan buatan (AI) dan pengolahan gambar (NumPy, OpenCV) dalam lingkungan yang interaktif untuk melatih pemikiran logis.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Jan 2025 -- Feb 2025} 
+  {Mendengarkan kendala staf sekolah terkait rekap data manual dan merancang sistem manajemen absensi digital. Menangani seluruh alur kerja dari analisis kebutuhan (\textit{requirement gathering}) hingga tahap pengujian akhir aplikasi (UAT), menghasilkan sistem berbasis Laravel yang stabil dan langsung mempercepat tugas administratif.}
+
+\cventry
+  {Coordinator Assistant Laboratory}
+  {ITS Mathematics Department (Programming \& Visual Computing)}
+  {Agt 2024 -- Des 2025}
+  {Memimpin operasional praktikum pemrograman dan membawahi tim asisten laboratorium. Mendampingi lebih dari 100 mahasiswa tingkat awal dalam menerapkan teori algoritma ke dalam praktik pengembangan aplikasi (Java, Python), memastikan setiap mahasiswa memahami logika dasar \textit{coding} dengan baik.}
+
+%==================== SELECTED PROJECTS ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {SIDEDIKK -- Platform Edukasi \& Screening Kesehatan}
+  {2026}
+  {Fullstack Developer | Next.js, Laravel, Tailwind CSS, PWA, Chart.js}
+  {Membangun aplikasi \textit{Progressive Web App} (PWA) berorientasi seluler (\textit{mobile-first}) untuk screening deteksi kehamilan dini. Menerjemahkan data kesehatan yang kompleks menjadi sistem klasifikasi risiko medis yang mudah dipahami, terintegrasi dengan asisten percakapan AI.}
+  {https://sidedikk.my.id}
+
+\cvproject
+  {Portal TPQ -- Sistem Manajemen Edukasi}
+  {2026}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Tailwind CSS}
+  {Merampingkan hambatan birokrasi di institusi pendidikan Islam. Mendigitalisasi data pencapaian siswa, jadwal guru, dan alur pelaporan kinerja menjadi satu sistem \textit{dashboard} terpusat agar pengajar dapat lebih fokus pada kegiatan mengajar ketimbang urusan kertas kerja administratif.}
+  {https://tpqnh.my.id}
+
+\cvproject
+  {erapor -- Sistem Otomasi Pelaporan Internal}
+  {2025}
+  {Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Menghapus ratusan jam pengerjaan administratif manual dengan mengotomatisasi sistem pelaporan dokumen. Membangun \textit{dashboard} berbasis hak akses (\textit{Role-Based Access}) untuk memusatkan integrasi data sekaligus memfasilitasi pencetakan multi-format laporan secara otomatis.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {HISurabaya -- Platform Pencarian Spasial Web GIS}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, SQL Server, Leaflet, Turf.js}
+  {Mengembangkan sistem informasi pariwisata yang mengubah pencarian berbasis teks biasa menjadi alat eksplorasi spasial (peta) yang interaktif. Memanfaatkan teknologi Web GIS agar pengguna dapat memvisualisasikan ketersediaan akomodasi berdasarkan rute navigasi dan radius area perkotaan.}
+  {https://github.com/hafidzmulia-its/hisurabaya}
+
+%==================== EDUCATION ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika (Bachelor of Mathematics)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {IPK: 3.40 / 4.00 | Mempelajari cara memecahkan masalah berskala masif menjadi urutan langkah yang logis. Skripsi berfokus pada optimasi kueri dari basis data berukuran besar (\textit{Data Warehouse}), memanfaatkan mekanisme partisi alokasi memori (PROADAPT) pada PostgreSQL dan TimescaleDB untuk memproses 50+ juta baris data deret waktu (\textit{time-series}), membuktikan pemahaman dalam arsitektur \textit{Backend} yang rumit.}
+
+%==================== LEADERSHIP ====================
+\section{Kepemimpinan \& Komunitas}
+
+\cventry
+  {Ketua Angkatan Matematika 2022 (STI 57)}
+  {Institut Teknologi Sepuluh Nopember}
+  {Mei 2023 -- Saat Ini}
+  {Terpilih untuk memfasilitasi komunikasi dan koordinasi bagi 150+ mahasiswa angkatan 2022. Berfokus pada pembangunan lingkungan akademik yang saling mendukung, berkontribusi pada peningkatan partisipasi aktif mahasiswa sebesar 20\% dalam berbagai kegiatan departemen.}
+
+\cventry
+  {Wakil Ketua Himpunan (1st Vice Head of Sentrum Katalis)}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Des 2025}
+  {Memimpin tata kelola pengurus internal dan memelopori transformasi manajemen digital bagi 150+ anggota staff. Bertindak sebagai fasilitator komunikasi yang berfokus menjaga kepaduan tim dan secara aktif berupaya menekan tingkat kelelahan kerja (burnout) panitia melalui otomatisasi sistem pelaporan.}
+
+\cventry
+  {Fasilitator Pelatihan \& Pembicara Teknis (Technical Speaker)}
+  {Berbagai Organisasi Kampus (HIMATIKA, LKKI, UKM Rebana)}
+  {Jul 2024 -- Nov 2025}
+  {Memandu berbagai pelatihan terkait dasar pengembangan web (\textit{web development}), manajemen SDM, dan kepemimpinan tim. Menerjemahkan konsep teoritis yang rumit menjadi keterampilan praktis yang mudah diaplikasikan bagi lebih dari 100+ peserta.}
+
+\cventry
+  {Kepala Departemen Kaderisasi (Regeneration Department)}
+  {LKKI Matematika ITS}
+  {Jan 2024 -- Des 2024}
+  {Memimpin program pengembangan sumber daya manusia (SDM) dan pelatihan anggota. Merancang serta mengeksekusi strategi pendekatan (\textit{engagement}) yang berpusat pada empati dan pertumbuhan personal, menghasilkan peningkatan partisipasi aktif mahasiswa sebesar 30\%.}
+
+%==================== SKILLS ====================
+\section{Keahlian Teknis \& Perangkat}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Bahasa Utama:} & TypeScript, JavaScript, PHP, Python, SQL, Java, HTML/CSS \\[3pt]
+\textbf{Frontend Web:} & Next.js, React, Vue.js, Tailwind CSS, Alpine.js, Blade, Bootstrap \\[3pt]
+\textbf{Backend \& Data:} & Laravel, Node.js, PostgreSQL, MySQL, SQL Server, MongoDB, PostGIS, Firebase, Appwrite \\[3pt]
+\textbf{Arsitektur \& IT:} & REST API Design, Otorisasi (\textit{Role-Based Access}), Autentikasi (Sanctum, NextAuth), Web GIS \\[3pt]
+\textbf{Tools \& Workflow:} & Git, Vercel, Cloudinary, Composer, npm, Vite, Google Sheets API, NumPy, OpenCV \\[3pt]
+\textbf{Keahlian Pendukung:} & \textit{Problem Solving}, Analisis Kebutuhan (\textit{Requirement Gathering}), Komunikasi Teknis, Mentorship \\
+\end{tabularx}
+
+\end{document}

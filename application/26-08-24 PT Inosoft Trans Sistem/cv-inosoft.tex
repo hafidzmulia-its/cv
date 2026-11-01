@@ -1,0 +1,167 @@
+%-------------------------
+% CV Target: IT Customer Support - PT Inosoft Trans Sistem
+% Author: Hafidz Mulia
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{0F4C81}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{View Repository / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{IT Application Support | Helpdesk Specialist}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== SUMMARY ====================
+\section{Professional Summary}
+Detail-oriented and customer-oriented IT professional passionate about helping customers succeed in utilizing enterprise software. Proven ability to coordinate closely with Project Managers, Developers, and QA Engineers to investigate and resolve customer issues. Strong sense of ownership in maintaining accurate documentation of customer interactions, issue investigations, and resolutions. A continuous learner with a calm-under-pressure mindset, delivering professional, responsive, and solution-oriented customer support while expanding understanding of complex business processes.
+
+%==================== EDUCATION ====================
+\section{Education}
+\cventry
+  {Bachelor of Mathematics (Programming and Visual Computing)}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {GPA: 3.40 / 4.00 | Focus: Computational Logic, Data Architecture, and Strong Analytical Problem Solving}
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\cventry
+  {Founder \& Technical Coordinator}
+  {Mulyos Project (B2B Digital Solution Agency)}
+  {Feb 2026 -- Present}
+  {Build trusted relationships with enterprise (B2B) customers by translating business needs into technical requirements. Manage customer expectations throughout the support process, communicate customer-reported problems clearly and accurately to the engineering team, and validate proposed solutions before communicating them back to customers in a clear and customer-friendly manner.}
+
+\cventry
+  {1st Vice Head (Digitalization \& IT Support)}
+  {HIMATIKA ITS}
+  {Feb 2025 -- Dec 2025}
+  {Managed technical support for internal applications serving 150+ users. Identified recurring issues and shared improvement opportunities with internal teams. Participated in knowledge-sharing and process improvement initiatives, escalating critical issues appropriately while ensuring effective communication across all stakeholders. Reduced manual administrative time by 60\%.}
+
+\cventry
+  {Programming Teacher (Technical Communicator)}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Utilize strong listening and problem-solving abilities to explain logical programming concepts. Able to manage multiple priorities in a fast-paced environment, demonstrating excellent communication and customer service skills to students and parents while ensuring high satisfaction.}
+
+\cventry
+  {Application Support Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Delivered hands-on support for the rollout of an internal digital system. Maintained basic documentation of user errors, performed root-cause analysis on data discrepancies, and provided outstanding enterprise customer support by acting proactively and maintaining a highly organized issue log.}
+
+%==================== TECHNICAL EXPOSURE & PROJECTS ====================
+\section{Relevant Technical Exposure}
+
+\cvproject
+  {keke-pwa --- Incident Management System}
+  {2026}
+  {Technical Lead | Next.js, Firebase, Issue Tracking}
+  {Developed a secure incident reporting PWA tailored for workplace safety. Simulated enterprise ticketing workflows (similar to Jira logic) by implementing role-based access, automated notifications, and threaded resolutions, ensuring tickets contain sufficient information for investigation.}
+  {https://github.com/hafidzmulia-its/keke-pwa}
+
+\cvproject
+  {Mainbipa --- Educational Web Platform}
+  {2026}
+  {Application Support \& Developer | Next.js, Tailwind CSS}
+  {Translated the client's business processes into a structured digital workflow. Facilitated continuous improvement by gathering user feedback during the draft phase, troubleshooting reported bugs, and communicating technical information in a customer-friendly manner until project approval.}
+  {https://mainbipa.id}
+\cvproject
+  {erapor --- Master Data Management (MDM) Dashboard}
+  {2025}
+  {Database \& App Support | MongoDB, NextAuth}
+  {Built a centralized reporting dashboard managing relational data for 70+ committees. Gained practical exposure to Master Data Management (MDM) and operational business logic, managing accurate and immutable records for future reference.}
+  {https://rapor-himatika.vercel.app}
+
+\cvproject
+  {Abila Company --- B2B Digital Identity \& Admin System}
+  {2024}
+  {IT Solutions Partner | HTML, TypeScript, UI/UX Revisions}
+  {Delivered a tailored web solution for a B2B/UMKM client. Actively listened to the client's business identity needs, maintained accurate documentation of requested changes, and provided responsive application support throughout the development and deployment phases.}
+  {}
+%==================== SKILLS & COMPETENCIES ====================
+\section{Skills \& Competencies}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Support Expertise:} & Incident Management, Application Support, B2B Customer Support (Dukungan Pelanggan), Service-Level Agreements (SLA) awareness, Ticket Investigation \\[3pt]
+\textbf{Tools \& Collaboration:} & Jira (Ticketing Systems), Confluence, Microsoft Teams, Email, Git \\[3pt]
+\textbf{Technical \& Data:} & Relational Databases (MySQL, PostgreSQL), Master Data Management (MDM) Exposure, Troubleshooting API \& Web Apps, Enterprise Software Architecture \\[3pt]
+\textbf{Mindset \& Soft Skills:} & Detail-Oriented, Proactive, Collaborative, Continuous Learner, Customer-Oriented, Problem Solver, Calm Under Pressure, Strong Sense of Accountability \\
+\end{tabularx}
+
+%==================== ADDITIONAL ====================
+\section{Additional Information}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Work Environment:} & Comfortable working independently in a remote environment or Hybrid setup in Surabaya \\[3pt]
+\textbf{Language:} & Indonesian (Native), Bahasa Inggris (Professional Working Proficiency) \\
+\end{tabularx}
+
+\end{document}

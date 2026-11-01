@@ -1,11 +1,11 @@
-%-------------------------
-% CV Target: General Application
+%-----------------
+% CV Target: General Application / Product-Minded Software Developer
 % Author: Hafidz Mulia
 % Compile: pdflatex -interaction=nonstopmode "CV_Hafidz_Mulia.tex"
-%-------------------------
+%-----------------
 \documentclass[a4paper,11pt]{article}
 
-%----------- PACKAGES -----------
+%-------- PACKAGES --------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -16,18 +16,18 @@
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
+% 
+%-------- COLORS --------
+\definecolor{accent}{HTML}{0F4C81} % Biru profesional, bisa diubah ke ungu jika menyesuaikan web
 
-%----------- COLORS -----------
-\definecolor{accent}{HTML}{0F4C81}
-
-%----------- PAGE STYLE -----------
+%-------- PAGE STYLE --------
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[C]{\footnotesize\thepage}
 
-%----------- SECTION FORMATTING -----------
+%-------- SECTION FORMATTING --------
 \titleformat{\section}
   {\Large\bfseries\color{accent}}
   {}
@@ -37,7 +37,7 @@
 
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 
-%----------- CUSTOM COMMANDS -----------
+%-------- CUSTOM COMMANDS --------
 \newcommand{\cvname}[1]{%
   {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
 }
@@ -65,12 +65,12 @@
   \vspace{6pt}
 }
 
-%----------- DOCUMENT START -----------
+%-------- DOCUMENT START --------
 \begin{document}
 
 %==================== HEADER ====================
 \cvname{Hafidz Mulia}
-\cvtitle{Fullstack Web Developer}
+\cvtitle{Software Developer \& Empathetic Problem Solver}
 \cvcontact{%
   \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
   \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
@@ -82,111 +82,122 @@
 
 %==================== SUMMARY ====================
 \section{Professional Summary}
-Final-year Mathematics student at ITS with hands-on experience building and deploying full-stack web applications across education, GIS, reporting, and health-tech domains. Strong in Laravel, Next.js, PHP, TypeScript, SQL, database design, authentication, admin dashboards, and production deployment. Delivered multiple live projects for student organizations, schools, research initiatives, and freelance clients through NechCode, covering the full development lifecycle from requirements and schema design to implementation and release.
+I write code to solve human problems. Recently graduated with a degree in Mathematics, I bridge mathematical rigor with practical software engineering to build scalable, user-centric tools. Whether developing an automated reporting platform, a mobile-first health screening app, or an educational management system, my focus is always on reducing friction and delivering measurable business impact. I lean on solid architectures (Laravel, Next.js, PostgreSQL) to get the job done, but technology always comes second to the user's needs. Beyond engineering, I actively mentor aspiring developers, bringing strong communication and empathy to every team I collaborate with.
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\cventry
+  {Web Application Developer}
+  {PT Semen Indonesia Logistik (SILOG) --- ICT Department, Application Development Unit}
+  {Sep 2026 -- Present | Full-time | Gresik, East Java (On-site)}
+  {Develop application systems for real business cases. Work in a Docker-based Linux development environment and build management systems with Laravel Filament.}
+
+\cventry
+  {Freelance Software Engineer}
+  {NechCode -- Digital Solutions Agency}
+  {Feb 2026 -- Present}
+  {Partner directly with MSMEs, educational institutions, and healthcare clients to translate messy workflows into clean, functional digital platforms. Manage end-to-end technical delivery--from database schema design to frontend usability--bridging the gap between business goals and robust software engineering.}
+
+\cventry
+  {Part-time Programming Teacher}
+  {Timedoor Academy}
+  {Jan 2025 -- Present}
+  {Break down complex computer science concepts into fun, digestible lessons for junior and teen students. Guide learners through debugging struggles and introduce basic AI and computer-vision (NumPy, OpenCV) in a supportive environment, fostering confidence and logical problem-solving skills.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {Jan 2025 -- Feb 2025} 
+  {Listened to the frustrations of school administrators regarding manual data entry and engineered a digital attendance management system. Handled the full lifecycle from requirements gathering to final user acceptance testing, delivering a reliable Laravel backend that immediately replaced tedious paperwork.}
+
+
+\cventry
+  {Coordinator Assistant Laboratory}
+  {ITS Mathematics Department (Programming \& Visual Computing)}
+  {Aug 2024 -- Dec 2025}
+  {Spearhead operational management for programming practicums and manage a team of assistants. Sit side-by-step with over 100 junior students to bridge the gap between confusing algorithm theory and satisfying practical software development (Java, Python), ensuring no student is left behind.}
+
+% \cventry
+%   {Private Programming Tutor}
+%   {Freelance Education Work}
+%   {Aug 2025 -- }
+%   {Provide highly tailored, one-on-one programming tutoring. Focus on building confidence in logic, debugging, and introductory web development through practical, guided project implementation.}
+
+%==================== SELECTED PROJECTS ====================
+\section{Selected Projects}
+
+\cvproject
+  {SIDEDIKK -- Health-Tech \& Screening Platforms}
+  {2026}
+  {Fullstack Developer | Next.js, Laravel, Tailwind CSS, PWA, Chart.js}
+  {Empowered users with accessible health education and risk detection. Developed a mobile-first pregnancy screening PWA that translates complex health data into clear, understandable risk classifications, and a prenatal education platform featuring AI-assisted conversational learning.}
+  {https://sidedikk.my.id}
+
+\cvproject
+  {Portal TPQ -- Education Management Portal}
+  {2026}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Tailwind CSS}
+  {Streamlined administrative bottlenecks for Islamic educational centers. Digitized student progress, teacher schedules, and automated reporting workflows into a unified dashboard, allowing educators to focus on teaching rather than administrative paperwork.}
+  {https://tpqnh.my.id}
+
+\cvproject
+  {erapor -- Automated Reporting System}
+  {2025}
+  {Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Eliminated hundreds of hours of manual administrative work by automating organizational reporting and document generation. Built role-based dashboards that centralized data access, allowing leadership to track compliance and teams to generate multi-format reports effortlessly.}
+  {https://github.com/hafidzmulia-its/erapor}
+
+\cvproject
+  {HISurabaya -- GIS Spatial Search Platform}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, SQL Server, Leaflet, Turf.js}
+  {Enhanced the tourism experience by transforming standard text searches into an interactive spatial discovery tool. Leveraged mapping technologies to allow users to visually explore accommodations based on routes and specific city zones.}
+  {https://github.com/hafidzmulia-its/hisurabaya}
 
 %==================== EDUCATION ====================
 \section{Education}
 \cventry
   {Bachelor of Mathematics}
   {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
-  {2022 -- Present}
-  {GPA: 3.36 / 4.00 | Focus: Computational Mathematics and Informatics | Thesis: Improved data warehouse query performance using a PROADAPT-based memory-aware partitioning mechanism on PostgreSQL and TimescaleDB for 50M+ row time-series data}
-
-%==================== PROJECTS ====================
-\section{Selected Projects}
-
-\cvproject
-  {HISurabaya --- GIS Hotel Information System}
-  {2025}
-  {Fullstack Developer | Laravel 12, PHP 8.2, SQL Server, Tailwind CSS, Leaflet, Turf.js}
-  {Built a GIS-based hotel information system for Surabaya with point, route, and area search modes. Combined Laravel, SQL Server, and interactive mapping workflows to deliver a stronger spatial-search product than a standard CRUD application.}
-  {https://github.com/hafidzmulia-its/hisurabaya}
-
-\cvproject
-  {erapor --- Automated Reporting System}
-  {2025}
-  {Fullstack Developer | Next.js, TypeScript, MongoDB, NextAuth, PDF / Excel export}
-  {Developed a reporting platform for HIMATIKA with role-based dashboards, user management, and automated report generation. Improved internal reporting workflows through centralized data access and export features.}
-  {https://github.com/hafidzmulia-its/erapor}
-
-\cvproject
-  {sina --- Children's Storybook Platform}
-  {2025}
-  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Tailwind CSS, Alpine.js, Cloudinary}
-  {Developed a responsive content platform with reading progress tracking, role-based access control, and admin CMS. Integrated Cloudinary for media delivery and deployed the application to production.}
-  {https://github.com/hafidzmulia-its/sina}
-
-\cvproject
-  {patahero\_api --- REST API Backend for Mobile App}
-  {2026}
-  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
-  {Built a RESTful backend for a mobile first-aid application, including structured fracture-treatment endpoints, token-based authentication, user profile management, and image upload handling.}
-  {https://github.com/hafidzmulia-its/patahero\_api}
-
-\cvproject
-  {ELKPD and PREMOM --- Learning and Health Platforms}
-  {2025 -- 2026}
-  {Fullstack Developer | Next.js, TypeScript, MongoDB / Appwrite, Tailwind CSS}
-  {Built learning and health-focused platforms with gated user flows, admin dashboards, progress tracking, and data management. Combined product development with deployment and client-facing delivery for real use cases.}
-  {}
-
-%==================== EXPERIENCE ====================
-\section{Professional Experience}
-
-\cventry
-  {Founder \& Lead Developer}
-  {NechCode --- Freelance Digital Agency}
-  {2026 -- Present}
-  {Founded and operate a freelance digital agency delivering web applications for UMKM and academic or research clients. Handle requirements gathering, architecture, development, database design, deployment, and iteration across projects such as Nestbloom, Premom, Thyva, Soulmom, and Real Keke.}
-
-\cventry
-  {Programming and Web Development Instructor}
-  {Timedoor Academy}
-  {Jan 2025 -- Present}
-  {Teach programming fundamentals, algorithmic thinking, and introductory web development. Prepare lesson materials and guide students through logic building, debugging, and project-based practice.}
-
-\cventry
-  {Assistant Laboratory Coordinator}
-  {ITS Mathematics Department}
-  {2024 -- Present}
-  {Support programming and visual computing practicum activities, guide junior students in algorithm design and debugging, and help maintain practicum materials.}
-
-\cventry
-  {Fullstack Developer Intern}
-  {SMA IT Al Uswah Surabaya}
-  {May 2025}
-  {Developed and delivered a Laravel-based attendance system, covering requirement gathering, database design, implementation, and user acceptance testing with school staff.}
-
-%==================== SKILLS ====================
-\section{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Languages:} & PHP, JavaScript, TypeScript, SQL, HTML, CSS \\[3pt]
-\textbf{Frameworks:} & Laravel, Next.js, React, Alpine.js, Blade, Bootstrap, Tailwind CSS \\[3pt]
-\textbf{Databases:} & MySQL, PostgreSQL, PostGIS, TimescaleDB, MongoDB, Microsoft SQL Server, Appwrite, Firebase Firestore \\[3pt]
-\textbf{Auth \& API:} & REST API design, Laravel Sanctum, Laravel Breeze, NextAuth.js, Iron Session, Google OAuth \\[3pt]
-\textbf{Tools \& Cloud:} & Git, GitHub, Composer, npm, Vite, Vercel, Cloudinary, Vercel Blob, Google Sheets API \\[3pt]
-\textbf{Other Strengths:} & Database modeling, CRUD systems, admin dashboards, deployment, debugging, responsive UI implementation, data warehouse research fundamentals \\
-\end{tabularx}
+  {2022 -- 2026}
+  {GPA: 3.40 / 4.00 | Learned how to break down massive problems into logical, solvable steps. My undergraduate thesis focused on optimizing how we pull data from massive databases, utilizing a PROADAPT-based memory-aware partitioning mechanism on PostgreSQL/TimescaleDB for 50M+ rows of time-series data, proving capability in complex, under-the-hood optimization.}
 
 %==================== LEADERSHIP ====================
-\section{Leadership}
+\section{Leadership \& Community}
 \cventry
-  {1st Vice Head}
+  {Leader of Mathematics 2022 (STI 57)}
+  {Institut Teknologi Sepuluh Nopember}
+  {May 2023 -- Present}
+  {Elected to facilitate communication and coordination among 150+ peers. Focused on building a supportive academic environment, contributing to a 20\% increase in active participation within departmental activities.}
+
+\cventry
+  {1st Vice Head of Sentrum Katalis}
   {HIMATIKA ITS}
-  {Feb 2025 -- Present}
-  {Support organizational operations and staff coordination for a 100+ member student organization, including workflow improvement and internal reporting support.}
+  {Feb 2025 -- Dec 2025}
+  {Directed internal governance and spearheaded digital transformation initiatives for a 150+ member organization. Acted as a communication bridge, focusing on maintaining a cohesive community and actively reducing committee burnout through process automation.}
 
 \cventry
-  {Web Developer}
-  {Abila Company --- ITS Community Service Program}
-  {Jul 2024}
-  {Developed a company profile website from initial design to deployment as part of the ITS community service program.}
+  {Workshop Facilitator \& Technical Speaker}
+  {Various Campus Organizations (HIMATIKA, LKKI, UKM Rebana)}
+  {Jul 2024 -- Nov 2025}
+  {Delivered multiple workshops on fundamental web development, human resource management, and team leadership. Translated complex concepts into actionable skills for over 100+ total participants across different events.}
 
-%==================== LANGUAGES ====================
-\section{Languages}
-\begin{tabularx}{\textwidth}{@{}l l@{}}
-\textbf{Indonesian:} & Native \\
-\textbf{English:} & Professional working proficiency for technical reading and writing \\
+\cventry
+  {Head of Regeneration Department}
+  {LKKI Matematika ITS}
+  {Jan 2024 -- Dec 2024}
+  {Led human resource development and member training programs. Designed and executed engagement strategies focused on personal growth and empathy, which resulted in a 30\% improvement in active student participation.}
+
+%==================== SKILLS ====================
+\section{Technical Arsenal}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Core Languages:} & TypeScript, JavaScript, PHP, Python, SQL, Java, HTML/CSS \\[3pt]
+\textbf{Frontend:} & Next.js, React, Vue.js, Tailwind CSS, Alpine.js, Blade, Bootstrap \\[3pt]
+\textbf{Backend \& Data:} & Laravel, Node.js, PostgreSQL, MySQL, SQL Server, MongoDB, PostGIS, Firebase, Appwrite \\[3pt]
+\textbf{Architecture:} & REST API Design, Role-Based Access Control, Authentication (Sanctum, NextAuth), Web GIS \\[3pt]
+\textbf{Tools \& Workflow:} & Git, Docker, Linux, Laravel Filament, Vercel, Cloudinary, Composer, npm, Vite, Google Sheets API, NumPy, OpenCV \\[3pt]
+\textbf{Soft Skills:} & Technical Communication, Mentorship, Requirement Gathering, Problem Solving \\
 \end{tabularx}
 
 \end{document}

@@ -1,0 +1,166 @@
+%-------------------------
+% CV Target: RainDev Studio Fullstack Software Engineer
+% Author: Hafidz Mulia
+% Bahasa: Indonesia
+% Compile: pdflatex -interaction=nonstopmode "cv.tex"
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------- PACKAGES -----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%----------- COLORS -----------
+\definecolor{accent}{HTML}{087A63}
+
+%----------- PAGE STYLE -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+%----------- CUSTOM COMMANDS -----------
+\newcommand{\cvname}[1]{%
+  {\centering\LARGE\bfseries #1\par\vspace{2pt}}%
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\centering\large\color{accent} #1\par\vspace{4pt}}%
+}
+
+\newcommand{\cvcontact}[1]{%
+  {\centering\small #1\par\vspace{6pt}}%
+}
+
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#3} \\
+  \textit{#2}
+  \ifx&#4& \else \\ \small #4 \fi
+  \vspace{6pt}
+}
+
+\newcommand{\cvproject}[5]{%
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \textit{\small #3} \\
+  {\small #4}
+  \ifx&#5& \else \par\noindent{\small \href{#5}{Lihat Repositori / Demo}} \fi
+  \vspace{6pt}
+}
+
+%----------- DOCUMENT START -----------
+\begin{document}
+
+%==================== HEADER ====================
+\cvname{Hafidz Mulia}
+\cvtitle{Fullstack Software Engineer | React, TypeScript, PHP, API}
+\cvcontact{%
+  \href{tel:+6285158335740}{+62 851 5833 5740} \quad\textbar\quad
+  \href{mailto:hafidzmuliia@gmail.com}{hafidzmuliia@gmail.com} \quad\textbar\quad
+  Surabaya, Indonesia \\
+  \href{https://hafmul.site}{hafmul.site} \quad\textbar\quad
+  \href{https://github.com/hafidzmulia-its}{github.com/hafidzmulia-its} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/hafidz-mulia/}{linkedin.com/in/hafidz-mulia}
+}
+
+%==================== RINGKASAN ====================
+\section{Ringkasan Profesional}
+Fullstack developer dengan pengalaman membangun dan merawat aplikasi web untuk kebutuhan klien, institusi, riset, dan operasional organisasi. Kekuatan utama saya berada pada \textbf{React, Next.js, TypeScript, Laravel/PHP, REST API, database modeling, authentication, responsive UI,} dan deployment aplikasi. Terbiasa mengerjakan produk secara end-to-end: memahami kebutuhan pengguna, menyusun arsitektur yang dapat dirawat, mengembangkan fitur, melakukan debugging, sampai menindaklanjuti revisi setelah aplikasi digunakan. Pengalaman backend saya mencakup \textbf{Next.js API Routes} pada ekosistem Node.js serta \textbf{Laravel/PHP}, dengan penggunaan \textbf{MySQL} dan \textbf{MongoDB} pada beberapa proyek nyata.
+
+%==================== KEAHLIAN ====================
+\section{Keahlian Teknis}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Bahasa:} & JavaScript, TypeScript, PHP, SQL, HTML, CSS, Python \\[3pt]
+\textbf{Frontend:} & React, Next.js, Tailwind CSS, responsive UI, form validation, dashboard UI \\[3pt]
+\textbf{Backend:} & Next.js API Routes, Node.js runtime, Laravel, REST API, authentication, CRUD workflow, RBAC \\[3pt]
+\textbf{Database:} & MongoDB, MySQL, PostgreSQL, PostGIS, Firebase Firestore, Microsoft SQL Server \\[3pt]
+\textbf{Integrasi:} & External API, Google Sheets API, Coze API, Cloudinary, Vercel Blob, Firebase Cloud Messaging \\[3pt]
+\textbf{Tools \& Delivery:} & Git, GitHub, branching, commit convention, npm, Composer, Vite, Vercel, cPanel, Docker \\[3pt]
+\textbf{Cara Kerja:} & Requirement breakdown, asynchronous communication, debugging, deployment, post-release iteration \\
+\end{tabularx}
+
+%==================== PROYEK ====================
+\section{Proyek Pilihan}
+
+\cvproject
+  {erapor --- Sistem Pelaporan Otomatis}
+  {2025}
+  {Fullstack Developer | Next.js, React, TypeScript, MongoDB, NextAuth, PDF / Excel export}
+  {Mengembangkan aplikasi pelaporan internal dengan role-based dashboard, manajemen pengguna, autentikasi, serta export PDF dan Excel. Sistem mendukung kebutuhan 70+ panitia dan membantu otomatisasi lebih dari 20 export dokumen per minggu.}
+  {https://rapor-himatika.vercel.app}
+
+\cvproject
+  {sina --- Platform Cerita Anak}
+  {2025}
+  {Fullstack Developer | Laravel 12, PHP 8.2, MySQL, Blade, Tailwind CSS, Cloudinary}
+  {Membangun platform konten responsif dengan role user/admin/superadmin, reading-progress tracking, CMS, CRUD, dan upload media. Mengubah lebih dari 10 layar Figma menjadi halaman produksi dan menangani deployment aplikasi.}
+  {https://sina.hafmul.site}
+
+\cvproject
+  {keke-pwa --- Platform Pelaporan Insiden K3}
+  {2026}
+  {Fullstack Developer | Next.js, React, TypeScript, Firebase, Cloudinary, PWA}
+  {Membangun sistem pelaporan mobile-first dengan role-based access, alur perubahan status, thread komentar, upload media, dan push notification melalui Firebase Cloud Messaging. Menangani UI responsif serta workflow operasional yang digunakan untuk komunikasi admin dan pengguna.}
+  {https://realkeke.vercel.app}
+
+\cvproject
+  {patahero\_api --- REST API Backend untuk Aplikasi Mobile}
+  {2026}
+  {Backend Developer | Laravel 12, PHP 8.2, MySQL, Sanctum}
+  {Membangun REST API dengan endpoint terstruktur, token-based authentication, manajemen profil pengguna, dan upload gambar. Melakukan deployment backend ke hosting berbasis cPanel sehingga API dapat digunakan oleh aplikasi mobile.}
+  {https://github.com/hafidzmulia-its/patahero_api}
+
+%==================== PENGALAMAN ====================
+\section{Pengalaman Relevan}
+
+\cventry
+  {Founder \& Lead Developer}
+  {NechCode.id --- Freelance Digital Agency}
+  {2026 -- Sekarang}
+  {Menangani pengembangan aplikasi web untuk klien dan kebutuhan riset dari tahap diskusi kebutuhan, arsitektur, frontend, backend, database, deployment, sampai revisi setelah rilis. Terbiasa menjaga komunikasi progres dan menyesuaikan implementasi berdasarkan feedback pengguna.}
+
+\cventry
+  {Programming \& Web Development Instructor}
+  {Timedoor Academy}
+  {Jan 2025 -- Sekarang}
+  {Mengajar dasar pemrograman, algoritma, debugging, dan web development. Pengalaman ini memperkuat kemampuan komunikasi teknis, code review dasar, dan pemecahan masalah secara terstruktur.}
+
+\cventry
+  {Assistant Laboratory Coordinator}
+  {Laboratorium PROVIKOM, Departemen Matematika ITS}
+  {2024 -- Des 2025}
+  {Mengoordinasikan dan mendampingi kegiatan praktikum algoritma, pemrograman, dan komputasi visual. Membimbing mahasiswa dalam problem solving, debugging, serta penyusunan materi praktikum bersama tim asisten.}
+
+\cventry
+  {Fullstack Developer Intern}
+  {SMA IT Al Uswah Surabaya}
+  {May 2025}
+  {Mengembangkan dan menyerahkan sistem berbasis Laravel untuk kebutuhan sekolah, mulai dari requirement gathering, desain basis data, implementasi fitur, sampai user testing bersama pihak institusi.}
+
+%==================== PENDIDIKAN ====================
+\section{Pendidikan}
+\cventry
+  {S1 Matematika}
+  {Institut Teknologi Sepuluh Nopember (ITS), Surabaya}
+  {2022 -- 2026}
+  {IPK: 3.36 / 4.00 | Peminatan Komputasi dan Informatika | Riset tugas akhir mencakup optimasi query PostgreSQL dan TimescaleDB pada data time-series berskala 50 juta lebih baris.}
+
+\end{document}
