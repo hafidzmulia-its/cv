@@ -149,9 +149,9 @@
       "fit_score": 88,
       "cv_path": "local run package: 04-edubuild-frontend-project/cv.pdf",
       "apply_method": "JobStreet",
-      "status": "under_review",
+      "status": "listing_closed",
       "applied_at": "2026-10-09",
-      "notes": "Rp6.7-10m/month. Next/React strong fit; Flutter/Dart gap. | User confirmed application submitted manually. | JobStreet email 2026-10-26 reports 'Meninjau lamaran' for application submitted 2026-10-09; this indicates employer review, not shortlist/interview or acceptance."
+      "notes": "Rp6.7-10m/month. Next/React strong fit; Flutter/Dart gap. | User confirmed application submitted manually. | JobStreet email 2026-10-26 reports 'Meninjau lamaran' for application submitted 2026-10-09; this indicates employer review, not shortlist/interview or acceptance. | JobStreet notification 2026-11-05: job posting expired and no longer accepts applications. This is NOT a rejection; prior under_review status no longer independently confirmed."
     },
     {
       "date": "2026-10-09",
